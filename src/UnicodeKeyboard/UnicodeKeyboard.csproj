@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{231F802E-F52E-4150-BE44-AC26D6D43873}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>YuriyGuts.UnicodeKeyboard</RootNamespace>
+    <AssemblyName>UnicodeKeyboard</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>Resources\KeyboardSmall.ico</ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Gma.UserActivityMonitor, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>References\Gma.UserActivityMonitor.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Interaction\ApplicationPopupMode.cs" />
+    <Compile Include="ResourceWrappers\SingleAssemblyComponentResourceManager.cs" />
+    <Compile Include="UI\AboutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\AboutForm.Designer.cs">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AddToFavoritesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\AddToFavoritesForm.Designer.cs">
+      <DependentUpon>AddToFavoritesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\CharacterLookupForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\CharacterLookupForm.Designer.cs">
+      <DependentUpon>CharacterLookupForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\KeyboardShortcutTranscriber.cs" />
+    <Compile Include="UI\IKeyboardShortcutTranscriber.cs" />
+    <Compile Include="UI\KeyboardShortcutEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interaction\CommandGateway.cs" />
+    <Compile Include="ResourceWrappers\LocalizationHelper.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Properties\Resources.uk.resx" />
+    <EmbeddedResource Include="Properties\Resources.ru.resx" />
+    <EmbeddedResource Include="UI\AboutForm.resx">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\AboutForm.ru.resx">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\AboutForm.uk.resx">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\AddToFavoritesForm.resx">
+      <DependentUpon>AddToFavoritesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\AddToFavoritesForm.ru.resx">
+      <DependentUpon>AddToFavoritesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\AddToFavoritesForm.uk.resx">
+      <DependentUpon>AddToFavoritesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\CharacterLookupForm.resx">
+      <DependentUpon>CharacterLookupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\CharacterLookupForm.ru.resx">
+      <DependentUpon>CharacterLookupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\CharacterLookupForm.uk.resx">
+      <DependentUpon>CharacterLookupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UI\MainForm.ru.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\MainForm.uk.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\OptionsForm.resx">
+      <DependentUpon>OptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\OptionsForm.ru.resx">
+      <DependentUpon>OptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\OptionsForm.uk.resx">
+      <DependentUpon>OptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="UI\OptionsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\OptionsForm.Designer.cs">
+      <DependentUpon>OptionsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UIHelper.cs" />
+    <Compile Include="ResourceWrappers\UnicodeCharacterDatabase.cs" />
+    <Compile Include="WindowsIntegration\UnicodeCharSender.cs" />
+    <Compile Include="WindowsIntegration\UnsafeNativeMethods.cs" />
+    <Compile Include="Settings\UserSettings.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KeyboardSearch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KeyboardSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KeyboardLarge.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KeyboardSmall.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CharAccept.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CharAddToFavorites.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CharacterNamesCompressed.dat" />
+    <None Include="Resources\CharCopy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ArrowLeft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ArrowRight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CharSearch.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>:: Is it a Release build?
+if "$(ConfigurationName)"=="Release" (
+:: If the output directory does not exists, creating it
+if not exist "$(SolutionDir)Release\$(PlatformName)" md "$(SolutionDir)Release\$(PlatformName)"
+if not exist "$(SolutionDir)Release\$(PlatformName)\Temp" md "$(SolutionDir)Release\$(PlatformName)\Temp"
+:: Merging the libraries with the main executable
+"$(ProjectDir)Tools\ILMerge.exe" /target:winexe /copyattrs /allowMultiple /out:"$(SolutionDir)Release\$(PlatformName)\Temp\UnicodeKeyboard.exe" "$(TargetDir)UnicodeKeyboard.exe" "$(TargetDir)Gma.UserActivityMonitor.dll" "$(TargetDir)ru\UnicodeKeyboard.resources.dll"
+"$(ProjectDir)Tools\ILMerge.exe" /target:winexe /copyattrs /allowMultiple /out:"$(SolutionDir)Release\$(PlatformName)\UnicodeKeyboard.exe" "$(SolutionDir)Release\$(PlatformName)\Temp\UnicodeKeyboard.exe" "$(TargetDir)uk\UnicodeKeyboard.resources.dll"
+del /Q "$(SolutionDir)Release\$(PlatformName)\Temp\UnicodeKeyboard.*"
+rd "$(SolutionDir)Release\$(PlatformName)\Temp"
+)</PostBuildEvent>
+  </PropertyGroup>
+</Project>

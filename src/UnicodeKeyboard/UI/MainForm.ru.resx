@@ -1,0 +1,287 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="trayIcon.BalloonTipText" xml:space="preserve">
+    <value>Программа запущена!
+Нажимайте {0} для вызова.</value>
+  </data>
+  <data name="trayIcon.BalloonTipTitle" xml:space="preserve">
+    <value>Виртуальная Юникод-клавиатура</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="cmiTrayUsageHint.Size" type="System.Drawing.Size, System.Drawing">
+    <value>280, 22</value>
+  </data>
+  <data name="cmiTrayUsageHint.Text" xml:space="preserve">
+    <value>Нажимайте "{0}" или дважды "{1}" для вызова</value>
+  </data>
+  <data name="cmiTraySeparator.Size" type="System.Drawing.Size, System.Drawing">
+    <value>277, 6</value>
+  </data>
+  <data name="cmiTrayOptions.Size" type="System.Drawing.Size, System.Drawing">
+    <value>280, 22</value>
+  </data>
+  <data name="cmiTrayOptions.Text" xml:space="preserve">
+    <value>Настройки...</value>
+  </data>
+  <data name="cmiTrayExit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>280, 22</value>
+  </data>
+  <data name="cmiTrayExit.Text" xml:space="preserve">
+    <value>Выход</value>
+  </data>
+  <data name="cmsTrayIconMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>281, 76</value>
+  </data>
+  <data name="trayIcon.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAEBAAAAAAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAQAQAAAAAAAAAAAAAAAAAAAAA
+        AAD///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af//
+        /wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af//
+        /wH///8B////AerFpOvnwJ//47ya/+C3lf/dso//2a6K/9aphf/TpX//0KB7/82cdv/KmXL/yJZu/8aT
+        a//EkGn/xJBo/8SQaOvuy6v/6NXI/+jUxf/n0sP/5dDB/+XOvv/jzLz/48q5/+LJt//hx7X/4MWz/9/E
+        sf/fxLD/3sKv/97Crv/EkGj/8tCx/+rYzP/8/Pz/2rqk//z8/P/8/Pz//Pz8//z8/P/8/Pz//Pz8//z8
+        /P/8/Pz/zKGC//z8/P/fw7D/xZJq//XUtv/s3ND/3sOv/92/q//bvaf/2bqj/9i3n//WtJz/1bGX/9Ou
+        lP/Rq4//0KiM/8+miP/No4X/4MWz/8eVbv/42Lv/7d7U//z8/P/8/Pz/3sKu//z8/P/bvKb//Pz8/9i2
+        nv/8/Pz/1bCX//z8/P/8/Pz//Pz8/+HItv/KmXL/+ty//+7g1v/jy7r/4sm4/+DGtP/fxLH/3sKt/9y/
+        qv/avKb/2bmi/9e2nv/Ws5r/6dbK//z8/P/jy7r/zp13//zewf/v4tj//Pz8/+TMvP/8/Pz/4cm3//z8
+        /P/fw7D//Pz8/9y+qf/8/Pz/2bih//z8/P/38/D/5c6+/9Giff/83sH/7+LY/+/i2P/v4tj/7uHX/+7g
+        1v/u39T/7d3S/+zc0f/r2s7/6tjM/+rXyv/o1cf/59PF/+fRwv/VqIP//N7B4/zewf+7ubb/s7Gu//rb
+        vv/42Lv/9tW3//PSs//wzq7/7cmq/+rFpP/nwJ//47ya/+C3lf/dso//2a6K4////wH///8BxMTE/by8
+        vLWzs7MR////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////AdDQ
+        0PnJycn5wsLCZ////wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af//
+        /wHZ2dln1NTU98/Pz+/IyMjlwMDA2be3t8Ourq6TpKSkfZubm2+RkZFJh4eHBf///wH///8B////Af//
+        /wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af//
+        /wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af//
+        /wH///8BAAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA
+        //8AAP//AAD//w==
+</value>
+  </data>
+  <data name="trayIcon.Text" xml:space="preserve">
+    <value>Виртуальная Юникод-клавиатура</value>
+  </data>
+  <data name="lblHeader.Size" type="System.Drawing.Size, System.Drawing">
+    <value>222, 16</value>
+  </data>
+  <data name="lblHeader.Text" xml:space="preserve">
+    <value>Введите код или название символа:</value>
+  </data>
+  <data name="btnAccept.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rbHexMode.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 17</value>
+  </data>
+  <data name="rbHexMode.Text" xml:space="preserve">
+    <value>1&amp;6-код</value>
+  </data>
+  <data name="rbDecimalMode.Location" type="System.Drawing.Point, System.Drawing">
+    <value>182, 33</value>
+  </data>
+  <data name="rbDecimalMode.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 17</value>
+  </data>
+  <data name="rbDecimalMode.Text" xml:space="preserve">
+    <value>10&amp;-код</value>
+  </data>
+  <data name="lblTargetWindow.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 13</value>
+  </data>
+  <data name="lblTargetWindow.Text" xml:space="preserve">
+    <value>Окно-адресат:</value>
+  </data>
+  <data name="btnAddToFavorites.ToolTip" xml:space="preserve">
+    <value>Добавить на панель быстрого доступа</value>
+  </data>
+  <data name="btnCopy.ToolTip" xml:space="preserve">
+    <value>Скопировать символ в буфер обмена (&lt;Ctrl+Alt+C&gt;)</value>
+  </data>
+  <data name="lblSenderWindowTitle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>95, 114</value>
+  </data>
+  <data name="lblSenderWindowTitle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>254, 13</value>
+  </data>
+  <data name="lblFavorites.Text" xml:space="preserve">
+    <value>Быстрый доступ (нажимайте {0}, затем номер ячейки):</value>
+  </data>
+  <data name="lnkAbout.Location" type="System.Drawing.Point, System.Drawing">
+    <value>230, 213</value>
+  </data>
+  <data name="lnkAbout.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 13</value>
+  </data>
+  <data name="lnkAbout.Text" xml:space="preserve">
+    <value>О программе</value>
+  </data>
+  <data name="rbTextMode.Location" type="System.Drawing.Point, System.Drawing">
+    <value>250, 33</value>
+  </data>
+  <data name="rbTextMode.Size" type="System.Drawing.Size, System.Drawing">
+    <value>103, 17</value>
+  </data>
+  <data name="rbTextMode.Text" xml:space="preserve">
+    <value>Поиск по &amp;имени</value>
+  </data>
+  <data name="lnkOptions.Location" type="System.Drawing.Point, System.Drawing">
+    <value>115, 213</value>
+  </data>
+  <data name="lnkOptions.Size" type="System.Drawing.Size, System.Drawing">
+    <value>105, 13</value>
+  </data>
+  <data name="lnkOptions.Text" xml:space="preserve">
+    <value>Настройки (Ctrl+O)</value>
+  </data>
+  <data name="lnkExit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>309, 213</value>
+  </data>
+  <data name="lnkExit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 13</value>
+  </data>
+  <data name="lnkExit.Text" xml:space="preserve">
+    <value>Выход</value>
+  </data>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAEBAAAAAAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAQAQAAAAAAAAAAAAAAAAAAAAA
+        AAD///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af//
+        /wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af//
+        /wH///8B////AerFpOvnwJ//47ya/+C3lf/dso//2a6K/9aphf/TpX//0KB7/82cdv/KmXL/yJZu/8aT
+        a//EkGn/xJBo/8SQaOvuy6v/6NXI/+jUxf/n0sP/5dDB/+XOvv/jzLz/48q5/+LJt//hx7X/4MWz/9/E
+        sf/fxLD/3sKv/97Crv/EkGj/8tCx/+rYzP/8/Pz/2rqk//z8/P/8/Pz//Pz8//z8/P/8/Pz//Pz8//z8
+        /P/8/Pz/zKGC//z8/P/fw7D/xZJq//XUtv/s3ND/3sOv/92/q//bvaf/2bqj/9i3n//WtJz/1bGX/9Ou
+        lP/Rq4//0KiM/8+miP/No4X/4MWz/8eVbv/42Lv/7d7U//z8/P/8/Pz/3sKu//z8/P/bvKb//Pz8/9i2
+        nv/8/Pz/1bCX//z8/P/8/Pz//Pz8/+HItv/KmXL/+ty//+7g1v/jy7r/4sm4/+DGtP/fxLH/3sKt/9y/
+        qv/avKb/2bmi/9e2nv/Ws5r/6dbK//z8/P/jy7r/zp13//zewf/v4tj//Pz8/+TMvP/8/Pz/4cm3//z8
+        /P/fw7D//Pz8/9y+qf/8/Pz/2bih//z8/P/38/D/5c6+/9Giff/83sH/7+LY/+/i2P/v4tj/7uHX/+7g
+        1v/u39T/7d3S/+zc0f/r2s7/6tjM/+rXyv/o1cf/59PF/+fRwv/VqIP//N7B4/zewf+7ubb/s7Gu//rb
+        vv/42Lv/9tW3//PSs//wzq7/7cmq/+rFpP/nwJ//47ya/+C3lf/dso//2a6K4////wH///8BxMTE/by8
+        vLWzs7MR////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////AdDQ
+        0PnJycn5wsLCZ////wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af//
+        /wHZ2dln1NTU98/Pz+/IyMjlwMDA2be3t8Ourq6TpKSkfZubm2+RkZFJh4eHBf///wH///8B////Af//
+        /wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af//
+        /wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af//
+        /wH///8BAAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA
+        //8AAP//AAD//w==
+</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Виртуальная Юникод-клавиатура</value>
+  </data>
+</root>
