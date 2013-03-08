@@ -16,22 +16,22 @@ namespace YuriyGuts.UnicodeKeyboard.WindowsIntegration
         /// <param name="charCode">Unicode character code.</param>
         public static void Send(IntPtr hTargetWindow, ushort charCode)
         {
-            UnsafeNativeMethods.SetForegroundWindow(hTargetWindow);
-            UnsafeNativeMethods.INPUT input = new UnsafeNativeMethods.INPUT
+            NativeMethods.SetForegroundWindow(hTargetWindow);
+            NativeStructs.INPUT input = new NativeStructs.INPUT
             {
-                type = UnsafeNativeMethods.INPUT_KEYBOARD,
-                input = new UnsafeNativeMethods.KEYBDINPUT
+                type = NativeMethods.INPUT_KEYBOARD,
+                input = new NativeStructs.KEYBDINPUT
                 {
                     wVk = 0,
                     wScan = charCode,
-                    dwFlags = UnsafeNativeMethods.KEYEVENTF_UNICODE,
+                    dwFlags = NativeMethods.KEYEVENTF_UNICODE,
                     time = 0,
                     dwExtraInfo = IntPtr.Zero
                 }
             };
 
             Trace.WriteLine(string.Format("Sending {0:X4} to {1:X8}", charCode, hTargetWindow.ToInt32()));
-            UnsafeNativeMethods.SendInput(1, ref input, Marshal.SizeOf(typeof(UnsafeNativeMethods.INPUT)));
+            NativeMethods.SendInput(1, ref input, Marshal.SizeOf(typeof(NativeStructs.INPUT)));
         }
     }
 }

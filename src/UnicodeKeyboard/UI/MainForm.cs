@@ -1,12 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using System.Drawing;
 using System.Globalization;
-using System.Text;
 using System.Windows.Forms;
 using YuriyGuts.UnicodeKeyboard.Interaction;
-using YuriyGuts.UnicodeKeyboard.Properties;
 using YuriyGuts.UnicodeKeyboard.ResourceWrappers;
 using YuriyGuts.UnicodeKeyboard.Settings;
 using YuriyGuts.UnicodeKeyboard.WindowsIntegration;
@@ -38,7 +35,7 @@ namespace YuriyGuts.UnicodeKeyboard.UI
         {
             InitializeMUI();
             InitializeCommandProcessor();
-            InitializeGlyphDisplayer();
+            //!!! InitializeGlyphDisplayer();
             LoadFavorites();
         }
 
@@ -124,7 +121,7 @@ namespace YuriyGuts.UnicodeKeyboard.UI
         {
             if (isWindowTrackingEnabled)
             {
-                IntPtr hNewTargetWnd = UnsafeNativeMethods.GetForegroundWindow();
+                IntPtr hNewTargetWnd = NativeMethods.GetForegroundWindow();
                 if (hNewTargetWnd != hTargetWindow && hNewTargetWnd != Handle)
                 {
                     hTargetWindow = hNewTargetWnd;
@@ -133,20 +130,8 @@ namespace YuriyGuts.UnicodeKeyboard.UI
             }
         }
 
-        private void commandGateway_ShowApplicationCommandReceived(object sender, ApplicationPopupModeEventArgs e)
+        private void commandGateway_ShowApplicationCommandReceived(object sender, EventArgs e)
         {
-            switch (e.PopupMode)
-            {
-                case ApplicationPopupMode.DecimalCodeSearch:
-                    rbDecimalMode.Checked = true;
-                    break;
-                case ApplicationPopupMode.HexCodeSearch:
-                    rbHexMode.Checked = true;
-                    break;
-                case ApplicationPopupMode.TextSearch:
-                    rbTextMode.Checked = true;
-                    break;
-            }
             ShowApplication();
         }
 
@@ -184,17 +169,13 @@ namespace YuriyGuts.UnicodeKeyboard.UI
             get
             {
                 ushort result;
-                if (!ParseCharacterCode(txtCharCode.Text, rbHexMode.Checked || rbTextMode.Checked, out result))
+                // !!! allowHex
+                if (!ParseCharacterCode(txtCharCode.Text, true/*rbHexMode.Checked || rbTextMode.Checked*/, out result))
                 {
                     result = 0;
                 }
                 return result;
             }
-        }
-
-        private void InitializeGlyphDisplayer()
-        {
-            lblCharPreview.Font = UIHelper.UnicodeCharacterFont;
         }
 
         private static bool ParseCharacterCode(string text, bool allowHex, out ushort result)
@@ -207,32 +188,15 @@ namespace YuriyGuts.UnicodeKeyboard.UI
             ushort charCode = 0;
             bool shouldSendChar = false;
 
-            if (rbHexMode.Checked || rbDecimalMode.Checked)
+            ExecuteActionWithFocusLostEventLock(() =>
             {
-                charCode = EnteredCharacterCode;
-                if (charCode > 0)
+                ushort pickedCharCode = CharacterLookupForm.Execute(txtCharCode.Text, this);
+                if (pickedCharCode > 0)
                 {
+                    charCode = pickedCharCode;
                     shouldSendChar = true;
                 }
-                else
-                {
-                    ShowErrorMessage(LocalizationHelper.GetResource(this, "msgInvalidCharCode"));
-                    return;
-                }
-            }
-
-            if (rbTextMode.Checked)
-            {
-                ExecuteActionWithFocusLostEventLock(() =>
-                {
-                    ushort pickedCharCode = CharacterLookupForm.Execute(txtCharCode.Text, this);
-                    if (pickedCharCode > 0)
-                    {
-                        charCode = pickedCharCode;
-                        shouldSendChar = true;
-                    }
-                });
-            }
+            });
 
             if (shouldSendChar)
             {
@@ -252,7 +216,7 @@ namespace YuriyGuts.UnicodeKeyboard.UI
 
                 if (!minimizeBeforeSending)
                 {
-                    UnsafeNativeMethods.SetForegroundWindow(Handle);
+                    NativeMethods.SetForegroundWindow(Handle);
                 }
             }
         }
@@ -291,44 +255,6 @@ namespace YuriyGuts.UnicodeKeyboard.UI
         {
             txtCharCode.Clear();
             txtCharCode.Focus();
-        }
-
-        private void HandleInputModeChanged()
-        {
-            ushort charCode = 0;
-            if (!rbTextMode.Checked)
-            {
-                charCode = EnteredCharacterCode;
-                if (charCode == 0)
-                {
-                    txtCharCode.Clear();
-                }
-            }
-
-            btnAccept.Image = !rbTextMode.Checked ? Resources.CharAccept : Resources.CharSearch;
-            toolTip.SetToolTip(btnAccept, LocalizationHelper.GetResource(this, string.Format("{0}_{1}", btnAccept.Name, !rbTextMode.Checked ? "ToolTip" : "SearchToolTip")));
-            txtCharCode.CharacterCasing = rbTextMode.Checked ? CharacterCasing.Normal : CharacterCasing.Upper;
-            txtCharCode.Focus();
-
-            UpdateCharacterPreview(charCode);
-        }
-
-        private void UpdateCharacterPreview(ushort charCode)
-        {
-            if (charCode == 0)
-            {
-                lblCharPreview.ForeColor = Color.Silver;
-                lblCharPreview.Text = @"?";
-                lblCharDescription.Text = string.Empty;
-            }
-            else
-            {
-                lblCharPreview.ForeColor = Color.Black;
-                lblCharPreview.Text = ((char)charCode).ToString();
-
-                string charDescription = UnicodeCharacterDatabase.GetCharacterName(charCode) ?? string.Empty;
-                lblCharDescription.Text = charDescription;
-            }
         }
 
         #endregion Input box processing
@@ -416,10 +342,10 @@ namespace YuriyGuts.UnicodeKeyboard.UI
 
         private void UpdateTargetWindowDescription()
         {
-            StringBuilder nameBuilder = new StringBuilder(1024);
-            int nameLength = UnsafeNativeMethods.GetWindowText(hTargetWindow, nameBuilder, nameBuilder.Capacity);
-            lblSenderWindowTitle.Text = nameLength > 0 ? nameBuilder.ToString() : LocalizationHelper.GetResource(this, "strNoTargetWindow");
-            lblSenderWindowTitle.ForeColor = nameLength > 0 ? Color.DarkGreen : Color.Red;
+            string title = NativeMethods.GetParentWindowTitle(hTargetWindow);
+            lblTargetWindowTitle.Text = title;
+            //!!! lblTargetWindowTitle.Text = nameLength > 0 ? nameBuilder.ToString() : LocalizationHelper.GetResource(this, "strNoTargetWindow");
+            //!!! lblTargetWindowTitle.ForeColor = nameLength > 0 ? Color.DarkGreen : Color.Red;
         }
 
         #endregion Utilities
@@ -512,18 +438,6 @@ namespace YuriyGuts.UnicodeKeyboard.UI
                 {
                     ClearInput();
                 }
-                if (e.KeyCode == Keys.F1)
-                {
-                    rbHexMode.Checked = true;
-                }
-                if (e.KeyCode == Keys.F2)
-                {
-                    rbDecimalMode.Checked = true;
-                }
-                if (e.KeyCode == Keys.F3)
-                {
-                    rbTextMode.Checked = true;
-                }
             }
 
             // Esc - hide window.
@@ -551,41 +465,6 @@ namespace YuriyGuts.UnicodeKeyboard.UI
             }
         }
 
-        private void rbHexMode_CheckedChanged(object sender, EventArgs e)
-        {
-            HandleInputModeChanged();
-        }
-
-        private void rbDecimalMode_CheckedChanged(object sender, EventArgs e)
-        {
-            HandleInputModeChanged();
-        }
-
-        private void rbTextMode_CheckedChanged(object sender, EventArgs e)
-        {
-            HandleInputModeChanged();
-        }
-
-        private void lnkCharmap_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            LaunchWindowsCharmap();
-        }
-
-        private void lnkOptions_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            ShowOptionsWindow();
-        }
-
-        private void lnkAbout_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            ShowAboutWindow();
-        }
-
-        private void lnkExit_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            TerminateApplication();
-        }
-
         private void txtCharCode_KeyDown(object sender, KeyEventArgs e)
         {
             bool isNoModifiers = e.Modifiers == Keys.None;
@@ -610,22 +489,13 @@ namespace YuriyGuts.UnicodeKeyboard.UI
                     HideApplication();
                     break;
                 }
-
-                if (rbHexMode.Checked)
-                {
-                    shouldAcceptKey = isEditKey || isNavigationKey || isValidHexKey;
-                    break;
-                }
-                if (rbDecimalMode.Checked)
-                {
-                    shouldAcceptKey = isEditKey || isNavigationKey || isValidDecimalKey;
-                    break;
-                }
-                if (rbTextMode.Checked)
-                {
+                
+                // !!!
+                //if (rbTextMode.Checked)
+                //{
                     shouldAcceptKey = true;
                     break;
-                }
+                //}
             }
             while (false);
 
@@ -634,11 +504,8 @@ namespace YuriyGuts.UnicodeKeyboard.UI
 
         private void txtCharCode_TextChanged(object sender, EventArgs e)
         {
-            if (!rbTextMode.Checked)
-            {
-                tmrCharacterPreview.Stop();
-                tmrCharacterPreview.Start();
-            }
+            tmrCharacterPreview.Stop();
+            tmrCharacterPreview.Start();
         }
 
         private void btnAccept_Click(object sender, EventArgs e)
@@ -654,12 +521,12 @@ namespace YuriyGuts.UnicodeKeyboard.UI
 
         private void btnAddToFavorites_Click(object sender, EventArgs e)
         {
-            if (rbHexMode.Checked || rbDecimalMode.Checked)
-            {
-                AddCharCodeToFavorites(EnteredCharacterCode);
-            }
-            if (rbTextMode.Checked)
-            {
+            //if (rbHexMode.Checked || rbDecimalMode.Checked)
+            //{
+            //    AddCharCodeToFavorites(EnteredCharacterCode);
+            //}
+            //if (rbTextMode.Checked)
+            //{
                 ExecuteActionWithFocusLostEventLock(() =>
                 {
                     ushort pickedCharCode = CharacterLookupForm.Execute(txtCharCode.Text, this);
@@ -668,14 +535,14 @@ namespace YuriyGuts.UnicodeKeyboard.UI
                         AddCharCodeToFavorites(pickedCharCode);
                     }
                 });
-            }
+            //}
         }
 
         private void tmrCharacterPreview_Tick(object sender, EventArgs e)
         {
             tmrCharacterPreview.Stop();
             ushort charCode = EnteredCharacterCode;
-            UpdateCharacterPreview(charCode);
+            //UpdateCharacterPreview(charCode);
         }
 
         private void cmiTrayOptions_Click(object sender, EventArgs e)
@@ -701,6 +568,43 @@ namespace YuriyGuts.UnicodeKeyboard.UI
                     UnicodeCharSender.Send(hTargetWindow, UserSettings.Instance.Favorites[favoriteIndex]);
                 }
             }
+        }
+
+        private void btnOptions_Click(object sender, EventArgs e)
+        {
+            cmsOptions.Show(btnOptions, 0, btnOptions.Height);
+        }
+
+        private void cmiOptions_Click(object sender, EventArgs e)
+        {
+            ShowOptionsWindow();
+        }
+
+        private void cmiWindowsCharMap_Click(object sender, EventArgs e)
+        {
+            LaunchWindowsCharmap();
+        }
+
+        private void cmiAbout_Click(object sender, EventArgs e)
+        {
+            ShowAboutWindow();
+        }
+
+        private void cmiExit_Click(object sender, EventArgs e)
+        {
+            TerminateApplication();
+        }
+
+        private void windowFinder_ActiveWindowChanged(object sender, EventArgs e)
+        {
+            hTargetWindow = windowFinder.SelectedHandle;
+            UpdateTargetWindowDescription();
+        }
+
+        private void windowFinder_ActiveWindowSelected(object sender, EventArgs e)
+        {
+            hTargetWindow = windowFinder.SelectedHandle;
+            UpdateTargetWindowDescription();
         }
 
         #endregion Form and control events

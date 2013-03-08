@@ -74,7 +74,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Interaction\ApplicationPopupMode.cs" />
     <Compile Include="ResourceWrappers\SingleAssemblyComponentResourceManager.cs" />
     <Compile Include="UI\AboutForm.cs">
       <SubType>Form</SubType>
@@ -166,6 +165,9 @@
     <EmbeddedResource Include="UI\OptionsForm.uk.resx">
       <DependentUpon>OptionsForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UI\WindowFinder.resx">
+      <DependentUpon>WindowFinder.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -183,8 +185,16 @@
     </Compile>
     <Compile Include="UI\UIHelper.cs" />
     <Compile Include="ResourceWrappers\UnicodeCharacterDatabase.cs" />
+    <Compile Include="UI\WindowFinder.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\WindowFinder.Designer.cs">
+      <DependentUpon>WindowFinder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\CapturedWindow.cs" />
+    <Compile Include="WindowsIntegration\NativeStructs.cs" />
     <Compile Include="WindowsIntegration\UnicodeCharSender.cs" />
-    <Compile Include="WindowsIntegration\UnsafeNativeMethods.cs" />
+    <Compile Include="WindowsIntegration\NativeMethods.cs" />
     <Compile Include="Settings\UserSettings.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -217,6 +227,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\CharSearch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wrench.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Crosshair.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CrosshairCursor.cur" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

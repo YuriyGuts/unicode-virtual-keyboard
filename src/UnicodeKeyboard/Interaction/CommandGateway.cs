@@ -84,7 +84,7 @@ namespace YuriyGuts.UnicodeKeyboard.Interaction
 
                         if (isHexModeInvoke)
                         {
-                            OnShowApplicationCommandReceived(this, new ApplicationPopupModeEventArgs(ApplicationPopupMode.HexCodeSearch));
+                            OnShowApplicationCommandReceived(this, EventArgs.Empty);
                         }
                         if (isFavoriteDigit)
                         {
@@ -133,7 +133,7 @@ namespace YuriyGuts.UnicodeKeyboard.Interaction
                     {
                         e.Handled = e.SuppressKeyPress = true;
                         isWaitingForSecondChordKey = false;
-                        OnShowApplicationCommandReceived(this, new ApplicationPopupModeEventArgs(ApplicationPopupMode.TextSearch));
+                        OnShowApplicationCommandReceived(this, EventArgs.Empty);
                     }
                 }
             }
@@ -274,7 +274,7 @@ namespace YuriyGuts.UnicodeKeyboard.Interaction
         /// <summary>
         /// Occurs when the application activation keystroke has been received.
         /// </summary>
-        public event EventHandler<ApplicationPopupModeEventArgs> ShowApplicationCommandReceived;
+        public event EventHandler ShowApplicationCommandReceived;
 
         /// <summary>
         /// Occurs when the favorite character insertion keystroke has been received.
@@ -290,9 +290,9 @@ namespace YuriyGuts.UnicodeKeyboard.Interaction
             }
         }
 
-        protected virtual void OnShowApplicationCommandReceived(object sender, ApplicationPopupModeEventArgs args)
+        protected virtual void OnShowApplicationCommandReceived(object sender, EventArgs args)
         {
-            EventHandler<ApplicationPopupModeEventArgs> handler = ShowApplicationCommandReceived;
+            EventHandler handler = ShowApplicationCommandReceived;
             if (handler != null)
             {
                 handler(sender, args);
