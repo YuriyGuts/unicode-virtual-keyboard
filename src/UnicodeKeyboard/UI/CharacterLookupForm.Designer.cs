@@ -36,21 +36,24 @@ namespace YuriyGuts.UnicodeKeyboard.UI
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.gridResultDisplayer = new System.Windows.Forms.DataGridView();
-            this.pnlBottom = new System.Windows.Forms.Panel();
-            this.btnCopy = new System.Windows.Forms.Button();
-            this.lblFilterEditHint = new System.Windows.Forms.Label();
-            this.btnAccept = new System.Windows.Forms.Button();
-            this.lblTotalItemsValue = new System.Windows.Forms.Label();
-            this.lblTotalItemsCaption = new System.Windows.Forms.Label();
-            this.pnlFilterContainer = new System.Windows.Forms.Panel();
-            this.txtFilter = new System.Windows.Forms.TextBox();
-            this.tmrSearchTimeout = new System.Windows.Forms.Timer(this.components);
             this.colCharacterCode = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colCharacterGlyph = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colCharacterName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pnlBottom = new System.Windows.Forms.Panel();
+            this.lblShortcutAddToFavorites = new System.Windows.Forms.Label();
+            this.lblShortcutCopyToClipboard = new System.Windows.Forms.Label();
+            this.lblShortcutInsertCharacter = new System.Windows.Forms.Label();
+            this.pnlShortcutSeparatorLine = new System.Windows.Forms.Panel();
+            this.imgShortcutCopyToClipboard = new System.Windows.Forms.Panel();
+            this.imgShortcutAddToFavorites = new System.Windows.Forms.Panel();
+            this.imgShortcutInsertCharacterAlt = new System.Windows.Forms.Panel();
+            this.imgShortcutInsertCharacter = new System.Windows.Forms.Panel();
+            this.pnlSeparatorLine = new System.Windows.Forms.Panel();
+            this.tmrSearchTimeout = new System.Windows.Forms.Timer(this.components);
+            this.pnlBorder = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.gridResultDisplayer)).BeginInit();
             this.pnlBottom.SuspendLayout();
-            this.pnlFilterContainer.SuspendLayout();
+            this.pnlBorder.SuspendLayout();
             this.SuspendLayout();
             // 
             // gridResultDisplayer
@@ -61,6 +64,8 @@ namespace YuriyGuts.UnicodeKeyboard.UI
             this.gridResultDisplayer.AllowUserToResizeColumns = false;
             this.gridResultDisplayer.AllowUserToResizeRows = false;
             this.gridResultDisplayer.BackgroundColor = System.Drawing.SystemColors.Window;
+            this.gridResultDisplayer.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.gridResultDisplayer.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.gridResultDisplayer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gridResultDisplayer.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colCharacterCode,
@@ -84,68 +89,6 @@ namespace YuriyGuts.UnicodeKeyboard.UI
             this.gridResultDisplayer.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridResultDisplayer_CellDoubleClick);
             this.gridResultDisplayer.CellValueNeeded += new System.Windows.Forms.DataGridViewCellValueEventHandler(this.gridResultDisplayer_CellValueNeeded);
             this.gridResultDisplayer.KeyDown += new System.Windows.Forms.KeyEventHandler(this.gridResultDisplayer_KeyDown);
-            // 
-            // pnlBottom
-            // 
-            resources.ApplyResources(this.pnlBottom, "pnlBottom");
-            this.pnlBottom.Controls.Add(this.btnCopy);
-            this.pnlBottom.Controls.Add(this.lblFilterEditHint);
-            this.pnlBottom.Controls.Add(this.btnAccept);
-            this.pnlBottom.Controls.Add(this.lblTotalItemsValue);
-            this.pnlBottom.Controls.Add(this.lblTotalItemsCaption);
-            this.pnlBottom.Name = "pnlBottom";
-            // 
-            // btnCopy
-            // 
-            resources.ApplyResources(this.btnCopy, "btnCopy");
-            this.btnCopy.Image = global::YuriyGuts.UnicodeKeyboard.Properties.Resources.CharCopy;
-            this.btnCopy.Name = "btnCopy";
-            this.btnCopy.UseVisualStyleBackColor = true;
-            this.btnCopy.Click += new System.EventHandler(this.btnCopy_Click);
-            // 
-            // lblFilterEditHint
-            // 
-            resources.ApplyResources(this.lblFilterEditHint, "lblFilterEditHint");
-            this.lblFilterEditHint.BackColor = System.Drawing.SystemColors.Control;
-            this.lblFilterEditHint.ForeColor = System.Drawing.Color.SteelBlue;
-            this.lblFilterEditHint.Name = "lblFilterEditHint";
-            // 
-            // btnAccept
-            // 
-            resources.ApplyResources(this.btnAccept, "btnAccept");
-            this.btnAccept.Image = global::YuriyGuts.UnicodeKeyboard.Properties.Resources.CharAccept;
-            this.btnAccept.Name = "btnAccept";
-            this.btnAccept.UseVisualStyleBackColor = true;
-            this.btnAccept.Click += new System.EventHandler(this.btnAccept_Click);
-            // 
-            // lblTotalItemsValue
-            // 
-            resources.ApplyResources(this.lblTotalItemsValue, "lblTotalItemsValue");
-            this.lblTotalItemsValue.Name = "lblTotalItemsValue";
-            // 
-            // lblTotalItemsCaption
-            // 
-            resources.ApplyResources(this.lblTotalItemsCaption, "lblTotalItemsCaption");
-            this.lblTotalItemsCaption.Name = "lblTotalItemsCaption";
-            // 
-            // pnlFilterContainer
-            // 
-            resources.ApplyResources(this.pnlFilterContainer, "pnlFilterContainer");
-            this.pnlFilterContainer.Controls.Add(this.txtFilter);
-            this.pnlFilterContainer.Name = "pnlFilterContainer";
-            // 
-            // txtFilter
-            // 
-            resources.ApplyResources(this.txtFilter, "txtFilter");
-            this.txtFilter.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtFilter.Name = "txtFilter";
-            this.txtFilter.TextChanged += new System.EventHandler(this.txtFilter_TextChanged);
-            this.txtFilter.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtFilter_KeyDown);
-            // 
-            // tmrSearchTimeout
-            // 
-            this.tmrSearchTimeout.Interval = 500;
-            this.tmrSearchTimeout.Tick += new System.EventHandler(this.tmrSearchTimeout_Tick);
             // 
             // colCharacterCode
             // 
@@ -174,24 +117,103 @@ namespace YuriyGuts.UnicodeKeyboard.UI
             this.colCharacterName.Name = "colCharacterName";
             this.colCharacterName.ReadOnly = true;
             // 
+            // pnlBottom
+            // 
+            resources.ApplyResources(this.pnlBottom, "pnlBottom");
+            this.pnlBottom.BackColor = System.Drawing.SystemColors.Control;
+            this.pnlBottom.Controls.Add(this.lblShortcutAddToFavorites);
+            this.pnlBottom.Controls.Add(this.lblShortcutCopyToClipboard);
+            this.pnlBottom.Controls.Add(this.lblShortcutInsertCharacter);
+            this.pnlBottom.Controls.Add(this.pnlShortcutSeparatorLine);
+            this.pnlBottom.Controls.Add(this.imgShortcutCopyToClipboard);
+            this.pnlBottom.Controls.Add(this.imgShortcutAddToFavorites);
+            this.pnlBottom.Controls.Add(this.imgShortcutInsertCharacterAlt);
+            this.pnlBottom.Controls.Add(this.imgShortcutInsertCharacter);
+            this.pnlBottom.Controls.Add(this.pnlSeparatorLine);
+            this.pnlBottom.Name = "pnlBottom";
+            // 
+            // lblShortcutAddToFavorites
+            // 
+            resources.ApplyResources(this.lblShortcutAddToFavorites, "lblShortcutAddToFavorites");
+            this.lblShortcutAddToFavorites.Name = "lblShortcutAddToFavorites";
+            // 
+            // lblShortcutCopyToClipboard
+            // 
+            resources.ApplyResources(this.lblShortcutCopyToClipboard, "lblShortcutCopyToClipboard");
+            this.lblShortcutCopyToClipboard.Name = "lblShortcutCopyToClipboard";
+            // 
+            // lblShortcutInsertCharacter
+            // 
+            resources.ApplyResources(this.lblShortcutInsertCharacter, "lblShortcutInsertCharacter");
+            this.lblShortcutInsertCharacter.Name = "lblShortcutInsertCharacter";
+            // 
+            // pnlShortcutSeparatorLine
+            // 
+            resources.ApplyResources(this.pnlShortcutSeparatorLine, "pnlShortcutSeparatorLine");
+            this.pnlShortcutSeparatorLine.BackColor = System.Drawing.Color.Silver;
+            this.pnlShortcutSeparatorLine.Name = "pnlShortcutSeparatorLine";
+            // 
+            // imgShortcutCopyToClipboard
+            // 
+            resources.ApplyResources(this.imgShortcutCopyToClipboard, "imgShortcutCopyToClipboard");
+            this.imgShortcutCopyToClipboard.BackColor = System.Drawing.SystemColors.Control;
+            this.imgShortcutCopyToClipboard.BackgroundImage = global::YuriyGuts.UnicodeKeyboard.Properties.Resources.KeyShortcutCopyToClipboard;
+            this.imgShortcutCopyToClipboard.Name = "imgShortcutCopyToClipboard";
+            // 
+            // imgShortcutAddToFavorites
+            // 
+            resources.ApplyResources(this.imgShortcutAddToFavorites, "imgShortcutAddToFavorites");
+            this.imgShortcutAddToFavorites.BackColor = System.Drawing.SystemColors.Control;
+            this.imgShortcutAddToFavorites.BackgroundImage = global::YuriyGuts.UnicodeKeyboard.Properties.Resources.KeyShortcutAddToFavorites;
+            this.imgShortcutAddToFavorites.Name = "imgShortcutAddToFavorites";
+            // 
+            // imgShortcutInsertCharacterAlt
+            // 
+            resources.ApplyResources(this.imgShortcutInsertCharacterAlt, "imgShortcutInsertCharacterAlt");
+            this.imgShortcutInsertCharacterAlt.BackColor = System.Drawing.SystemColors.Control;
+            this.imgShortcutInsertCharacterAlt.BackgroundImage = global::YuriyGuts.UnicodeKeyboard.Properties.Resources.MouseShortcutInsertCharacter;
+            this.imgShortcutInsertCharacterAlt.Name = "imgShortcutInsertCharacterAlt";
+            // 
+            // imgShortcutInsertCharacter
+            // 
+            resources.ApplyResources(this.imgShortcutInsertCharacter, "imgShortcutInsertCharacter");
+            this.imgShortcutInsertCharacter.BackColor = System.Drawing.SystemColors.Control;
+            this.imgShortcutInsertCharacter.BackgroundImage = global::YuriyGuts.UnicodeKeyboard.Properties.Resources.KeyShortcutInsertCharacter;
+            this.imgShortcutInsertCharacter.Name = "imgShortcutInsertCharacter";
+            // 
+            // pnlSeparatorLine
+            // 
+            resources.ApplyResources(this.pnlSeparatorLine, "pnlSeparatorLine");
+            this.pnlSeparatorLine.BackColor = System.Drawing.Color.Silver;
+            this.pnlSeparatorLine.Name = "pnlSeparatorLine";
+            // 
+            // tmrSearchTimeout
+            // 
+            this.tmrSearchTimeout.Interval = 500;
+            this.tmrSearchTimeout.Tick += new System.EventHandler(this.tmrSearchTimeout_Tick);
+            // 
+            // pnlBorder
+            // 
+            resources.ApplyResources(this.pnlBorder, "pnlBorder");
+            this.pnlBorder.BackColor = System.Drawing.SystemColors.WindowText;
+            this.pnlBorder.Controls.Add(this.gridResultDisplayer);
+            this.pnlBorder.Controls.Add(this.pnlBottom);
+            this.pnlBorder.Name = "pnlBorder";
+            // 
             // CharacterLookupForm
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.gridResultDisplayer);
-            this.Controls.Add(this.pnlFilterContainer);
-            this.Controls.Add(this.pnlBottom);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
+            this.Controls.Add(this.pnlBorder);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "CharacterLookupForm";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
-            this.Load += new System.EventHandler(this.FormCharacterLookup_Load);
-            this.Shown += new System.EventHandler(this.FormCharacterLookup_Shown);
+            this.Activated += new System.EventHandler(this.CharacterLookupForm_Activated);
+            this.Shown += new System.EventHandler(this.CharacterLookupForm_Shown);
             ((System.ComponentModel.ISupportInitialize)(this.gridResultDisplayer)).EndInit();
             this.pnlBottom.ResumeLayout(false);
-            this.pnlBottom.PerformLayout();
-            this.pnlFilterContainer.ResumeLayout(false);
-            this.pnlFilterContainer.PerformLayout();
+            this.pnlBorder.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -200,16 +222,19 @@ namespace YuriyGuts.UnicodeKeyboard.UI
 
         private System.Windows.Forms.DataGridView gridResultDisplayer;
         private System.Windows.Forms.Panel pnlBottom;
-        private System.Windows.Forms.Label lblTotalItemsValue;
-        private System.Windows.Forms.Label lblTotalItemsCaption;
-        private System.Windows.Forms.Button btnAccept;
-        private System.Windows.Forms.Button btnCopy;
-        private System.Windows.Forms.Panel pnlFilterContainer;
-        private System.Windows.Forms.TextBox txtFilter;
         private System.Windows.Forms.Timer tmrSearchTimeout;
-        private System.Windows.Forms.Label lblFilterEditHint;
         private System.Windows.Forms.DataGridViewTextBoxColumn colCharacterCode;
         private System.Windows.Forms.DataGridViewTextBoxColumn colCharacterGlyph;
         private System.Windows.Forms.DataGridViewTextBoxColumn colCharacterName;
+        private System.Windows.Forms.Panel pnlBorder;
+        private System.Windows.Forms.Panel pnlSeparatorLine;
+        private System.Windows.Forms.Panel imgShortcutCopyToClipboard;
+        private System.Windows.Forms.Panel imgShortcutAddToFavorites;
+        private System.Windows.Forms.Panel imgShortcutInsertCharacterAlt;
+        private System.Windows.Forms.Panel imgShortcutInsertCharacter;
+        private System.Windows.Forms.Label lblShortcutAddToFavorites;
+        private System.Windows.Forms.Label lblShortcutCopyToClipboard;
+        private System.Windows.Forms.Label lblShortcutInsertCharacter;
+        private System.Windows.Forms.Panel pnlShortcutSeparatorLine;
     }
 }

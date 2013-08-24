@@ -5,6 +5,10 @@ using YuriyGuts.UnicodeKeyboard.WindowsIntegration;
 
 namespace YuriyGuts.UnicodeKeyboard.UI
 {
+    /// <summary>
+    /// Represents the window captured by the Window Finder tool.
+    /// Portions Copyright (c) 2005 Corneliu I. Tusnea [http://hawkeye.codeplex.com/].
+    /// </summary>
     internal class CapturedWindow : IDisposable
     {
         private IntPtr handle = IntPtr.Zero;

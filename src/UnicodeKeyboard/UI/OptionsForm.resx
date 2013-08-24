@@ -475,7 +475,7 @@
     <value>kbdSecondaryShortcut</value>
   </data>
   <data name="&gt;&gt;kbdSecondaryShortcut.Type" xml:space="preserve">
-    <value>YuriyGuts.UnicodeKeyboard.UI.KeyboardShortcutEditor, UnicodeKeyboard, Version=1.0.2.27, Culture=neutral, PublicKeyToken=null</value>
+    <value>YuriyGuts.UnicodeKeyboard.UI.KeyboardShortcutEditor, UnicodeKeyboard, Version=1.0.2.28, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;kbdSecondaryShortcut.Parent" xml:space="preserve">
     <value>pnlSecondaryShortcutSelectorPadding</value>
@@ -563,7 +563,7 @@
     <value>kbdPrimaryShortcut</value>
   </data>
   <data name="&gt;&gt;kbdPrimaryShortcut.Type" xml:space="preserve">
-    <value>YuriyGuts.UnicodeKeyboard.UI.KeyboardShortcutEditor, UnicodeKeyboard, Version=1.0.2.27, Culture=neutral, PublicKeyToken=null</value>
+    <value>YuriyGuts.UnicodeKeyboard.UI.KeyboardShortcutEditor, UnicodeKeyboard, Version=1.0.2.28, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;kbdPrimaryShortcut.Parent" xml:space="preserve">
     <value>pnlPrimaryShortcutSelectorPadding</value>

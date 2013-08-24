@@ -121,21 +121,21 @@
   <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
     <value>350, 465</value>
   </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>334, 431</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="pnlBottom.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
   <data name="&gt;&gt;btnCancel.Parent" xml:space="preserve">
     <value>pnlBottom</value>
   </data>
   <data name="&gt;&gt;pnlMiddle.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="btnOK.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
   <data name="&gt;&gt;btnCancel.Name" xml:space="preserve">
     <value>btnCancel</value>
-  </data>
-  <data name="&gt;&gt;colCharacterGlyph.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lblCharacterPreview.Name" xml:space="preserve">
     <value>lblCharacterPreview</value>
@@ -161,9 +161,8 @@
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>AddToFavoritesForm</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="pnlBottom.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>10, 10, 10, 10</value>
+  <data name="colCharacterName.HeaderText" xml:space="preserve">
+    <value>Name</value>
   </data>
   <data name="&gt;&gt;pnlTop.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -171,14 +170,14 @@
   <data name="btnCancel.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="gridFavorites.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="pnlMiddle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>334, 326</value>
   </data>
   <data name="lblUsageHint.Location" type="System.Drawing.Point, System.Drawing">
     <value>61, 31</value>
   </data>
-  <data name="&gt;&gt;gridFavorites.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="lblCharacterPreview.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
   </data>
   <data name="&gt;&gt;lblCharacterName.ZOrder" xml:space="preserve">
     <value>1</value>
@@ -189,20 +188,27 @@
   <data name="lblCharacterName.Text" xml:space="preserve">
     <value>CHARACTER NAME</value>
   </data>
-  <data name="btnOK.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
+  <data name="&gt;&gt;pnlTop.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="lblUsageHint.Text" xml:space="preserve">
-    <value>Select a cell for this character:</value>
+  <data name="btnOK.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 25</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
   </data>
   <data name="colCharacterCode.Width" type="System.Int32, mscorlib">
     <value>45</value>
   </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="pnlTop.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>10, 10, 10, 10</value>
   </data>
   <data name="lblCharacterName.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;lblUsageHint.Parent" xml:space="preserve">
+    <value>pnlTop</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterParent</value>
@@ -210,17 +216,11 @@
   <data name="btnCancel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Right</value>
   </data>
-  <data name="&gt;&gt;pnlTop.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="lblUsageHint.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="pnlTop.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="&gt;&gt;btnOK.Parent" xml:space="preserve">
-    <value>pnlBottom</value>
-  </data>
-  <data name="&gt;&gt;lblCharacterName.Name" xml:space="preserve">
-    <value>lblCharacterName</value>
+  <data name="pnlBottom.Size" type="System.Drawing.Size, System.Drawing">
+    <value>334, 45</value>
   </data>
   <data name="&gt;&gt;colCharacterName.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -231,14 +231,11 @@
   <data name="&gt;&gt;pnlMiddle.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="pnlMiddle.Size" type="System.Drawing.Size, System.Drawing">
-    <value>334, 326</value>
+  <data name="gridFavorites.Size" type="System.Drawing.Size, System.Drawing">
+    <value>314, 326</value>
   </data>
   <data name="&gt;&gt;pnlBottom.Name" xml:space="preserve">
     <value>pnlBottom</value>
-  </data>
-  <data name="pnlTop.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
   </data>
   <data name="&gt;&gt;lblUsageHint.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -249,14 +246,17 @@
   <data name="pnlMiddle.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
+  <data name="&gt;&gt;pnlBottom.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
   <data name="lblUsageHint.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
   <data name="btnOK.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 10, 0</value>
   </data>
-  <data name="&gt;&gt;lblCharacterPreview.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="gridFavorites.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
   <data name="&gt;&gt;lblCharacterName.Parent" xml:space="preserve">
     <value>pnlTop</value>
@@ -273,14 +273,11 @@
   <data name="lblCharacterName.Location" type="System.Drawing.Point, System.Drawing">
     <value>61, 13</value>
   </data>
-  <data name="btnCancel.Text" xml:space="preserve">
-    <value>Cancel</value>
-  </data>
   <data name="colCharacterGlyph.Width" type="System.Int32, mscorlib">
     <value>50</value>
   </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
+  <data name="&gt;&gt;lblCharacterPreview.Parent" xml:space="preserve">
+    <value>pnlTop</value>
   </data>
   <data name="&gt;&gt;pnlBottom.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -290,6 +287,9 @@
   </data>
   <data name="btnOK.Location" type="System.Drawing.Point, System.Drawing">
     <value>134, 10</value>
+  </data>
+  <data name="pnlBottom.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 386</value>
   </data>
   <data name="pnlMiddle.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -312,11 +312,17 @@
   <data name="btnCancel.Size" type="System.Drawing.Size, System.Drawing">
     <value>90, 25</value>
   </data>
+  <data name="&gt;&gt;colCharacterName.Name" xml:space="preserve">
+    <value>colCharacterName</value>
+  </data>
   <data name="&gt;&gt;pnlBottom.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="&gt;&gt;colCharacterName.Name" xml:space="preserve">
-    <value>colCharacterName</value>
+  <data name="&gt;&gt;lblCharacterPreview.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="lblCharacterName.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
   </data>
   <data name="&gt;&gt;gridFavorites.Parent" xml:space="preserve">
     <value>pnlMiddle</value>
@@ -324,20 +330,20 @@
   <data name="&gt;&gt;btnCancel.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;pnlTop.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
   <data name="btnCancel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
-  <data name="lblUsageHint.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="pnlTop.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
   </data>
-  <data name="lblCharacterName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>262, 13</value>
+  <data name="pnlTop.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
-  <data name="lblCharacterPreview.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 9</value>
+  <data name="btnOK.Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="pnlBottom.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Bottom</value>
@@ -354,47 +360,44 @@
   <data name="&gt;&gt;colIndex.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Add to Favorites</value>
+  <data name="btnOK.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="colCharacterCode.MinimumWidth" type="System.Int32, mscorlib">
     <value>45</value>
   </data>
-  <data name="&gt;&gt;pnlBottom.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;gridFavorites.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="btnOK.Text" xml:space="preserve">
-    <value>OK</value>
+  <data name="colIndex.Width" type="System.Int32, mscorlib">
+    <value>25</value>
   </data>
   <data name="&gt;&gt;pnlTop.Name" xml:space="preserve">
     <value>pnlTop</value>
   </data>
-  <data name="lblCharacterPreview.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="pnlBottom.Size" type="System.Drawing.Size, System.Drawing">
-    <value>334, 45</value>
-  </data>
-  <data name="pnlBottom.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+  <data name="lblCharacterPreview.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 9</value>
   </data>
   <data name="&gt;&gt;colCharacterCode.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="lblUsageHint.Text" xml:space="preserve">
+    <value>Select a cell for this character:</value>
+  </data>
   <data name="lblCharacterPreview.Text" xml:space="preserve">
     <value>?</value>
   </data>
-  <data name="pnlBottom.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 386</value>
+  <data name="&gt;&gt;btnOK.Parent" xml:space="preserve">
+    <value>pnlBottom</value>
   </data>
-  <data name="btnOK.Size" type="System.Drawing.Size, System.Drawing">
-    <value>90, 25</value>
-  </data>
-  <data name="lblCharacterName.TabIndex" type="System.Int32, mscorlib">
+  <data name="&gt;&gt;pnlTop.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
   <data name="pnlMiddle.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 60</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Add to Favorites</value>
   </data>
   <data name="colCharacterGlyph.MinimumWidth" type="System.Int32, mscorlib">
     <value>50</value>
@@ -402,29 +405,29 @@
   <data name="&gt;&gt;btnOK.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;lblUsageHint.Parent" xml:space="preserve">
-    <value>pnlTop</value>
-  </data>
-  <data name="&gt;&gt;lblCharacterPreview.Parent" xml:space="preserve">
-    <value>pnlTop</value>
-  </data>
-  <data name="pnlMiddle.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>10, 0, 10, 0</value>
+  <data name="btnOK.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
   <data name="lblCharacterPreview.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial Unicode MS, 15.75pt</value>
   </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>334, 431</value>
+  <data name="pnlMiddle.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 0, 10, 0</value>
+  </data>
+  <data name="btnCancel.Text" xml:space="preserve">
+    <value>Cancel</value>
   </data>
   <data name="&gt;&gt;colCharacterGlyph.Name" xml:space="preserve">
     <value>colCharacterGlyph</value>
   </data>
-  <data name="colCharacterName.HeaderText" xml:space="preserve">
-    <value>Name</value>
+  <data name="&gt;&gt;lblCharacterName.Name" xml:space="preserve">
+    <value>lblCharacterName</value>
   </data>
-  <data name="gridFavorites.Size" type="System.Drawing.Size, System.Drawing">
-    <value>314, 326</value>
+  <data name="pnlTop.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="colCharacterGlyph.HeaderText" xml:space="preserve">
+    <value />
   </data>
   <data name="gridFavorites.Location" type="System.Drawing.Point, System.Drawing">
     <value>10, 0</value>
@@ -432,27 +435,21 @@
   <data name="colCharacterCode.HeaderText" xml:space="preserve">
     <value>Code</value>
   </data>
-  <data name="pnlTop.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
   <data name="colIndex.HeaderText" xml:space="preserve">
     <value>#</value>
   </data>
-  <data name="colCharacterGlyph.HeaderText" xml:space="preserve">
-    <value />
+  <data name="pnlBottom.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 10, 10, 10</value>
   </data>
-  <data name="colIndex.Width" type="System.Int32, mscorlib">
-    <value>25</value>
+  <data name="lblCharacterName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>262, 13</value>
   </data>
   <data name="&gt;&gt;gridFavorites.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;colCharacterGlyph.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>uk</value>
-  </metadata>
   <metadata name="colCharacterCode.UserAddedColumn" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>

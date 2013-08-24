@@ -74,6 +74,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Interaction\CharacterSearchResult.cs" />
     <Compile Include="ResourceWrappers\SingleAssemblyComponentResourceManager.cs" />
     <Compile Include="UI\AboutForm.cs">
       <SubType>Form</SubType>
@@ -236,6 +237,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\CrosshairCursor.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KeyShortcutAddToFavorites.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KeyShortcutCopyToClipboard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KeyShortcutInsertCharacter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MouseShortcutInsertCharacter.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!-- 
     Microsoft ResX Schema 
@@ -117,360 +117,149 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="trayIcon.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>107, 17</value>
-  </metadata>
-  <data name="trayIcon.BalloonTipText" xml:space="preserve">
-    <value>The application is running!
-Press {0} to activate.</value>
-  </data>
-  <data name="trayIcon.BalloonTipTitle" xml:space="preserve">
-    <value>Unicode Virtual Keyboard</value>
-  </data>
-  <metadata name="cmsTrayIconMenu.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>367, 17</value>
-  </metadata>
-  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="cmiTrayUsageHint.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="cmiTrayUsageHint.Size" type="System.Drawing.Size, System.Drawing">
-    <value>258, 22</value>
-  </data>
-  <data name="cmiTrayUsageHint.Text" xml:space="preserve">
-    <value>Press "{0}" or twice "{1}" to activate</value>
-  </data>
-  <data name="cmiTraySeparator.Size" type="System.Drawing.Size, System.Drawing">
-    <value>255, 6</value>
-  </data>
-  <data name="cmiTrayOptions.Size" type="System.Drawing.Size, System.Drawing">
-    <value>258, 22</value>
-  </data>
-  <data name="cmiTrayOptions.Text" xml:space="preserve">
-    <value>Options...</value>
-  </data>
-  <data name="cmiTrayExit.Size" type="System.Drawing.Size, System.Drawing">
-    <value>258, 22</value>
-  </data>
-  <data name="cmiTrayExit.Text" xml:space="preserve">
-    <value>Exit</value>
-  </data>
-  <data name="cmsTrayIconMenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>259, 76</value>
-  </data>
-  <data name="&gt;&gt;cmsTrayIconMenu.Name" xml:space="preserve">
-    <value>cmsTrayIconMenu</value>
-  </data>
-  <data name="&gt;&gt;cmsTrayIconMenu.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="trayIcon.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        AAABAAEAEBAAAAAAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAQAQAAAAAAAAAAAAAAAAAAAAA
-        AAD///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af//
-        /wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af//
-        /wH///8B////AerFpOvnwJ//47ya/+C3lf/dso//2a6K/9aphf/TpX//0KB7/82cdv/KmXL/yJZu/8aT
-        a//EkGn/xJBo/8SQaOvuy6v/6NXI/+jUxf/n0sP/5dDB/+XOvv/jzLz/48q5/+LJt//hx7X/4MWz/9/E
-        sf/fxLD/3sKv/97Crv/EkGj/8tCx/+rYzP/8/Pz/2rqk//z8/P/8/Pz//Pz8//z8/P/8/Pz//Pz8//z8
-        /P/8/Pz/zKGC//z8/P/fw7D/xZJq//XUtv/s3ND/3sOv/92/q//bvaf/2bqj/9i3n//WtJz/1bGX/9Ou
-        lP/Rq4//0KiM/8+miP/No4X/4MWz/8eVbv/42Lv/7d7U//z8/P/8/Pz/3sKu//z8/P/bvKb//Pz8/9i2
-        nv/8/Pz/1bCX//z8/P/8/Pz//Pz8/+HItv/KmXL/+ty//+7g1v/jy7r/4sm4/+DGtP/fxLH/3sKt/9y/
-        qv/avKb/2bmi/9e2nv/Ws5r/6dbK//z8/P/jy7r/zp13//zewf/v4tj//Pz8/+TMvP/8/Pz/4cm3//z8
-        /P/fw7D//Pz8/9y+qf/8/Pz/2bih//z8/P/38/D/5c6+/9Giff/83sH/7+LY/+/i2P/v4tj/7uHX/+7g
-        1v/u39T/7d3S/+zc0f/r2s7/6tjM/+rXyv/o1cf/59PF/+fRwv/VqIP//N7B4/zewf+7ubb/s7Gu//rb
-        vv/42Lv/9tW3//PSs//wzq7/7cmq/+rFpP/nwJ//47ya/+C3lf/dso//2a6K4////wH///8BxMTE/by8
-        vLWzs7MR////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////AdDQ
-        0PnJycn5wsLCZ////wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af//
-        /wHZ2dln1NTU98/Pz+/IyMjlwMDA2be3t8Ourq6TpKSkfZubm2+RkZFJh4eHBf///wH///8B////Af//
-        /wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af//
-        /wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af//
-        /wH///8BAAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA
-        //8AAP//AAD//w==
-</value>
-  </data>
-  <data name="trayIcon.Text" xml:space="preserve">
-    <value>Unicode Virtual Keyboard</value>
-  </data>
-  <data name="txtCharCode.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 14.25pt</value>
-  </data>
-  <data name="txtCharCode.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 80</value>
+  <data name="lblFavoriteIndex0.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 0</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="txtCharCode.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
+  <data name="lblFavoriteGlyph3.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
   </data>
-  <data name="txtCharCode.Size" type="System.Drawing.Size, System.Drawing">
-    <value>334, 30</value>
-  </data>
-  <data name="txtCharCode.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;txtCharCode.Name" xml:space="preserve">
-    <value>txtCharCode</value>
-  </data>
-  <data name="&gt;&gt;txtCharCode.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;txtCharCode.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;txtCharCode.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="lblHeader.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblHeader.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lblHeader.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 60</value>
-  </data>
-  <data name="lblHeader.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>10, 10, 10, 5</value>
-  </data>
-  <data name="lblHeader.Size" type="System.Drawing.Size, System.Drawing">
-    <value>199, 16</value>
-  </data>
-  <data name="lblHeader.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="lblHeader.Text" xml:space="preserve">
-    <value>Unicode character name or code:</value>
-  </data>
-  <data name="&gt;&gt;lblHeader.Name" xml:space="preserve">
-    <value>lblHeader</value>
-  </data>
-  <data name="&gt;&gt;lblHeader.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblHeader.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;lblHeader.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="lblTargetWindow.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblTargetWindow.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 9.75pt</value>
-  </data>
-  <data name="lblTargetWindow.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lblTargetWindow.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 18</value>
-  </data>
-  <data name="lblTargetWindow.Size" type="System.Drawing.Size, System.Drawing">
-    <value>99, 16</value>
-  </data>
-  <data name="lblTargetWindow.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="lblTargetWindow.Text" xml:space="preserve">
-    <value>Target window:</value>
-  </data>
-  <data name="&gt;&gt;lblTargetWindow.Name" xml:space="preserve">
-    <value>lblTargetWindow</value>
-  </data>
-  <data name="&gt;&gt;lblTargetWindow.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblTargetWindow.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;lblTargetWindow.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="lblTargetWindowTitle.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
-  <data name="lblTargetWindowTitle.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 9.75pt</value>
-  </data>
-  <data name="lblTargetWindowTitle.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lblTargetWindowTitle.Location" type="System.Drawing.Point, System.Drawing">
-    <value>142, 13</value>
-  </data>
-  <data name="lblTargetWindowTitle.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 4, 0, 0</value>
-  </data>
-  <data name="lblTargetWindowTitle.Size" type="System.Drawing.Size, System.Drawing">
-    <value>169, 27</value>
-  </data>
-  <data name="lblTargetWindowTitle.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="lblTargetWindowTitle.Text" xml:space="preserve">
-    <value>(none)</value>
-  </data>
-  <data name="&gt;&gt;lblTargetWindowTitle.Name" xml:space="preserve">
-    <value>lblTargetWindowTitle</value>
-  </data>
-  <data name="&gt;&gt;lblTargetWindowTitle.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblTargetWindowTitle.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;lblTargetWindowTitle.ZOrder" xml:space="preserve">
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lblFavoriteIndex7.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
   </data>
-  <data name="tblFavoriteGlyphs.CellBorderStyle" type="System.Windows.Forms.TableLayoutPanelCellBorderStyle, System.Windows.Forms">
-    <value>Single</value>
+  <data name="cmsOptions.Size" type="System.Drawing.Size, System.Drawing">
+    <value>250, 98</value>
   </data>
-  <data name="tblFavoriteGlyphs.ColumnCount" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="lblFavoriteGlyph9.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblFavoriteGlyph9.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="lblFavoriteGlyph9.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial Unicode MS, 15.75pt</value>
-  </data>
-  <data name="lblFavoriteGlyph9.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lblFavoriteGlyph9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>301, 1</value>
-  </data>
-  <data name="lblFavoriteGlyph9.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 0, 0</value>
-  </data>
-  <data name="lblFavoriteGlyph9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>29, 33</value>
-  </data>
-  <data name="lblFavoriteGlyph9.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="lblFavoriteGlyph9.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;lblFavoriteGlyph9.Name" xml:space="preserve">
-    <value>lblFavoriteGlyph9</value>
-  </data>
-  <data name="&gt;&gt;lblFavoriteGlyph9.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblFavoriteGlyph9.Parent" xml:space="preserve">
-    <value>tblFavoriteGlyphs</value>
-  </data>
-  <data name="&gt;&gt;lblFavoriteGlyph9.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="lblFavoriteGlyph8.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblFavoriteGlyph8.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="lblFavoriteGlyph8.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial Unicode MS, 15.75pt</value>
-  </data>
-  <data name="lblFavoriteGlyph8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lblFavoriteGlyph8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>268, 1</value>
-  </data>
-  <data name="lblFavoriteGlyph8.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 0, 0</value>
-  </data>
-  <data name="lblFavoriteGlyph8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>26, 33</value>
-  </data>
-  <data name="lblFavoriteGlyph8.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="lblFavoriteGlyph8.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;lblFavoriteGlyph8.Name" xml:space="preserve">
-    <value>lblFavoriteGlyph8</value>
-  </data>
-  <data name="&gt;&gt;lblFavoriteGlyph8.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblFavoriteGlyph8.Parent" xml:space="preserve">
-    <value>tblFavoriteGlyphs</value>
-  </data>
-  <data name="&gt;&gt;lblFavoriteGlyph8.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="lblFavoriteGlyph7.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblFavoriteGlyph7.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="lblFavoriteGlyph7.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial Unicode MS, 15.75pt</value>
-  </data>
-  <data name="lblFavoriteGlyph7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lblFavoriteGlyph7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>235, 1</value>
-  </data>
-  <data name="lblFavoriteGlyph7.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 0, 0</value>
-  </data>
-  <data name="lblFavoriteGlyph7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>26, 33</value>
-  </data>
-  <data name="lblFavoriteGlyph7.TabIndex" type="System.Int32, mscorlib">
+  <data name="&gt;&gt;lblFavoriteIndex2.ZOrder" xml:space="preserve">
     <value>7</value>
-  </data>
-  <data name="lblFavoriteGlyph7.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;lblFavoriteGlyph7.Name" xml:space="preserve">
-    <value>lblFavoriteGlyph7</value>
-  </data>
-  <data name="&gt;&gt;lblFavoriteGlyph7.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lblFavoriteGlyph7.Parent" xml:space="preserve">
     <value>tblFavoriteGlyphs</value>
   </data>
-  <data name="&gt;&gt;lblFavoriteGlyph7.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="lblFavoriteGlyph2.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 0, 0</value>
   </data>
-  <data name="lblFavoriteGlyph6.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="lblFavoriteIndex7.Text" xml:space="preserve">
+    <value>7</value>
   </data>
-  <data name="lblFavoriteGlyph6.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
+  <data name="lblFavoriteIndex0.Size" type="System.Drawing.Size, System.Drawing">
+    <value>27, 12</value>
   </data>
-  <data name="lblFavoriteGlyph6.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="$this.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblFavoriteGlyph3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>103, 1</value>
+  </data>
+  <data name="lblFavoriteGlyph9.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial Unicode MS, 15.75pt</value>
   </data>
-  <data name="lblFavoriteGlyph6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="tblFavoriteIndexes.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 186</value>
   </data>
-  <data name="lblFavoriteGlyph6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>202, 1</value>
+  <data name="lblFavoriteGlyph9.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
   </data>
   <data name="lblFavoriteGlyph6.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 0, 0, 0</value>
   </data>
+  <data name="lblFavoriteGlyph2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="lblFavoriteGlyph7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>26, 33</value>
+  </data>
+  <data name="lblFavoriteIndex3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>102, 0</value>
+  </data>
+  <data name="lblFavoriteIndex7.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 6.75pt</value>
+  </data>
+  <data name="lblFavoriteIndex6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblFavoriteIndex3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>27, 12</value>
+  </data>
+  <data name="lblHeader.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="lblFavoriteGlyph8.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial Unicode MS, 15.75pt</value>
+  </data>
+  <data name="lblTargetWindowTitle.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;cmiTrayExit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblFavorites.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 13</value>
+  </data>
+  <data name="lblFavoriteGlyph2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>70, 1</value>
+  </data>
+  <data name="&gt;&gt;cmiOptionsSeparator.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="lblFavoriteGlyph6.Size" type="System.Drawing.Size, System.Drawing">
     <value>26, 33</value>
   </data>
-  <data name="lblFavoriteGlyph6.TabIndex" type="System.Int32, mscorlib">
+  <data name="lblFavoriteGlyph5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>26, 33</value>
+  </data>
+  <data name="lblFavoriteIndex9.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;lblFavoriteIndex6.Name" xml:space="preserve">
+    <value>lblFavoriteIndex6</value>
+  </data>
+  <data name="&gt;&gt;lblFavoriteGlyph9.Parent" xml:space="preserve">
+    <value>tblFavoriteGlyphs</value>
+  </data>
+  <data name="btnOptions.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;lblFavorites.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblFavoriteIndex3.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
-  <data name="lblFavoriteGlyph6.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
+  <data name="&gt;&gt;lblFavoriteIndex1.Parent" xml:space="preserve">
+    <value>tblFavoriteIndexes</value>
+  </data>
+  <data name="cmiWindowsCharMap.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Ctrl+M</value>
+  </data>
+  <data name="trayIcon.BalloonTipTitle" xml:space="preserve">
+    <value>Unicode Virtual Keyboard</value>
+  </data>
+  <data name="&gt;&gt;toolTip.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblFavoriteIndex2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>27, 12</value>
+  </data>
+  <data name="&gt;&gt;cmiTraySeparator.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblFavoriteIndex1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="lblFavoriteIndex6.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;txtCharSearch.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="lblFavoriteIndex5.Text" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="lblTargetWindow.Size" type="System.Drawing.Size, System.Drawing">
+    <value>99, 16</value>
   </data>
   <data name="&gt;&gt;lblFavoriteGlyph6.Name" xml:space="preserve">
     <value>lblFavoriteGlyph6</value>
@@ -478,846 +267,188 @@ Press {0} to activate.</value>
   <data name="&gt;&gt;lblFavoriteGlyph6.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;lblFavoriteGlyph6.Parent" xml:space="preserve">
-    <value>tblFavoriteGlyphs</value>
-  </data>
-  <data name="&gt;&gt;lblFavoriteGlyph6.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="lblFavoriteGlyph5.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblFavoriteGlyph5.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="lblFavoriteGlyph5.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial Unicode MS, 15.75pt</value>
-  </data>
-  <data name="lblFavoriteGlyph5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lblFavoriteGlyph5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>169, 1</value>
-  </data>
-  <data name="lblFavoriteGlyph5.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 0, 0</value>
-  </data>
-  <data name="lblFavoriteGlyph5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>26, 33</value>
-  </data>
-  <data name="lblFavoriteGlyph5.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="lblFavoriteGlyph5.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;lblFavoriteGlyph5.Name" xml:space="preserve">
-    <value>lblFavoriteGlyph5</value>
-  </data>
-  <data name="&gt;&gt;lblFavoriteGlyph5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblFavoriteGlyph5.Parent" xml:space="preserve">
-    <value>tblFavoriteGlyphs</value>
-  </data>
-  <data name="&gt;&gt;lblFavoriteGlyph5.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="lblFavoriteGlyph4.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblFavoriteGlyph4.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="lblFavoriteGlyph4.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial Unicode MS, 15.75pt</value>
-  </data>
-  <data name="lblFavoriteGlyph4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lblFavoriteGlyph4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>136, 1</value>
-  </data>
-  <data name="lblFavoriteGlyph4.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 0, 0</value>
-  </data>
-  <data name="lblFavoriteGlyph4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>26, 33</value>
-  </data>
-  <data name="lblFavoriteGlyph4.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="lblFavoriteGlyph4.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;lblFavoriteGlyph4.Name" xml:space="preserve">
-    <value>lblFavoriteGlyph4</value>
-  </data>
-  <data name="&gt;&gt;lblFavoriteGlyph4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblFavoriteGlyph4.Parent" xml:space="preserve">
-    <value>tblFavoriteGlyphs</value>
-  </data>
-  <data name="&gt;&gt;lblFavoriteGlyph4.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="lblFavoriteGlyph3.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblFavoriteGlyph3.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="lblFavoriteGlyph3.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial Unicode MS, 15.75pt</value>
-  </data>
-  <data name="lblFavoriteGlyph3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lblFavoriteGlyph3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>103, 1</value>
-  </data>
-  <data name="lblFavoriteGlyph3.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 0, 0</value>
-  </data>
-  <data name="lblFavoriteGlyph3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>26, 33</value>
-  </data>
-  <data name="lblFavoriteGlyph3.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="lblFavoriteGlyph3.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
   <data name="&gt;&gt;lblFavoriteGlyph3.Name" xml:space="preserve">
     <value>lblFavoriteGlyph3</value>
   </data>
-  <data name="&gt;&gt;lblFavoriteGlyph3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblFavoriteGlyph3.Parent" xml:space="preserve">
-    <value>tblFavoriteGlyphs</value>
-  </data>
-  <data name="&gt;&gt;lblFavoriteGlyph3.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="lblFavoriteGlyph2.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblFavoriteGlyph2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="lblFavoriteGlyph2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial Unicode MS, 15.75pt</value>
-  </data>
-  <data name="lblFavoriteGlyph2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="lblFavoriteGlyph9.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="lblFavoriteGlyph2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>70, 1</value>
-  </data>
-  <data name="lblFavoriteGlyph2.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 0, 0</value>
-  </data>
-  <data name="lblFavoriteGlyph2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>26, 33</value>
-  </data>
-  <data name="lblFavoriteGlyph2.TabIndex" type="System.Int32, mscorlib">
+  <data name="lblFavoriteIndex2.Text" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="lblFavoriteGlyph2.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
+  <data name="cmsTrayIconMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>259, 76</value>
   </data>
-  <data name="&gt;&gt;lblFavoriteGlyph2.Name" xml:space="preserve">
-    <value>lblFavoriteGlyph2</value>
+  <data name="&gt;&gt;cmiExit.Name" xml:space="preserve">
+    <value>cmiExit</value>
   </data>
-  <data name="&gt;&gt;lblFavoriteGlyph2.Type" xml:space="preserve">
+  <data name="tblFavoriteGlyphs.CellBorderStyle" type="System.Windows.Forms.TableLayoutPanelCellBorderStyle, System.Windows.Forms">
+    <value>Single</value>
+  </data>
+  <data name="lblHeader.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblFavoriteIndex9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>300, 0</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Unicode Virtual Keyboard</value>
+  </data>
+  <data name="windowFinder.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="cmiWindowsCharMap.Size" type="System.Drawing.Size, System.Drawing">
+    <value>249, 22</value>
+  </data>
+  <data name="lblFavoriteIndex1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 6.75pt</value>
+  </data>
+  <data name="&gt;&gt;lblFavoriteIndex9.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="cmiExit.Text" xml:space="preserve">
+    <value>Exit</value>
+  </data>
+  <data name="&gt;&gt;lblFavoriteIndex6.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;lblFavoriteIndex7.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="lblFavoriteIndex4.Text" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="lblFavoriteGlyph6.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="tblFavoriteGlyphs.RowCount" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;cmiTrayUsageHint.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblTargetWindowTitle.Name" xml:space="preserve">
+    <value>lblTargetWindowTitle</value>
+  </data>
+  <data name="lblFavoriteIndex0.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 6.75pt</value>
+  </data>
+  <data name="lblHeader.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 60</value>
+  </data>
+  <data name="&gt;&gt;toolTip.Name" xml:space="preserve">
+    <value>toolTip</value>
+  </data>
+  <data name="&gt;&gt;lblFavoriteGlyph0.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;lblFavoriteGlyph0.Name" xml:space="preserve">
+    <value>lblFavoriteGlyph0</value>
+  </data>
+  <data name="lblFavoriteGlyph1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>37, 1</value>
+  </data>
+  <data name="&gt;&gt;cmiOptions.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmiWindowsCharMap.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblHeader.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblFavorites.Name" xml:space="preserve">
+    <value>lblFavorites</value>
+  </data>
+  <data name="txtCharSearch.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;lblFavoriteIndex5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblFavoriteGlyph9.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 0, 0</value>
+  </data>
+  <data name="&gt;&gt;lblFavoriteIndex4.Name" xml:space="preserve">
+    <value>lblFavoriteIndex4</value>
+  </data>
+  <data name="lblFavoriteIndex8.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;lblFavoriteIndex8.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;lblHeader.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lblFavoriteGlyph2.Parent" xml:space="preserve">
     <value>tblFavoriteGlyphs</value>
   </data>
-  <data name="&gt;&gt;lblFavoriteGlyph2.ZOrder" xml:space="preserve">
-    <value>7</value>
+  <data name="lblFavoriteIndex2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 6.75pt</value>
   </data>
-  <data name="lblFavoriteGlyph1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblFavoriteGlyph1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="lblFavoriteGlyph1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial Unicode MS, 15.75pt</value>
-  </data>
-  <data name="lblFavoriteGlyph1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lblFavoriteGlyph1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>37, 1</value>
-  </data>
-  <data name="lblFavoriteGlyph1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 0, 0</value>
-  </data>
-  <data name="lblFavoriteGlyph1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>26, 33</value>
-  </data>
-  <data name="lblFavoriteGlyph1.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="lblFavoriteGlyph1.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;lblFavoriteGlyph1.Name" xml:space="preserve">
-    <value>lblFavoriteGlyph1</value>
-  </data>
-  <data name="&gt;&gt;lblFavoriteGlyph1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblFavoriteGlyph1.Parent" xml:space="preserve">
-    <value>tblFavoriteGlyphs</value>
-  </data>
-  <data name="&gt;&gt;lblFavoriteGlyph1.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="lblFavoriteGlyph0.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblFavoriteGlyph0.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="lblFavoriteGlyph0.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial Unicode MS, 15.75pt</value>
-  </data>
-  <data name="lblFavoriteGlyph0.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lblFavoriteGlyph0.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 1</value>
-  </data>
-  <data name="lblFavoriteGlyph0.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 0, 0</value>
-  </data>
-  <data name="lblFavoriteGlyph0.Size" type="System.Drawing.Size, System.Drawing">
-    <value>26, 33</value>
-  </data>
-  <data name="lblFavoriteGlyph0.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="lblFavoriteGlyph0.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;lblFavoriteGlyph0.Name" xml:space="preserve">
-    <value>lblFavoriteGlyph0</value>
-  </data>
-  <data name="&gt;&gt;lblFavoriteGlyph0.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblFavoriteGlyph0.Parent" xml:space="preserve">
-    <value>tblFavoriteGlyphs</value>
-  </data>
-  <data name="&gt;&gt;lblFavoriteGlyph0.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="tblFavoriteGlyphs.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 150</value>
-  </data>
-  <data name="tblFavoriteGlyphs.RowCount" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="tblFavoriteGlyphs.Size" type="System.Drawing.Size, System.Drawing">
-    <value>334, 35</value>
-  </data>
-  <data name="tblFavoriteGlyphs.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>7, 16</value>
   </data>
   <data name="&gt;&gt;tblFavoriteGlyphs.Name" xml:space="preserve">
     <value>tblFavoriteGlyphs</value>
   </data>
-  <data name="&gt;&gt;tblFavoriteGlyphs.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tblFavoriteGlyphs.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;tblFavoriteGlyphs.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="tblFavoriteGlyphs.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="lblFavoriteGlyph9" Row="0" RowSpan="1" Column="9" ColumnSpan="1" /&gt;&lt;Control Name="lblFavoriteGlyph8" Row="0" RowSpan="1" Column="8" ColumnSpan="1" /&gt;&lt;Control Name="lblFavoriteGlyph7" Row="0" RowSpan="1" Column="7" ColumnSpan="1" /&gt;&lt;Control Name="lblFavoriteGlyph6" Row="0" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="lblFavoriteGlyph5" Row="0" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="lblFavoriteGlyph4" Row="0" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="lblFavoriteGlyph3" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="lblFavoriteGlyph2" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="lblFavoriteGlyph1" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="lblFavoriteGlyph0" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,10,Percent,10,Percent,10,Percent,10,Percent,10,Percent,10,Percent,10,Percent,10,Percent,10,Percent,10" /&gt;&lt;Rows Styles="Percent,100,Absolute,34" /&gt;&lt;/TableLayoutSettings&gt;</value>
-  </data>
-  <data name="lblFavorites.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
-  <data name="lblFavorites.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8.25pt</value>
-  </data>
-  <data name="lblFavorites.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lblFavorites.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 132</value>
-  </data>
-  <data name="lblFavorites.Size" type="System.Drawing.Size, System.Drawing">
-    <value>56, 13</value>
-  </data>
-  <data name="lblFavorites.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="lblFavorites.Text" xml:space="preserve">
-    <value>Favorites:</value>
-  </data>
-  <data name="&gt;&gt;lblFavorites.Name" xml:space="preserve">
-    <value>lblFavorites</value>
-  </data>
-  <data name="&gt;&gt;lblFavorites.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblFavorites.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;lblFavorites.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="tblFavoriteIndexes.ColumnCount" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="lblFavoriteIndex9.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblFavoriteIndex9.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="lblFavoriteIndex9.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 6.75pt</value>
-  </data>
-  <data name="lblFavoriteIndex9.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lblFavoriteIndex9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>300, 0</value>
-  </data>
-  <data name="lblFavoriteIndex9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>31, 12</value>
-  </data>
-  <data name="lblFavoriteIndex9.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="lblFavoriteIndex9.Text" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="lblFavoriteIndex9.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;lblFavoriteIndex9.Name" xml:space="preserve">
-    <value>lblFavoriteIndex9</value>
-  </data>
-  <data name="&gt;&gt;lblFavoriteIndex9.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblFavoriteIndex9.Parent" xml:space="preserve">
-    <value>tblFavoriteIndexes</value>
-  </data>
-  <data name="&gt;&gt;lblFavoriteIndex9.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="lblFavoriteIndex8.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblFavoriteIndex8.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="lblFavoriteIndex8.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 6.75pt</value>
-  </data>
-  <data name="lblFavoriteIndex8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lblFavoriteIndex8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>267, 0</value>
-  </data>
-  <data name="lblFavoriteIndex8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>27, 12</value>
-  </data>
-  <data name="lblFavoriteIndex8.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="lblFavoriteIndex8.Text" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="lblFavoriteIndex8.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;lblFavoriteIndex8.Name" xml:space="preserve">
-    <value>lblFavoriteIndex8</value>
-  </data>
-  <data name="&gt;&gt;lblFavoriteIndex8.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblFavoriteIndex8.Parent" xml:space="preserve">
-    <value>tblFavoriteIndexes</value>
-  </data>
-  <data name="&gt;&gt;lblFavoriteIndex8.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="lblFavoriteIndex7.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblFavoriteIndex7.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="lblFavoriteIndex7.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 6.75pt</value>
-  </data>
-  <data name="lblFavoriteIndex7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lblFavoriteIndex7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>234, 0</value>
-  </data>
-  <data name="lblFavoriteIndex7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>27, 12</value>
-  </data>
-  <data name="lblFavoriteIndex7.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="lblFavoriteIndex7.Text" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="lblFavoriteIndex7.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;lblFavoriteIndex7.Name" xml:space="preserve">
-    <value>lblFavoriteIndex7</value>
-  </data>
-  <data name="&gt;&gt;lblFavoriteIndex7.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblFavoriteIndex7.Parent" xml:space="preserve">
-    <value>tblFavoriteIndexes</value>
-  </data>
-  <data name="&gt;&gt;lblFavoriteIndex7.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="&gt;&gt;trayIcon.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NotifyIcon, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="lblFavoriteIndex6.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="lblFavoriteIndex6.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="lblFavoriteIndex6.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 6.75pt</value>
-  </data>
-  <data name="lblFavoriteIndex6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lblFavoriteIndex6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>201, 0</value>
-  </data>
-  <data name="lblFavoriteIndex6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>27, 12</value>
-  </data>
-  <data name="lblFavoriteIndex6.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
   <data name="lblFavoriteIndex6.Text" xml:space="preserve">
     <value>6</value>
   </data>
-  <data name="lblFavoriteIndex6.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
+  <data name="lblFavoriteIndex9.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
   </data>
-  <data name="&gt;&gt;lblFavoriteIndex6.Name" xml:space="preserve">
-    <value>lblFavoriteIndex6</value>
-  </data>
-  <data name="&gt;&gt;lblFavoriteIndex6.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblFavoriteIndex6.Parent" xml:space="preserve">
-    <value>tblFavoriteIndexes</value>
-  </data>
-  <data name="&gt;&gt;lblFavoriteIndex6.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="lblFavoriteIndex5.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblFavoriteIndex5.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="lblFavoriteIndex5.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 6.75pt</value>
-  </data>
-  <data name="lblFavoriteIndex5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lblFavoriteIndex5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>168, 0</value>
-  </data>
-  <data name="lblFavoriteIndex5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>27, 12</value>
-  </data>
-  <data name="lblFavoriteIndex5.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="lblFavoriteIndex5.Text" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="lblFavoriteIndex5.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;lblFavoriteIndex5.Name" xml:space="preserve">
-    <value>lblFavoriteIndex5</value>
-  </data>
-  <data name="&gt;&gt;lblFavoriteIndex5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblFavoriteIndex5.Parent" xml:space="preserve">
-    <value>tblFavoriteIndexes</value>
+  <data name="lblTargetWindowTitle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>142, 13</value>
   </data>
   <data name="&gt;&gt;lblFavoriteIndex5.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="lblFavoriteIndex4.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;tmrSearchPopupTimeout.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="lblFavoriteIndex4.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
+  <data name="lblFavoriteIndex9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>31, 12</value>
   </data>
-  <data name="lblFavoriteIndex4.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 6.75pt</value>
-  </data>
-  <data name="lblFavoriteIndex4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lblFavoriteIndex4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>135, 0</value>
-  </data>
-  <data name="lblFavoriteIndex4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>27, 12</value>
-  </data>
-  <data name="lblFavoriteIndex4.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="lblFavoriteIndex4.Text" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="lblFavoriteIndex4.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;lblFavoriteIndex4.Name" xml:space="preserve">
-    <value>lblFavoriteIndex4</value>
-  </data>
-  <data name="&gt;&gt;lblFavoriteIndex4.Type" xml:space="preserve">
+  <data name="&gt;&gt;lblFavoriteIndex7.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;lblFavoriteIndex4.Parent" xml:space="preserve">
-    <value>tblFavoriteIndexes</value>
+  <data name="trayIcon.Text" xml:space="preserve">
+    <value>Unicode Virtual Keyboard</value>
   </data>
-  <data name="&gt;&gt;lblFavoriteIndex4.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="lblFavoriteIndex3.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblFavoriteIndex3.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="lblFavoriteIndex3.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 6.75pt</value>
-  </data>
-  <data name="lblFavoriteIndex3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lblFavoriteIndex3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>102, 0</value>
-  </data>
-  <data name="lblFavoriteIndex3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>27, 12</value>
-  </data>
-  <data name="lblFavoriteIndex3.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="lblFavoriteIndex3.Text" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="lblFavoriteIndex3.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;lblFavoriteIndex3.Name" xml:space="preserve">
-    <value>lblFavoriteIndex3</value>
-  </data>
-  <data name="&gt;&gt;lblFavoriteIndex3.Type" xml:space="preserve">
+  <data name="&gt;&gt;lblFavoriteGlyph7.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;lblFavoriteIndex3.Parent" xml:space="preserve">
-    <value>tblFavoriteIndexes</value>
+  <data name="windowFinder.ToolTip" xml:space="preserve">
+    <value />
   </data>
-  <data name="&gt;&gt;lblFavoriteIndex3.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="lblFavoriteIndex2.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblFavoriteIndex2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="lblFavoriteGlyph0.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
-  </data>
-  <data name="lblFavoriteIndex2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 6.75pt</value>
-  </data>
-  <data name="lblFavoriteIndex2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lblFavoriteIndex2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>69, 0</value>
-  </data>
-  <data name="lblFavoriteIndex2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>27, 12</value>
-  </data>
-  <data name="lblFavoriteIndex2.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="lblFavoriteIndex2.Text" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="lblFavoriteIndex2.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;lblFavoriteIndex2.Name" xml:space="preserve">
-    <value>lblFavoriteIndex2</value>
-  </data>
-  <data name="&gt;&gt;lblFavoriteIndex2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblFavoriteIndex2.Parent" xml:space="preserve">
-    <value>tblFavoriteIndexes</value>
-  </data>
-  <data name="&gt;&gt;lblFavoriteIndex2.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="lblFavoriteIndex1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblFavoriteIndex1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="lblFavoriteIndex1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 6.75pt</value>
-  </data>
-  <data name="lblFavoriteIndex1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lblFavoriteIndex1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>36, 0</value>
-  </data>
-  <data name="lblFavoriteIndex1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>27, 12</value>
-  </data>
-  <data name="lblFavoriteIndex1.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="lblFavoriteIndex1.Text" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="lblFavoriteIndex1.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;lblFavoriteIndex1.Name" xml:space="preserve">
-    <value>lblFavoriteIndex1</value>
-  </data>
-  <data name="&gt;&gt;lblFavoriteIndex1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblFavoriteIndex1.Parent" xml:space="preserve">
-    <value>tblFavoriteIndexes</value>
-  </data>
-  <data name="&gt;&gt;lblFavoriteIndex1.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="lblFavoriteIndex0.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblFavoriteIndex0.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="lblFavoriteIndex0.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 6.75pt</value>
-  </data>
-  <data name="lblFavoriteIndex0.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lblFavoriteIndex0.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 0</value>
-  </data>
-  <data name="lblFavoriteIndex0.Size" type="System.Drawing.Size, System.Drawing">
-    <value>27, 12</value>
-  </data>
-  <data name="lblFavoriteIndex0.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="lblFavoriteIndex0.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="lblFavoriteIndex0.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;lblFavoriteIndex0.Name" xml:space="preserve">
-    <value>lblFavoriteIndex0</value>
-  </data>
-  <data name="&gt;&gt;lblFavoriteIndex0.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblFavoriteIndex0.Parent" xml:space="preserve">
-    <value>tblFavoriteIndexes</value>
-  </data>
-  <data name="&gt;&gt;lblFavoriteIndex0.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="tblFavoriteIndexes.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 186</value>
-  </data>
-  <data name="tblFavoriteIndexes.RowCount" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="tblFavoriteIndexes.Size" type="System.Drawing.Size, System.Drawing">
-    <value>334, 12</value>
-  </data>
-  <data name="tblFavoriteIndexes.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
-  </data>
-  <data name="&gt;&gt;tblFavoriteIndexes.Name" xml:space="preserve">
-    <value>tblFavoriteIndexes</value>
-  </data>
-  <data name="&gt;&gt;tblFavoriteIndexes.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tblFavoriteIndexes.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;tblFavoriteIndexes.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="tblFavoriteIndexes.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="lblFavoriteIndex9" Row="0" RowSpan="1" Column="9" ColumnSpan="1" /&gt;&lt;Control Name="lblFavoriteIndex8" Row="0" RowSpan="1" Column="8" ColumnSpan="1" /&gt;&lt;Control Name="lblFavoriteIndex7" Row="0" RowSpan="1" Column="7" ColumnSpan="1" /&gt;&lt;Control Name="lblFavoriteIndex6" Row="0" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="lblFavoriteIndex5" Row="0" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="lblFavoriteIndex4" Row="0" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="lblFavoriteIndex3" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="lblFavoriteIndex2" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="lblFavoriteIndex1" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="lblFavoriteIndex0" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,10,Percent,10,Percent,10,Percent,10,Percent,10,Percent,10,Percent,10,Percent,10,Percent,10,Percent,10" /&gt;&lt;Rows Styles="Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
-  </data>
-  <metadata name="toolTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="tmrCharacterPreview.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>202, 17</value>
-  </metadata>
-  <data name="btnOptions.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btnOptions.Location" type="System.Drawing.Point, System.Drawing">
-    <value>321, 12</value>
-  </data>
-  <data name="btnOptions.Size" type="System.Drawing.Size, System.Drawing">
-    <value>28, 28</value>
-  </data>
-  <data name="btnOptions.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
-  </data>
-  <data name="&gt;&gt;btnOptions.Name" xml:space="preserve">
-    <value>btnOptions</value>
-  </data>
-  <data name="&gt;&gt;btnOptions.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnOptions.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;btnOptions.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <metadata name="cmsOptions.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>518, 17</value>
-  </metadata>
-  <data name="cmiOptions.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
-    <value>Ctrl+O</value>
-  </data>
-  <data name="cmiOptions.Size" type="System.Drawing.Size, System.Drawing">
-    <value>249, 22</value>
-  </data>
-  <data name="cmiOptions.Text" xml:space="preserve">
-    <value>Options...</value>
-  </data>
-  <data name="cmiWindowsCharMap.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
-    <value>Ctrl+M</value>
-  </data>
-  <data name="cmiWindowsCharMap.Size" type="System.Drawing.Size, System.Drawing">
-    <value>249, 22</value>
-  </data>
-  <data name="cmiWindowsCharMap.Text" xml:space="preserve">
-    <value>Windows Character Map</value>
-  </data>
-  <data name="cmiOptionsSeparator.Size" type="System.Drawing.Size, System.Drawing">
-    <value>246, 6</value>
-  </data>
-  <data name="cmiAbout.Size" type="System.Drawing.Size, System.Drawing">
-    <value>249, 22</value>
-  </data>
-  <data name="cmiAbout.Text" xml:space="preserve">
-    <value>About</value>
-  </data>
-  <data name="cmiExit.Size" type="System.Drawing.Size, System.Drawing">
-    <value>249, 22</value>
-  </data>
-  <data name="cmiExit.Text" xml:space="preserve">
-    <value>Exit</value>
-  </data>
-  <data name="cmsOptions.Size" type="System.Drawing.Size, System.Drawing">
-    <value>250, 98</value>
-  </data>
-  <data name="&gt;&gt;cmsOptions.Name" xml:space="preserve">
-    <value>cmsOptions</value>
   </data>
   <data name="&gt;&gt;cmsOptions.Type" xml:space="preserve">
     <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="windowFinder.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADrwAAA68AZW8ckkAAABGSURBVDhP7c5BCgAgCERRL+f9jzTRYkJkhKxlLd7CL4gG
-        oOTumHKPZKR/YI+MHevNiMtqju4PcHlKxg4ZiW/mHslITxyADYUlyQuVrSEAAAAAAElFTkSuQmCC
-</value>
-  </data>
-  <data name="windowFinder.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Center</value>
-  </data>
-  <data name="windowFinder.Location" type="System.Drawing.Point, System.Drawing">
-    <value>116, 13</value>
-  </data>
-  <data name="windowFinder.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
-  </data>
-  <data name="windowFinder.Size" type="System.Drawing.Size, System.Drawing">
-    <value>27, 27</value>
-  </data>
-  <data name="windowFinder.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
-  </data>
-  <data name="&gt;&gt;windowFinder.Name" xml:space="preserve">
-    <value>windowFinder</value>
-  </data>
-  <data name="&gt;&gt;windowFinder.Type" xml:space="preserve">
-    <value>YuriyGuts.UnicodeKeyboard.UI.WindowFinder, UnicodeKeyboard, Version=1.0.2.28, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;windowFinder.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;windowFinder.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <data name="lblFavoriteGlyph9.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
-  </metadata>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>7, 16</value>
   </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>361, 212</value>
+  <data name="&gt;&gt;lblFavoriteIndex8.Name" xml:space="preserve">
+    <value>lblFavoriteIndex8</value>
   </data>
-  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 9.75pt</value>
+  <data name="&gt;&gt;lblTargetWindowTitle.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblFavoriteIndex1.Text" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lblFavoriteIndex5.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1343,91 +474,1056 @@ Press {0} to activate.</value>
         //8AAP//AAD//w==
 </value>
   </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblTargetWindowTitle.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 4, 0, 0</value>
+  </data>
+  <data name="&gt;&gt;tblFavoriteGlyphs.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;lblFavorites.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;lblTargetWindow.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="txtCharSearch.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 80</value>
+  </data>
+  <data name="lblFavoriteIndex8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>27, 12</value>
+  </data>
+  <data name="lblFavoriteIndex9.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="btnOptions.Size" type="System.Drawing.Size, System.Drawing">
+    <value>28, 28</value>
+  </data>
+  <data name="&gt;&gt;lblFavoriteGlyph4.Parent" xml:space="preserve">
+    <value>tblFavoriteGlyphs</value>
+  </data>
+  <data name="&gt;&gt;lblFavoriteIndex8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblFavoriteIndex0.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tblFavoriteIndexes.RowCount" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="lblFavoriteGlyph7.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 4, 3, 4</value>
   </data>
-  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
-    <value>CenterScreen</value>
+  <data name="&gt;&gt;lblFavoriteGlyph8.Name" xml:space="preserve">
+    <value>lblFavoriteGlyph8</value>
   </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Unicode Virtual Keyboard</value>
+  <data name="lblFavoriteIndex0.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;lblFavoriteGlyph5.Parent" xml:space="preserve">
+    <value>tblFavoriteGlyphs</value>
+  </data>
+  <data name="&gt;&gt;lblFavoriteIndex4.Parent" xml:space="preserve">
+    <value>tblFavoriteIndexes</value>
+  </data>
+  <data name="lblFavoriteIndex0.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtCharSearch.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="windowFinder.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="windowFinder.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADrwAAA68AZW8ckkAAABGSURBVDhP7c5BCgAgCERRL+f9jzTRYkJkhKxlLd7CL4gG
+        oOTumHKPZKR/YI+MHevNiMtqju4PcHlKxg4ZiW/mHslITxyADYUlyQuVrSEAAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="cmiTrayOptions.Text" xml:space="preserve">
+    <value>Options...</value>
+  </data>
+  <data name="windowFinder.Location" type="System.Drawing.Point, System.Drawing">
+    <value>116, 13</value>
+  </data>
+  <data name="lblFavoriteGlyph1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial Unicode MS, 15.75pt</value>
+  </data>
+  <data name="&gt;&gt;lblFavoriteGlyph8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblFavoriteIndex2.Parent" xml:space="preserve">
+    <value>tblFavoriteIndexes</value>
+  </data>
+  <data name="lblFavoriteIndex3.Text" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;lblTargetWindow.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblFavoriteGlyph2.Name" xml:space="preserve">
+    <value>lblFavoriteGlyph2</value>
+  </data>
+  <data name="lblFavoriteIndex7.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="&gt;&gt;lblFavoriteGlyph8.Parent" xml:space="preserve">
+    <value>tblFavoriteGlyphs</value>
+  </data>
+  <data name="lblFavoriteIndex7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>234, 0</value>
+  </data>
+  <data name="lblFavoriteGlyph7.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="btnOptions.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="cmiAbout.Size" type="System.Drawing.Size, System.Drawing">
+    <value>249, 22</value>
+  </data>
+  <data name="lblFavoriteIndex3.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;lblFavoriteGlyph5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblTargetWindow.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="lblFavoriteGlyph0.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial Unicode MS, 15.75pt</value>
+  </data>
+  <data name="lblFavoriteIndex1.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="cmiWindowsCharMap.Text" xml:space="preserve">
+    <value>Windows Character Map</value>
+  </data>
+  <data name="lblFavoriteIndex0.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;lblFavoriteIndex3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblFavoriteIndex5.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;lblFavoriteIndex0.Name" xml:space="preserve">
+    <value>lblFavoriteIndex0</value>
+  </data>
+  <data name="lblFavorites.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="lblFavoriteIndex8.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;lblFavoriteIndex4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblFavoriteGlyph5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblFavoriteGlyph0.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblFavoriteGlyph3.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblFavoriteIndex6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>201, 0</value>
+  </data>
+  <data name="lblFavoriteGlyph8.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
   </data>
   <data name="&gt;&gt;trayIcon.Name" xml:space="preserve">
     <value>trayIcon</value>
   </data>
-  <data name="&gt;&gt;trayIcon.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NotifyIcon, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;lblFavoriteGlyph3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;cmiTrayUsageHint.Name" xml:space="preserve">
-    <value>cmiTrayUsageHint</value>
-  </data>
-  <data name="&gt;&gt;cmiTrayUsageHint.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cmiTraySeparator.Name" xml:space="preserve">
-    <value>cmiTraySeparator</value>
-  </data>
-  <data name="&gt;&gt;cmiTraySeparator.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cmiTrayOptions.Name" xml:space="preserve">
-    <value>cmiTrayOptions</value>
+  <data name="lblTargetWindowTitle.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
   </data>
   <data name="&gt;&gt;cmiTrayOptions.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;cmiTrayExit.Name" xml:space="preserve">
-    <value>cmiTrayExit</value>
+  <data name="lblFavoriteIndex1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
   </data>
-  <data name="&gt;&gt;cmiTrayExit.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;lblFavoriteIndex5.Parent" xml:space="preserve">
+    <value>tblFavoriteIndexes</value>
   </data>
-  <data name="&gt;&gt;toolTip.Name" xml:space="preserve">
-    <value>toolTip</value>
+  <data name="&gt;&gt;btnOptions.Name" xml:space="preserve">
+    <value>btnOptions</value>
   </data>
-  <data name="&gt;&gt;toolTip.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="lblTargetWindowTitle.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
   </data>
-  <data name="&gt;&gt;tmrCharacterPreview.Name" xml:space="preserve">
-    <value>tmrCharacterPreview</value>
+  <data name="&gt;&gt;lblFavorites.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="&gt;&gt;tmrCharacterPreview.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="lblFavoriteIndex9.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 6.75pt</value>
   </data>
-  <data name="&gt;&gt;cmiOptions.Name" xml:space="preserve">
-    <value>cmiOptions</value>
+  <data name="lblFavoriteIndex3.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
   </data>
-  <data name="&gt;&gt;cmiOptions.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="tblFavoriteGlyphs.ColumnCount" type="System.Int32, mscorlib">
+    <value>10</value>
   </data>
-  <data name="&gt;&gt;cmiWindowsCharMap.Name" xml:space="preserve">
-    <value>cmiWindowsCharMap</value>
+  <data name="lblFavoriteGlyph4.ToolTip" xml:space="preserve">
+    <value />
   </data>
-  <data name="&gt;&gt;cmiWindowsCharMap.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="lblFavoriteIndex5.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
   </data>
-  <data name="&gt;&gt;cmiOptionsSeparator.Name" xml:space="preserve">
-    <value>cmiOptionsSeparator</value>
+  <data name="&gt;&gt;lblFavoriteIndex9.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;cmiOptionsSeparator.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="cmiTrayUsageHint.Size" type="System.Drawing.Size, System.Drawing">
+    <value>258, 22</value>
   </data>
-  <data name="&gt;&gt;cmiAbout.Name" xml:space="preserve">
-    <value>cmiAbout</value>
+  <data name="&gt;&gt;lblFavoriteIndex6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;cmiAbout.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="lblFavoriteGlyph9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>29, 33</value>
   </data>
-  <data name="&gt;&gt;cmiExit.Name" xml:space="preserve">
-    <value>cmiExit</value>
+  <data name="cmiTrayExit.Text" xml:space="preserve">
+    <value>Exit</value>
   </data>
-  <data name="&gt;&gt;cmiExit.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="lblFavoriteGlyph2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;lblFavoriteGlyph7.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;lblFavoriteGlyph9.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblFavoriteGlyph3.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="lblFavoriteIndex0.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="lblFavoriteIndex5.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;lblFavoriteGlyph1.Parent" xml:space="preserve">
+    <value>tblFavoriteGlyphs</value>
+  </data>
+  <data name="lblFavoriteIndex2.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="lblFavoriteIndex6.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="lblFavoriteGlyph4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblFavoriteIndex8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>267, 0</value>
+  </data>
+  <data name="lblFavoriteGlyph5.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial Unicode MS, 15.75pt</value>
+  </data>
+  <data name="lblHeader.Text" xml:space="preserve">
+    <value>Unicode character name or code:</value>
+  </data>
+  <data name="lblFavoriteGlyph8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>26, 33</value>
+  </data>
+  <data name="trayIcon.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAEBAAAAAAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAQAQAAAAAAAAAAAAAAAAAAAAA
+        AAD///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af//
+        /wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af//
+        /wH///8B////AerFpOvnwJ//47ya/+C3lf/dso//2a6K/9aphf/TpX//0KB7/82cdv/KmXL/yJZu/8aT
+        a//EkGn/xJBo/8SQaOvuy6v/6NXI/+jUxf/n0sP/5dDB/+XOvv/jzLz/48q5/+LJt//hx7X/4MWz/9/E
+        sf/fxLD/3sKv/97Crv/EkGj/8tCx/+rYzP/8/Pz/2rqk//z8/P/8/Pz//Pz8//z8/P/8/Pz//Pz8//z8
+        /P/8/Pz/zKGC//z8/P/fw7D/xZJq//XUtv/s3ND/3sOv/92/q//bvaf/2bqj/9i3n//WtJz/1bGX/9Ou
+        lP/Rq4//0KiM/8+miP/No4X/4MWz/8eVbv/42Lv/7d7U//z8/P/8/Pz/3sKu//z8/P/bvKb//Pz8/9i2
+        nv/8/Pz/1bCX//z8/P/8/Pz//Pz8/+HItv/KmXL/+ty//+7g1v/jy7r/4sm4/+DGtP/fxLH/3sKt/9y/
+        qv/avKb/2bmi/9e2nv/Ws5r/6dbK//z8/P/jy7r/zp13//zewf/v4tj//Pz8/+TMvP/8/Pz/4cm3//z8
+        /P/fw7D//Pz8/9y+qf/8/Pz/2bih//z8/P/38/D/5c6+/9Giff/83sH/7+LY/+/i2P/v4tj/7uHX/+7g
+        1v/u39T/7d3S/+zc0f/r2s7/6tjM/+rXyv/o1cf/59PF/+fRwv/VqIP//N7B4/zewf+7ubb/s7Gu//rb
+        vv/42Lv/9tW3//PSs//wzq7/7cmq/+rFpP/nwJ//47ya/+C3lf/dso//2a6K4////wH///8BxMTE/by8
+        vLWzs7MR////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////AdDQ
+        0PnJycn5wsLCZ////wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af//
+        /wHZ2dln1NTU98/Pz+/IyMjlwMDA2be3t8Ourq6TpKSkfZubm2+RkZFJh4eHBf///wH///8B////Af//
+        /wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af//
+        /wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af//
+        /wH///8BAAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA
+        //8AAP//AAD//w==
+</value>
+  </data>
+  <data name="txtCharSearch.Size" type="System.Drawing.Size, System.Drawing">
+    <value>334, 30</value>
+  </data>
+  <data name="&gt;&gt;lblFavoriteIndex9.Parent" xml:space="preserve">
+    <value>tblFavoriteIndexes</value>
+  </data>
+  <data name="&gt;&gt;lblFavoriteGlyph3.Parent" xml:space="preserve">
+    <value>tblFavoriteGlyphs</value>
+  </data>
+  <data name="&gt;&gt;lblFavoriteIndex6.Parent" xml:space="preserve">
+    <value>tblFavoriteIndexes</value>
+  </data>
+  <data name="lblFavoriteGlyph1.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="lblFavoriteIndex3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblFavoriteIndex3.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="lblHeader.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;lblFavoriteIndex7.Parent" xml:space="preserve">
+    <value>tblFavoriteIndexes</value>
+  </data>
+  <data name="lblFavoriteGlyph0.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblFavoriteGlyph4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblFavoriteIndex0.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="cmsTrayIconMenu.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;cmiTraySeparator.Name" xml:space="preserve">
+    <value>cmiTraySeparator</value>
+  </data>
+  <data name="lblFavoriteGlyph3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblFavoriteIndex0.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblFavoriteIndex2.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;lblFavoriteGlyph9.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblFavoriteGlyph9.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="lblHeader.Size" type="System.Drawing.Size, System.Drawing">
+    <value>199, 16</value>
+  </data>
+  <data name="lblFavoriteIndex2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="lblFavoriteIndex2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;lblFavoriteIndex0.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="tblFavoriteGlyphs.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="lblFavoriteGlyph9" Row="0" RowSpan="1" Column="9" ColumnSpan="1" /&gt;&lt;Control Name="lblFavoriteGlyph8" Row="0" RowSpan="1" Column="8" ColumnSpan="1" /&gt;&lt;Control Name="lblFavoriteGlyph7" Row="0" RowSpan="1" Column="7" ColumnSpan="1" /&gt;&lt;Control Name="lblFavoriteGlyph6" Row="0" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="lblFavoriteGlyph5" Row="0" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="lblFavoriteGlyph4" Row="0" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="lblFavoriteGlyph3" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="lblFavoriteGlyph2" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="lblFavoriteGlyph1" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="lblFavoriteGlyph0" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,10,Percent,10,Percent,10,Percent,10,Percent,10,Percent,10,Percent,10,Percent,10,Percent,10,Percent,10" /&gt;&lt;Rows Styles="Percent,100,Absolute,34" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="tblFavoriteGlyphs.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="lblFavoriteGlyph7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblTargetWindow.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 18</value>
+  </data>
+  <data name="lblFavoriteGlyph5.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="lblFavoriteGlyph0.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 0, 0</value>
+  </data>
+  <data name="lblFavoriteGlyph3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial Unicode MS, 15.75pt</value>
+  </data>
+  <data name="lblFavoriteIndex9.Text" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;lblFavoriteGlyph7.Name" xml:space="preserve">
+    <value>lblFavoriteGlyph7</value>
+  </data>
+  <data name="lblFavoriteGlyph1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblFavoriteIndex4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblFavoriteIndex4.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="lblFavoriteGlyph8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>268, 1</value>
+  </data>
+  <data name="lblTargetWindow.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblFavorites.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblFavoriteGlyph8.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="cmiTrayUsageHint.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="lblFavoriteGlyph9.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;lblTargetWindowTitle.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="lblFavoriteGlyph5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblFavoriteIndex8.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblFavoriteGlyph2.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="cmiTrayOptions.Size" type="System.Drawing.Size, System.Drawing">
+    <value>258, 22</value>
+  </data>
+  <data name="lblHeader.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;tblFavoriteIndexes.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnOptions.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblHeader.Name" xml:space="preserve">
+    <value>lblHeader</value>
+  </data>
+  <data name="lblFavoriteIndex8.Text" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="lblFavoriteGlyph2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial Unicode MS, 15.75pt</value>
+  </data>
+  <data name="lblFavoriteGlyph1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;btnOptions.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="cmiTrayUsageHint.Text" xml:space="preserve">
+    <value>Press "{0}" or twice "{1}" to activate</value>
+  </data>
+  <data name="tblFavoriteIndexes.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;lblFavoriteGlyph2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="cmiOptions.Text" xml:space="preserve">
+    <value>Options...</value>
+  </data>
+  <data name="lblFavoriteGlyph0.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;cmsTrayIconMenu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblFavoriteGlyph3.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="lblFavoriteIndex2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblFavoriteGlyph6.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="lblFavorites.Text" xml:space="preserve">
+    <value>Favorites:</value>
+  </data>
+  <data name="lblFavoriteIndex5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblFavoriteIndex3.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="lblFavoriteGlyph8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblFavoriteGlyph7.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblFavoriteGlyph0.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblFavorites.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt</value>
+  </data>
+  <data name="lblFavoriteIndex4.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="lblFavorites.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;tmrSearchPopupTimeout.Name" xml:space="preserve">
+    <value>tmrSearchPopupTimeout</value>
+  </data>
+  <data name="&gt;&gt;txtCharSearch.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btnOptions.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="tblFavoriteIndexes.ColumnCount" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="lblFavoriteIndex5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblFavoriteGlyph1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;windowFinder.Name" xml:space="preserve">
+    <value>windowFinder</value>
+  </data>
+  <data name="&gt;&gt;lblFavoriteIndex5.Name" xml:space="preserve">
+    <value>lblFavoriteIndex5</value>
+  </data>
+  <data name="&gt;&gt;lblFavoriteGlyph2.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="lblFavoriteIndex7.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="lblFavoriteGlyph8.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>MainForm</value>
   </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;lblFavoriteGlyph4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="lblFavoriteGlyph5.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9.75pt</value>
+  </data>
+  <data name="lblFavoriteGlyph7.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial Unicode MS, 15.75pt</value>
+  </data>
+  <data name="lblFavoriteIndex6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>27, 12</value>
+  </data>
+  <data name="lblTargetWindowTitle.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9.75pt</value>
+  </data>
+  <data name="lblTargetWindowTitle.Text" xml:space="preserve">
+    <value>(none)</value>
+  </data>
+  <data name="&gt;&gt;lblFavoriteIndex9.Name" xml:space="preserve">
+    <value>lblFavoriteIndex9</value>
+  </data>
+  <data name="&gt;&gt;tblFavoriteIndexes.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="lblFavoriteGlyph2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;lblFavoriteGlyph0.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmsTrayIconMenu.Name" xml:space="preserve">
+    <value>cmsTrayIconMenu</value>
+  </data>
+  <data name="lblFavoriteGlyph5.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="&gt;&gt;lblTargetWindow.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtCharSearch.Name" xml:space="preserve">
+    <value>txtCharSearch</value>
+  </data>
+  <data name="&gt;&gt;cmiOptionsSeparator.Name" xml:space="preserve">
+    <value>cmiOptionsSeparator</value>
+  </data>
+  <data name="lblFavoriteGlyph4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>136, 1</value>
+  </data>
+  <data name="lblFavoriteIndex9.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="cmiAbout.Text" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="&gt;&gt;cmiWindowsCharMap.Name" xml:space="preserve">
+    <value>cmiWindowsCharMap</value>
+  </data>
+  <data name="lblFavoriteGlyph6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblFavoriteGlyph6.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial Unicode MS, 15.75pt</value>
+  </data>
+  <data name="lblFavoriteGlyph1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>26, 33</value>
+  </data>
+  <data name="&gt;&gt;tblFavoriteGlyphs.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblFavoriteGlyph3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblFavoriteGlyph2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;lblFavoriteGlyph4.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;cmiExit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="cmiTrayExit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>258, 22</value>
+  </data>
+  <data name="&gt;&gt;lblFavoriteIndex1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblFavoriteIndex4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>135, 0</value>
+  </data>
+  <data name="&gt;&gt;cmiAbout.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblFavoriteGlyph6.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblFavoriteIndex8.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="lblFavoriteGlyph0.Size" type="System.Drawing.Size, System.Drawing">
+    <value>26, 33</value>
+  </data>
+  <data name="&gt;&gt;lblFavoriteIndex7.Name" xml:space="preserve">
+    <value>lblFavoriteIndex7</value>
+  </data>
+  <data name="lblTargetWindowTitle.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;btnOptions.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="lblFavoriteGlyph6.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="lblFavoriteIndex4.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblTargetWindow.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9.75pt</value>
+  </data>
+  <data name="lblFavoriteIndex3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 6.75pt</value>
+  </data>
+  <data name="&gt;&gt;lblFavoriteIndex4.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="lblFavoriteGlyph7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>235, 1</value>
+  </data>
+  <data name="lblFavoriteGlyph0.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;lblFavoriteGlyph6.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;lblFavoriteGlyph0.Parent" xml:space="preserve">
+    <value>tblFavoriteGlyphs</value>
+  </data>
+  <data name="lblFavoriteIndex1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblTargetWindow.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblFavoriteIndex6.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="lblFavoriteGlyph9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>301, 1</value>
+  </data>
+  <data name="&gt;&gt;lblFavoriteGlyph6.Parent" xml:space="preserve">
+    <value>tblFavoriteGlyphs</value>
+  </data>
+  <data name="&gt;&gt;lblHeader.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;lblFavoriteIndex1.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="lblFavoriteGlyph1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="lblTargetWindow.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnOptions.Location" type="System.Drawing.Point, System.Drawing">
+    <value>321, 12</value>
+  </data>
+  <data name="tblFavoriteGlyphs.Size" type="System.Drawing.Size, System.Drawing">
+    <value>334, 35</value>
+  </data>
+  <data name="lblFavoriteIndex6.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;tblFavoriteGlyphs.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="lblFavoriteIndex8.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="lblFavoriteGlyph4.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 0, 0</value>
+  </data>
+  <data name="&gt;&gt;windowFinder.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="lblFavoriteIndex7.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;txtCharSearch.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="lblFavoriteGlyph1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="lblFavoriteGlyph6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>202, 1</value>
+  </data>
+  <data name="lblFavoriteGlyph8.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="windowFinder.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="tblFavoriteGlyphs.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 150</value>
+  </data>
+  <data name="lblFavoriteGlyph8.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="cmiTraySeparator.Size" type="System.Drawing.Size, System.Drawing">
+    <value>255, 6</value>
+  </data>
+  <data name="trayIcon.BalloonTipText" xml:space="preserve">
+    <value>The application is running!
+Press {0} to activate.</value>
+  </data>
+  <data name="&gt;&gt;lblFavoriteGlyph8.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;cmsOptions.Name" xml:space="preserve">
+    <value>cmsOptions</value>
+  </data>
+  <data name="&gt;&gt;tblFavoriteIndexes.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tblFavoriteIndexes.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;lblFavoriteGlyph1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="cmiExit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>249, 22</value>
+  </data>
+  <data name="lblFavoriteIndex3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="cmsOptions.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;lblTargetWindow.Name" xml:space="preserve">
+    <value>lblTargetWindow</value>
+  </data>
+  <data name="&gt;&gt;lblFavoriteIndex0.Parent" xml:space="preserve">
+    <value>tblFavoriteIndexes</value>
+  </data>
+  <data name="lblFavoriteIndex2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>69, 0</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="&gt;&gt;lblTargetWindowTitle.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="lblFavoriteIndex1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>36, 0</value>
+  </data>
+  <data name="lblFavorites.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 132</value>
+  </data>
+  <data name="&gt;&gt;lblFavoriteIndex3.Name" xml:space="preserve">
+    <value>lblFavoriteIndex3</value>
+  </data>
+  <data name="lblFavoriteGlyph7.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblFavoriteIndex7.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblTargetWindow.Text" xml:space="preserve">
+    <value>Target window:</value>
+  </data>
+  <data name="&gt;&gt;cmiTrayUsageHint.Name" xml:space="preserve">
+    <value>cmiTrayUsageHint</value>
+  </data>
+  <data name="cmiOptionsSeparator.Size" type="System.Drawing.Size, System.Drawing">
+    <value>246, 6</value>
+  </data>
+  <data name="&gt;&gt;lblFavoriteGlyph1.Name" xml:space="preserve">
+    <value>lblFavoriteGlyph1</value>
+  </data>
+  <data name="lblFavoriteIndex5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>27, 12</value>
+  </data>
+  <data name="lblFavoriteIndex7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblFavoriteIndex8.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 6.75pt</value>
+  </data>
+  <data name="&gt;&gt;cmiTrayExit.Name" xml:space="preserve">
+    <value>cmiTrayExit</value>
+  </data>
+  <data name="lblHeader.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 10, 10, 5</value>
+  </data>
+  <data name="lblFavoriteGlyph7.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;lblFavoriteIndex8.Parent" xml:space="preserve">
+    <value>tblFavoriteIndexes</value>
+  </data>
+  <data name="lblFavoriteIndex2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;lblFavoriteGlyph5.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;cmiAbout.Name" xml:space="preserve">
+    <value>cmiAbout</value>
+  </data>
+  <data name="lblFavoriteGlyph4.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>361, 212</value>
+  </data>
+  <data name="&gt;&gt;lblFavoriteIndex2.Name" xml:space="preserve">
+    <value>lblFavoriteIndex2</value>
+  </data>
+  <data name="lblFavoriteIndex4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="txtCharSearch.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="lblFavoriteGlyph4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>26, 33</value>
+  </data>
+  <data name="lblFavoriteGlyph9.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;lblFavoriteGlyph1.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="tblFavoriteGlyphs.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblTargetWindowTitle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>169, 27</value>
+  </data>
+  <data name="lblFavoriteIndex9.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblFavoriteIndex4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>27, 12</value>
+  </data>
+  <data name="lblFavoriteGlyph6.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblFavoriteGlyph4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial Unicode MS, 15.75pt</value>
+  </data>
+  <data name="lblFavoriteGlyph5.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblFavoriteGlyph3.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 0, 0</value>
+  </data>
+  <data name="tblFavoriteIndexes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>334, 12</value>
+  </data>
+  <data name="&gt;&gt;lblFavoriteGlyph3.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="cmiOptions.Size" type="System.Drawing.Size, System.Drawing">
+    <value>249, 22</value>
+  </data>
+  <data name="txtCharSearch.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 14.25pt</value>
+  </data>
+  <data name="&gt;&gt;lblFavoriteIndex0.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblFavoriteGlyph8.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 0, 0</value>
+  </data>
+  <data name="lblFavoriteGlyph3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>26, 33</value>
+  </data>
+  <data name="lblFavoriteGlyph7.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 0, 0</value>
+  </data>
+  <data name="lblFavoriteIndex1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;windowFinder.Type" xml:space="preserve">
+    <value>YuriyGuts.UnicodeKeyboard.UI.WindowFinder, UnicodeKeyboard, Version=1.0.2.28, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tblFavoriteIndexes.Name" xml:space="preserve">
+    <value>tblFavoriteIndexes</value>
+  </data>
+  <data name="lblFavoriteGlyph5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>169, 1</value>
+  </data>
+  <data name="lblFavoriteIndex7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>27, 12</value>
+  </data>
+  <data name="lblFavoriteIndex4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 6.75pt</value>
+  </data>
+  <data name="lblFavorites.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;lblFavoriteIndex1.Name" xml:space="preserve">
+    <value>lblFavoriteIndex1</value>
+  </data>
+  <data name="lblFavoriteGlyph1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 0, 0</value>
+  </data>
+  <data name="&gt;&gt;lblFavoriteIndex3.Parent" xml:space="preserve">
+    <value>tblFavoriteIndexes</value>
+  </data>
+  <data name="&gt;&gt;cmiTrayOptions.Name" xml:space="preserve">
+    <value>cmiTrayOptions</value>
+  </data>
+  <data name="&gt;&gt;lblFavoriteGlyph5.Name" xml:space="preserve">
+    <value>lblFavoriteGlyph5</value>
+  </data>
+  <data name="lblFavoriteGlyph2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>26, 33</value>
+  </data>
+  <data name="&gt;&gt;lblFavoriteGlyph4.Name" xml:space="preserve">
+    <value>lblFavoriteGlyph4</value>
+  </data>
+  <data name="lblFavoriteIndex4.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="lblFavoriteGlyph5.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 0, 0</value>
+  </data>
+  <data name="windowFinder.Size" type="System.Drawing.Size, System.Drawing">
+    <value>27, 27</value>
+  </data>
+  <data name="lblFavoriteIndex6.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 6.75pt</value>
+  </data>
+  <data name="lblFavoriteGlyph4.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;lblFavoriteGlyph9.Name" xml:space="preserve">
+    <value>lblFavoriteGlyph9</value>
+  </data>
+  <data name="lblFavoriteGlyph4.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="lblFavoriteGlyph0.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 1</value>
+  </data>
+  <data name="&gt;&gt;lblFavoriteIndex2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="cmiOptions.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Ctrl+O</value>
+  </data>
+  <data name="&gt;&gt;cmiOptions.Name" xml:space="preserve">
+    <value>cmiOptions</value>
+  </data>
+  <data name="lblFavoriteIndex9.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblFavoriteGlyph2.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;windowFinder.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="lblFavoriteIndex5.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 6.75pt</value>
+  </data>
+  <data name="lblFavoriteIndex5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>168, 0</value>
+  </data>
+  <data name="lblFavoriteIndex1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>27, 12</value>
+  </data>
+  <data name="lblFavoriteIndex8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblFavoriteIndex1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="tblFavoriteIndexes.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="lblFavoriteIndex9" Row="0" RowSpan="1" Column="9" ColumnSpan="1" /&gt;&lt;Control Name="lblFavoriteIndex8" Row="0" RowSpan="1" Column="8" ColumnSpan="1" /&gt;&lt;Control Name="lblFavoriteIndex7" Row="0" RowSpan="1" Column="7" ColumnSpan="1" /&gt;&lt;Control Name="lblFavoriteIndex6" Row="0" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="lblFavoriteIndex5" Row="0" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="lblFavoriteIndex4" Row="0" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="lblFavoriteIndex3" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="lblFavoriteIndex2" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="lblFavoriteIndex1" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="lblFavoriteIndex0" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,10,Percent,10,Percent,10,Percent,10,Percent,10,Percent,10,Percent,10,Percent,10,Percent,10,Percent,10" /&gt;&lt;Rows Styles="Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <metadata name="trayIcon.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>107, 17</value>
+  </metadata>
+  <metadata name="cmsTrayIconMenu.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>367, 17</value>
+  </metadata>
+  <metadata name="cmsOptions.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>518, 17</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="tmrSearchPopupTimeout.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>202, 17</value>
+  </metadata>
+  <metadata name="toolTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
 </root>

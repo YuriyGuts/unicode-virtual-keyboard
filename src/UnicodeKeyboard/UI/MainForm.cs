@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using System.Globalization;
 using System.Windows.Forms;
 using YuriyGuts.UnicodeKeyboard.Interaction;
 using YuriyGuts.UnicodeKeyboard.ResourceWrappers;
@@ -35,7 +34,7 @@ namespace YuriyGuts.UnicodeKeyboard.UI
         {
             InitializeMUI();
             InitializeCommandProcessor();
-            //!!! InitializeGlyphDisplayer();
+            InitializeCharacterLookupForm();
             LoadFavorites();
         }
 
@@ -72,6 +71,13 @@ namespace YuriyGuts.UnicodeKeyboard.UI
             commandGateway.SendCharacterCommandReceived += commandGateway_SendCharacterCommandReceived;
         }
 
+        private void InitializeCharacterLookupForm()
+        {
+            frmCharacterLookup = new CharacterLookupForm();
+            frmCharacterLookup.ResultSubmitted += frmCharacterLookup_ResultSubmitted;
+            frmCharacterLookup.VisibleChanged += (sender, args) => { lockFocusLostEvents = frmCharacterLookup.Visible; };
+        }
+
         #endregion Initialization
 
         #region Application control
@@ -94,13 +100,17 @@ namespace YuriyGuts.UnicodeKeyboard.UI
             Show();
             Activate();
             WindowState = FormWindowState.Normal;
-            txtCharCode.Focus();
-            txtCharCode.SelectAll();
+            txtCharSearch.Focus();
+            txtCharSearch.SelectAll();
             isWindowTrackingEnabled = false;
         }
 
         private void HideApplication()
         {
+            if (frmCharacterLookup.Visible)
+            {
+                frmCharacterLookup.SubmitResult(new CharacterSearchResult { Action = CharacterSearchAction.Cancel });
+            }
             WindowState = FormWindowState.Minimized;
         }
 
@@ -164,97 +174,50 @@ namespace YuriyGuts.UnicodeKeyboard.UI
 
         #region Input box processing
 
-        private ushort EnteredCharacterCode
+        private CharacterLookupForm frmCharacterLookup;
+
+        private void ShowCharacterLookupForm(bool focusSearchForm)
         {
-            get
+            if (frmCharacterLookup.Visible)
             {
-                ushort result;
-                // !!! allowHex
-                if (!ParseCharacterCode(txtCharCode.Text, true/*rbHexMode.Checked || rbTextMode.Checked*/, out result))
-                {
-                    result = 0;
-                }
-                return result;
+                frmCharacterLookup.SubmitResult(new CharacterSearchResult { Action = CharacterSearchAction.None });
             }
-        }
 
-        private static bool ParseCharacterCode(string text, bool allowHex, out ushort result)
-        {
-            return ushort.TryParse(text, allowHex ? NumberStyles.HexNumber : NumberStyles.Integer, CultureInfo.InvariantCulture, out result);
-        }
+            frmCharacterLookup.SearchQuery = txtCharSearch.Text;
+            AdjustCharacterLookupFormPosition();
 
-        private void HandleAccept(bool minimizeBeforeSending)
-        {
-            ushort charCode = 0;
-            bool shouldSendChar = false;
-
-            ExecuteActionWithFocusLostEventLock(() =>
+            if (!frmCharacterLookup.Visible)
             {
-                ushort pickedCharCode = CharacterLookupForm.Execute(txtCharCode.Text, this);
-                if (pickedCharCode > 0)
-                {
-                    charCode = pickedCharCode;
-                    shouldSendChar = true;
-                }
-            });
-
-            if (shouldSendChar)
-            {
-                if (minimizeBeforeSending)
-                {
-                    HideApplication();
-                }
-
-                try
-                {
-                    UnicodeCharSender.Send(hTargetWindow, charCode);
-                }
-                catch (Exception ex)
-                {
-                    ShowErrorMessage(LocalizationHelper.GetResource(this, "msgSendCharFailed"), ex);
-                }
-
-                if (!minimizeBeforeSending)
-                {
-                    NativeMethods.SetForegroundWindow(Handle);
-                }
+                frmCharacterLookup.Show(this);
+                AdjustCharacterLookupFormPosition();
             }
-        }
 
-        private void CopyEnteredCharToClipboard()
-        {
-            ushort enteredCharCode = EnteredCharacterCode;
-            if (enteredCharCode > 0)
+            if (focusSearchForm)
             {
-                Clipboard.SetText(((char)enteredCharCode).ToString());
-            }
-        }
-
-        private void AddCharCodeToFavorites(ushort charCode)
-        {
-            if (charCode != 0)
-            {
-                ExecuteActionWithFocusLostEventLock(() =>
-                {
-                    int? selectedIndex = AddToFavoritesForm.Execute(charCode, this);
-                    if (selectedIndex.HasValue)
-                    {
-                        UserSettings.Instance.Favorites[selectedIndex.Value] = charCode;
-                        UserSettings.Instance.Save(false);
-                        LoadFavorites();
-                    }
-                });
+                frmCharacterLookup.Focus();
             }
             else
             {
-                ShowErrorMessage(LocalizationHelper.GetResource(this, "msgInvalidCharCode"));
+                txtCharSearch.Focus();
             }
+        }
+
+        private void AdjustCharacterLookupFormPosition()
+        {
+            frmCharacterLookup.Left = Left + txtCharSearch.Left + 3;
+            frmCharacterLookup.Top = Top + txtCharSearch.Top + txtCharSearch.Height + 24;
+        }
+
+        private void SubmitSearchQuery(bool focusSearchForm)
+        {
+            tmrSearchPopupTimeout.Stop();
+            ShowCharacterLookupForm(focusSearchForm);
         }
 
         private void ClearInput()
         {
-            txtCharCode.Clear();
-            txtCharCode.Focus();
+            txtCharSearch.Clear();
+            txtCharSearch.Focus();
         }
 
         #endregion Input box processing
@@ -344,8 +307,6 @@ namespace YuriyGuts.UnicodeKeyboard.UI
         {
             string title = NativeMethods.GetParentWindowTitle(hTargetWindow);
             lblTargetWindowTitle.Text = title;
-            //!!! lblTargetWindowTitle.Text = nameLength > 0 ? nameBuilder.ToString() : LocalizationHelper.GetResource(this, "strNoTargetWindow");
-            //!!! lblTargetWindowTitle.ForeColor = nameLength > 0 ? Color.DarkGreen : Color.Red;
         }
 
         #endregion Utilities
@@ -360,12 +321,12 @@ namespace YuriyGuts.UnicodeKeyboard.UI
 
         private void FormMain_Deactivate(object sender, EventArgs e)
         {
-            isWindowTrackingEnabled = true;
             if (lockFocusLostEvents)
             {
                 return;
             }
 
+            isWindowTrackingEnabled = true;
             if (UserSettings.Instance.MinimizeOnFocusLost)
             {
                 HideApplication();
@@ -427,7 +388,7 @@ namespace YuriyGuts.UnicodeKeyboard.UI
 
         private void FormMain_Shown(object sender, EventArgs e)
         {
-            txtCharCode.Focus();
+            txtCharSearch.Focus();
         }
 
         private void FormMain_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
@@ -440,109 +401,103 @@ namespace YuriyGuts.UnicodeKeyboard.UI
                 }
             }
 
-            // Esc - hide window.
+            // Esc: hide window.
             if (!e.Alt && !e.Control && !e.Shift && e.KeyCode == Keys.Escape)
             {
                 HideApplication();
             }
 
-            // Ctrl+Alt+C - copy character to clipboard
-            if (e.KeyCode == Keys.C && e.Modifiers == (Keys.Control | Keys.Alt))
-            {
-                CopyEnteredCharToClipboard();
-            }
-
-            // Ctrl+M - launch Windows Character Map.
+            // Ctrl + M: launch Windows Character Map.
             if (e.KeyCode == Keys.M && e.Control && !e.Alt && !e.Shift)
             {
                 LaunchWindowsCharmap();
             }
 
-            // Ctrl+O - show options window.
+            // Ctrl + O: show options window.
             if (e.KeyCode == Keys.O && e.Control && !e.Alt && !e.Shift)
             {
                 ShowOptionsWindow();
             }
         }
 
-        private void txtCharCode_KeyDown(object sender, KeyEventArgs e)
+        private void frmCharacterLookup_ResultSubmitted(object sender, CharacterSearchResultEventArgs e)
         {
-            bool isNoModifiers = e.Modifiers == Keys.None;
-            bool isNavigationKey = (e.KeyCode == Keys.Left || e.KeyCode == Keys.Right || e.KeyCode == Keys.Home || e.KeyCode == Keys.End) && (isNoModifiers || e.Modifiers == Keys.Shift);
-            bool isEditKey = (e.KeyCode == Keys.Delete || e.KeyCode == Keys.Back || e.KeyValue == 3);
-            bool isValidDecimalKey = isNoModifiers && (e.KeyCode >= Keys.D0 && e.KeyCode <= Keys.D9) || (e.KeyCode >= Keys.NumPad0 && e.KeyCode <= Keys.NumPad9);
-            bool isValidHexKey = isValidDecimalKey || (e.KeyCode >= Keys.A && e.KeyCode <= Keys.F);
-
-            bool shouldAcceptKey = false;
-            do
+            switch (e.Result.Action)
             {
-                // Enter - accept character code or text
-                if (e.KeyCode == Keys.Enter && (isNoModifiers || e.Modifiers == Keys.Control))
-                {
-                    HandleAccept(e.Modifiers != Keys.Control);
+                case CharacterSearchAction.Cancel:
                     break;
-                }
 
-                // Alt+F4 or Esc - hide application
-                if ((e.Modifiers == Keys.Alt && e.KeyCode == Keys.F4) || e.KeyCode == Keys.Escape)
-                {
+                case CharacterSearchAction.InsertCharacter:
+                    if (!e.Result.KeepApplicationActive)
+                    {
+                        HideApplication();
+                    }
+
+                    try
+                    {
+                        UnicodeCharSender.Send(hTargetWindow, e.Result.CharacterCode);
+                    }
+                    catch (Exception ex)
+                    {
+                        ShowErrorMessage(LocalizationHelper.GetResource(this, "msgSendCharFailed"), ex);
+                    }
+
+                    if (e.Result.KeepApplicationActive)
+                    {
+                        NativeMethods.SetForegroundWindow(Handle);
+                    }
+                    break;
+
+                case CharacterSearchAction.CopyCharacterToClipboard:
+                    Clipboard.SetText(((char)e.Result.CharacterCode).ToString());
                     HideApplication();
                     break;
-                }
-                
-                // !!!
-                //if (rbTextMode.Checked)
-                //{
-                    shouldAcceptKey = true;
-                    break;
-                //}
-            }
-            while (false);
 
-            e.Handled = e.SuppressKeyPress = !shouldAcceptKey;
+                case CharacterSearchAction.AddCharacterToFavorites:
+                    int? selectedIndex = AddToFavoritesForm.Execute(e.Result.CharacterCode, this);
+                    if (selectedIndex.HasValue)
+                    {
+                        UserSettings.Instance.Favorites[selectedIndex.Value] = e.Result.CharacterCode;
+                        UserSettings.Instance.Save(false);
+                        LoadFavorites();
+                    }
+                    break;
+            }
+        }
+
+        private void txtCharCode_KeyDown(object sender, KeyEventArgs e)
+        {
+            // Enter: search characters
+            if (e.KeyCode == Keys.Enter && (e.Modifiers == Keys.None || e.Modifiers == Keys.Control))
+            {
+                e.Handled = e.SuppressKeyPress = true;
+                SubmitSearchQuery(true);
+            }
+
+            // Alt + F4 or Esc: hide application
+            if ((e.Modifiers == Keys.Alt && e.KeyCode == Keys.F4) || e.KeyCode == Keys.Escape)
+            {
+                e.Handled = e.SuppressKeyPress = true;
+                HideApplication();
+            }
+
+            // Arrow keys: move focus to the popup form
+            if (e.Modifiers == Keys.None && (e.KeyCode == Keys.Up || e.KeyCode == Keys.Down) && frmCharacterLookup.Visible)
+            {
+                frmCharacterLookup.Focus();
+            }
         }
 
         private void txtCharCode_TextChanged(object sender, EventArgs e)
         {
-            tmrCharacterPreview.Stop();
-            tmrCharacterPreview.Start();
+            tmrSearchPopupTimeout.Stop();
+            tmrSearchPopupTimeout.Start();
         }
 
-        private void btnAccept_Click(object sender, EventArgs e)
+        private void tmrSearchPopupTimeout_Tick(object sender, EventArgs e)
         {
-            HandleAccept(true);
-            txtCharCode.Focus();
-        }
-
-        private void btnCopy_Click(object sender, EventArgs e)
-        {
-            CopyEnteredCharToClipboard();
-        }
-
-        private void btnAddToFavorites_Click(object sender, EventArgs e)
-        {
-            //if (rbHexMode.Checked || rbDecimalMode.Checked)
-            //{
-            //    AddCharCodeToFavorites(EnteredCharacterCode);
-            //}
-            //if (rbTextMode.Checked)
-            //{
-                ExecuteActionWithFocusLostEventLock(() =>
-                {
-                    ushort pickedCharCode = CharacterLookupForm.Execute(txtCharCode.Text, this);
-                    if (pickedCharCode > 0)
-                    {
-                        AddCharCodeToFavorites(pickedCharCode);
-                    }
-                });
-            //}
-        }
-
-        private void tmrCharacterPreview_Tick(object sender, EventArgs e)
-        {
-            tmrCharacterPreview.Stop();
-            ushort charCode = EnteredCharacterCode;
-            //UpdateCharacterPreview(charCode);
+            tmrSearchPopupTimeout.Stop();
+            SubmitSearchQuery(false);
         }
 
         private void cmiTrayOptions_Click(object sender, EventArgs e)

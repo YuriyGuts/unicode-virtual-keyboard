@@ -124,23 +124,17 @@
     <value>Назва</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="lblFilterEditHint.Location" type="System.Drawing.Point, System.Drawing">
-    <value>157, 11</value>
+  <data name="lblShortcutAddToFavorites.Size" type="System.Drawing.Size, System.Drawing">
+    <value>103, 29</value>
   </data>
-  <data name="lblFilterEditHint.Size" type="System.Drawing.Size, System.Drawing">
-    <value>136, 11</value>
+  <data name="lblShortcutAddToFavorites.Text" xml:space="preserve">
+    <value>Додати до швидкого доступу</value>
   </data>
-  <data name="lblFilterEditHint.Text" xml:space="preserve">
-    <value>F3 - перейти до рядка пошуку</value>
+  <data name="lblShortcutCopyToClipboard.Text" xml:space="preserve">
+    <value>Скопіювати до буфера обміну</value>
   </data>
-  <data name="lblTotalItemsValue.Location" type="System.Drawing.Point, System.Drawing">
-    <value>109, 9</value>
-  </data>
-  <data name="lblTotalItemsCaption.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 13</value>
-  </data>
-  <data name="lblTotalItemsCaption.Text" xml:space="preserve">
-    <value>Всього знайдено:</value>
+  <data name="lblShortcutInsertCharacter.Text" xml:space="preserve">
+    <value>Вставити символ</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Пошук символів</value>

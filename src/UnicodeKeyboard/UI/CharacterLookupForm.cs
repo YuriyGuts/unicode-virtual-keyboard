@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Globalization;
 using System.Windows.Forms;
+using YuriyGuts.UnicodeKeyboard.Interaction;
 using YuriyGuts.UnicodeKeyboard.ResourceWrappers;
 
 namespace YuriyGuts.UnicodeKeyboard.UI
@@ -12,45 +13,29 @@ namespace YuriyGuts.UnicodeKeyboard.UI
     /// </summary>
     public partial class CharacterLookupForm : Form
     {
-        private readonly char[] namePartSeparators = new[] { ' ' };
-        private List<KeyValuePair<ushort, string>> lastSearchResults;
+        private readonly char[] namePartSeparators = { ' ' };
 
-        /// <summary>
-        /// Gets or sets the code of the character to be added to Favorites.
-        /// </summary>
-        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
-        public ushort CharacterCode { get; set; }
+        private string searchQuery;
+        private List<KeyValuePair<ushort, string>> lastSearchResults;
 
         /// <summary>
         /// Gets or sets the current character name filter.
         /// </summary>
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
-        public string Filter
+        public string SearchQuery
         {
-            get { return txtFilter.Text; }
-            set { txtFilter.Text = value; }
+            get
+            {
+                return searchQuery;
+            }
+            set
+            {
+                searchQuery = value;
+                PerformSearch();
+            }
         }
 
-        /// <summary>
-        /// Executes the character lookup form with the specified initial filter.
-        /// </summary>
-        /// <param name="initialFilter">Initial character name filter.</param>
-        /// <param name="owner">Owner window.</param>
-        /// <returns></returns>
-        public static ushort Execute(string initialFilter, Control owner)
-        {
-            ushort result = 0;
-            using (CharacterLookupForm frmCharacterLookup = new CharacterLookupForm())
-            {
-                frmCharacterLookup.Filter = initialFilter;
-                DialogResult dialogResult = frmCharacterLookup.ShowDialog(owner ?? MainForm.Instance);
-                if (dialogResult == DialogResult.OK)
-                {
-                    result = frmCharacterLookup.CharacterCode;
-                }
-            }
-            return result;
-        }
+        public event EventHandler<CharacterSearchResultEventArgs> ResultSubmitted;
 
         /// <summary>
         /// Initializes a new instance of CharacterLookupForm.
@@ -66,37 +51,46 @@ namespace YuriyGuts.UnicodeKeyboard.UI
             colCharacterGlyph.DefaultCellStyle.Font = UIHelper.UnicodeCharacterFont;
         }
 
+        public void SubmitResult(CharacterSearchResult result)
+        {
+            if (result.Action != CharacterSearchAction.None)
+            {
+                Hide();
+            }
+            OnResultSubmitted(new CharacterSearchResultEventArgs(result));
+        }
+
+        protected virtual void OnResultSubmitted(CharacterSearchResultEventArgs e)
+        {
+            if (ResultSubmitted != null)
+            {
+                ResultSubmitted(this, e);
+            }
+        }
+
         private void PerformSearch()
         {
             UseWaitCursor = true;
 
-            tmrSearchTimeout.Enabled = false;
-
-            if (Filter.Contains(" ") && Filter.Trim().Length > 0)
+            if (SearchQuery.Contains(" ") && SearchQuery.Trim().Length > 0)
             {
-                string[] filterParts = Filter.Split(namePartSeparators, StringSplitOptions.RemoveEmptyEntries);
+                string[] filterParts = SearchQuery.Split(namePartSeparators, StringSplitOptions.RemoveEmptyEntries);
                 string regexPattern = string.Join(@".*?", filterParts);
                 lastSearchResults = UnicodeCharacterDatabase.FindCharactersByNameRegex(regexPattern);
             }
             else
             {
-                lastSearchResults = UnicodeCharacterDatabase.FindCharactersByName(Filter, false);
+                lastSearchResults = UnicodeCharacterDatabase.FindCharactersByName(SearchQuery, false);
             }
 
             gridResultDisplayer.Rows.Clear();
             gridResultDisplayer.RowCount = lastSearchResults.Count;
-            lblTotalItemsValue.Text = lastSearchResults.Count.ToString();
+            if (!Focused)
+            {
+                gridResultDisplayer.ClearSelection();
+            }
 
             UseWaitCursor = false;
-        }
-
-        private void CopySelectedCharacterToClipboard()
-        {
-            ushort charCode = GetSelectedCharacter();
-            if (charCode != 0)
-            {
-                Clipboard.SetText(((char)charCode).ToString());
-            }
         }
 
         private ushort GetSelectedCharacter()
@@ -115,56 +109,27 @@ namespace YuriyGuts.UnicodeKeyboard.UI
             return ushort.Parse(cellValueHex, NumberStyles.HexNumber);
         }
 
-        private void Accept(ushort charCode)
-        {
-            CharacterCode = charCode;
-            DialogResult = DialogResult.OK;
-        }
-
-        private void Cancel()
-        {
-            CharacterCode = 0;
-            DialogResult = DialogResult.Cancel;
-        }
-
-        private static bool IsNoModifiers(KeyEventArgs args)
+        private static bool KeyHasNoModifiers(KeyEventArgs args)
         {
             return !args.Alt && !args.Control && !args.Shift;
         }
 
-        private static bool IsControlPressed(KeyEventArgs args)
+        private static bool KeyHasControlModifierOnly(KeyEventArgs args)
         {
             return !args.Alt && args.Control && !args.Shift;
         }
 
-        private void FormCharacterLookup_Shown(object sender, EventArgs e)
+        private void CharacterLookupForm_Activated(object sender, EventArgs e)
         {
-            if (Filter != null)
+            if (gridResultDisplayer.RowCount > 0)
             {
-                PerformSearch();
-                gridResultDisplayer.Focus();
+                gridResultDisplayer.Rows[gridResultDisplayer.FirstDisplayedScrollingRowIndex].Selected = true;
             }
         }
 
-        private void FormCharacterLookup_Load(object sender, EventArgs e)
+        private void CharacterLookupForm_Shown(object sender, EventArgs e)
         {
-            // Place the search form right under the main form's search box.
-            Top += 165;
-        }
-
-        private void btnCopy_Click(object sender, EventArgs e)
-        {
-            CopySelectedCharacterToClipboard();
-        }
-
-        private void btnAccept_Click(object sender, EventArgs e)
-        {
-            ushort charCode = GetSelectedCharacter();
-            if (charCode != 0)
-            {
-                Accept(charCode);
-            }
-            else
+            if (SearchQuery != null)
             {
                 PerformSearch();
             }
@@ -172,33 +137,62 @@ namespace YuriyGuts.UnicodeKeyboard.UI
 
         private void gridResultDisplayer_KeyDown(object sender, KeyEventArgs e)
         {
-            // Esc - close form.
-            if (IsNoModifiers(e) && e.KeyCode == Keys.Escape)
+            // Esc: close form.
+            if (KeyHasNoModifiers(e) && e.KeyCode == Keys.Escape)
             {
-                Cancel();
+                e.Handled = e.SuppressKeyPress = true;
+                SubmitResult(new CharacterSearchResult
+                {
+                    Action = CharacterSearchAction.Cancel,
+                    CharacterCode = 0,
+                });
             }
 
-            // Enter - accept character.
-            if (IsNoModifiers(e) && e.KeyCode == Keys.Enter)
+            // Enter: insert character.
+            if ((KeyHasNoModifiers(e) || KeyHasControlModifierOnly(e)) && e.KeyCode == Keys.Enter)
             {
                 ushort charCode = GetSelectedCharacter();
                 if (charCode != 0)
                 {
-                    Accept(charCode);
+                    SubmitResult(new CharacterSearchResult
+                    {
+                        Action = CharacterSearchAction.InsertCharacter,
+                        CharacterCode = charCode,
+                        KeepApplicationActive = KeyHasControlModifierOnly(e),
+                    });
                 }
             }
 
-            // F3 or Ctrl+F - focus the search box.
-            if ((IsNoModifiers(e) && e.KeyCode == Keys.F3) || (IsControlPressed(e) && e.KeyCode == Keys.F))
+            // Ctrl + C: copy selected character to clipboard.
+            if (KeyHasControlModifierOnly(e) && e.KeyCode == Keys.C)
             {
-                txtFilter.Focus();
-                txtFilter.SelectAll();
+                e.Handled = e.SuppressKeyPress = true;
+                SubmitResult(new CharacterSearchResult
+                {
+                    Action = CharacterSearchAction.CopyCharacterToClipboard,
+                    CharacterCode = GetSelectedCharacter(),
+                });
             }
 
-            // Ctrl+Alt+C - copy selected character to clipboard.
-            if (e.Control && e.Alt && !e.Shift && e.KeyCode == Keys.C)
+            // Ctrl + D: add selected character to Favorites.
+            if (KeyHasControlModifierOnly(e) && e.KeyCode == Keys.D)
             {
-                CopySelectedCharacterToClipboard();
+                e.Handled = e.SuppressKeyPress = true;
+                SubmitResult(new CharacterSearchResult
+                {
+                    Action = CharacterSearchAction.AddCharacterToFavorites,
+                    CharacterCode = GetSelectedCharacter(),
+                });
+            }
+
+            // Backspace, Delete: return the focus to the owner.
+            if (KeyHasNoModifiers(e) && (e.KeyCode == Keys.Back || e.KeyCode == Keys.Delete))
+            {
+                if (Owner != null)
+                {
+                    gridResultDisplayer.ClearSelection();
+                    Owner.Focus();
+                }
             }
         }
 
@@ -228,38 +222,12 @@ namespace YuriyGuts.UnicodeKeyboard.UI
             if (e.RowIndex >= 0)
             {
                 ushort charCode = GetCharacterCodeFromRow(e.RowIndex);
-                Accept(charCode);
-            }
-        }
-
-        private void txtFilter_KeyDown(object sender, KeyEventArgs e)
-        {
-            // Esc - close form.
-            if (IsNoModifiers(e) && e.KeyCode == Keys.Escape)
-            {
-                Cancel();
-            }
-
-            // Enter - perform search and focus the first row.
-            if (IsNoModifiers(e) && e.KeyCode == Keys.Enter)
-            {
-                PerformSearch();
-                if (lastSearchResults.Count > 0)
+                SubmitResult(new CharacterSearchResult
                 {
-                    gridResultDisplayer.Focus();
-                }
+                    Action = CharacterSearchAction.InsertCharacter,
+                    CharacterCode = charCode,
+                });
             }
-
-            // ArrowUp, ArrowDown, PageUp, PageDown - focus the grid.
-            if (IsNoModifiers(e) && (e.KeyCode == Keys.Up || e.KeyCode == Keys.Down || e.KeyCode == Keys.PageUp || e.KeyCode == Keys.PageDown))
-            {
-                gridResultDisplayer.Focus();
-            }
-        }
-
-        private void txtFilter_TextChanged(object sender, EventArgs e)
-        {
-            tmrSearchTimeout.Enabled = true;
         }
 
         private void tmrSearchTimeout_Tick(object sender, EventArgs e)

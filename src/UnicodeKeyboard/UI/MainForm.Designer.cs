@@ -31,14 +31,14 @@ namespace YuriyGuts.UnicodeKeyboard.UI
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
+            SingleAssemblyComponentResourceManager resources = new SingleAssemblyComponentResourceManager(typeof(MainForm));
             this.trayIcon = new System.Windows.Forms.NotifyIcon(this.components);
             this.cmsTrayIconMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.cmiTrayUsageHint = new System.Windows.Forms.ToolStripMenuItem();
             this.cmiTraySeparator = new System.Windows.Forms.ToolStripSeparator();
             this.cmiTrayOptions = new System.Windows.Forms.ToolStripMenuItem();
             this.cmiTrayExit = new System.Windows.Forms.ToolStripMenuItem();
-            this.txtCharCode = new System.Windows.Forms.TextBox();
+            this.txtCharSearch = new System.Windows.Forms.TextBox();
             this.lblHeader = new System.Windows.Forms.Label();
             this.lblTargetWindow = new System.Windows.Forms.Label();
             this.lblTargetWindowTitle = new System.Windows.Forms.Label();
@@ -66,7 +66,6 @@ namespace YuriyGuts.UnicodeKeyboard.UI
             this.lblFavoriteIndex1 = new System.Windows.Forms.Label();
             this.lblFavoriteIndex0 = new System.Windows.Forms.Label();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.tmrCharacterPreview = new System.Windows.Forms.Timer(this.components);
             this.btnOptions = new System.Windows.Forms.Button();
             this.cmsOptions = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.cmiOptions = new System.Windows.Forms.ToolStripMenuItem();
@@ -75,6 +74,7 @@ namespace YuriyGuts.UnicodeKeyboard.UI
             this.cmiAbout = new System.Windows.Forms.ToolStripMenuItem();
             this.cmiExit = new System.Windows.Forms.ToolStripMenuItem();
             this.windowFinder = new YuriyGuts.UnicodeKeyboard.UI.WindowFinder();
+            this.tmrSearchPopupTimeout = new System.Windows.Forms.Timer(this.components);
             this.cmsTrayIconMenu.SuspendLayout();
             this.tblFavoriteGlyphs.SuspendLayout();
             this.tblFavoriteIndexes.SuspendLayout();
@@ -89,13 +89,14 @@ namespace YuriyGuts.UnicodeKeyboard.UI
             // 
             // cmsTrayIconMenu
             // 
+            resources.ApplyResources(this.cmsTrayIconMenu, "cmsTrayIconMenu");
             this.cmsTrayIconMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.cmiTrayUsageHint,
             this.cmiTraySeparator,
             this.cmiTrayOptions,
             this.cmiTrayExit});
             this.cmsTrayIconMenu.Name = "cmsTrayIconMenu";
-            resources.ApplyResources(this.cmsTrayIconMenu, "cmsTrayIconMenu");
+            this.toolTip.SetToolTip(this.cmsTrayIconMenu, resources.GetString("cmsTrayIconMenu.ToolTip"));
             // 
             // cmiTrayUsageHint
             // 
@@ -104,41 +105,44 @@ namespace YuriyGuts.UnicodeKeyboard.UI
             // 
             // cmiTraySeparator
             // 
-            this.cmiTraySeparator.Name = "cmiTraySeparator";
             resources.ApplyResources(this.cmiTraySeparator, "cmiTraySeparator");
+            this.cmiTraySeparator.Name = "cmiTraySeparator";
             // 
             // cmiTrayOptions
             // 
-            this.cmiTrayOptions.Name = "cmiTrayOptions";
             resources.ApplyResources(this.cmiTrayOptions, "cmiTrayOptions");
+            this.cmiTrayOptions.Name = "cmiTrayOptions";
             this.cmiTrayOptions.Click += new System.EventHandler(this.cmiTrayOptions_Click);
             // 
             // cmiTrayExit
             // 
-            this.cmiTrayExit.Name = "cmiTrayExit";
             resources.ApplyResources(this.cmiTrayExit, "cmiTrayExit");
+            this.cmiTrayExit.Name = "cmiTrayExit";
             this.cmiTrayExit.Click += new System.EventHandler(this.cmiTrayExit_Click);
             // 
-            // txtCharCode
+            // txtCharSearch
             // 
-            this.txtCharCode.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtCharCode.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            resources.ApplyResources(this.txtCharCode, "txtCharCode");
-            this.txtCharCode.Name = "txtCharCode";
-            this.txtCharCode.TextChanged += new System.EventHandler(this.txtCharCode_TextChanged);
-            this.txtCharCode.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtCharCode_KeyDown);
-            this.txtCharCode.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.FormMain_PreviewKeyDown);
+            resources.ApplyResources(this.txtCharSearch, "txtCharSearch");
+            this.txtCharSearch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtCharSearch.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txtCharSearch.Name = "txtCharSearch";
+            this.toolTip.SetToolTip(this.txtCharSearch, resources.GetString("txtCharSearch.ToolTip"));
+            this.txtCharSearch.TextChanged += new System.EventHandler(this.txtCharCode_TextChanged);
+            this.txtCharSearch.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtCharCode_KeyDown);
+            this.txtCharSearch.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.FormMain_PreviewKeyDown);
             // 
             // lblHeader
             // 
             resources.ApplyResources(this.lblHeader, "lblHeader");
             this.lblHeader.ForeColor = System.Drawing.SystemColors.ControlText;
             this.lblHeader.Name = "lblHeader";
+            this.toolTip.SetToolTip(this.lblHeader, resources.GetString("lblHeader.ToolTip"));
             // 
             // lblTargetWindow
             // 
             resources.ApplyResources(this.lblTargetWindow, "lblTargetWindow");
             this.lblTargetWindow.Name = "lblTargetWindow";
+            this.toolTip.SetToolTip(this.lblTargetWindow, resources.GetString("lblTargetWindow.ToolTip"));
             // 
             // lblTargetWindowTitle
             // 
@@ -147,11 +151,12 @@ namespace YuriyGuts.UnicodeKeyboard.UI
             this.lblTargetWindowTitle.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblTargetWindowTitle.ForeColor = System.Drawing.Color.Gray;
             this.lblTargetWindowTitle.Name = "lblTargetWindowTitle";
+            this.toolTip.SetToolTip(this.lblTargetWindowTitle, resources.GetString("lblTargetWindowTitle.ToolTip"));
             // 
             // tblFavoriteGlyphs
             // 
-            this.tblFavoriteGlyphs.BackColor = System.Drawing.SystemColors.Window;
             resources.ApplyResources(this.tblFavoriteGlyphs, "tblFavoriteGlyphs");
+            this.tblFavoriteGlyphs.BackColor = System.Drawing.SystemColors.Window;
             this.tblFavoriteGlyphs.Controls.Add(this.lblFavoriteGlyph9, 9, 0);
             this.tblFavoriteGlyphs.Controls.Add(this.lblFavoriteGlyph8, 8, 0);
             this.tblFavoriteGlyphs.Controls.Add(this.lblFavoriteGlyph7, 7, 0);
@@ -163,12 +168,14 @@ namespace YuriyGuts.UnicodeKeyboard.UI
             this.tblFavoriteGlyphs.Controls.Add(this.lblFavoriteGlyph1, 1, 0);
             this.tblFavoriteGlyphs.Controls.Add(this.lblFavoriteGlyph0, 0, 0);
             this.tblFavoriteGlyphs.Name = "tblFavoriteGlyphs";
+            this.toolTip.SetToolTip(this.tblFavoriteGlyphs, resources.GetString("tblFavoriteGlyphs.ToolTip"));
             // 
             // lblFavoriteGlyph9
             // 
             resources.ApplyResources(this.lblFavoriteGlyph9, "lblFavoriteGlyph9");
             this.lblFavoriteGlyph9.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblFavoriteGlyph9.Name = "lblFavoriteGlyph9";
+            this.toolTip.SetToolTip(this.lblFavoriteGlyph9, resources.GetString("lblFavoriteGlyph9.ToolTip"));
             this.lblFavoriteGlyph9.Click += new System.EventHandler(this.lblFavoriteGlyph_Click);
             // 
             // lblFavoriteGlyph8
@@ -176,6 +183,7 @@ namespace YuriyGuts.UnicodeKeyboard.UI
             resources.ApplyResources(this.lblFavoriteGlyph8, "lblFavoriteGlyph8");
             this.lblFavoriteGlyph8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblFavoriteGlyph8.Name = "lblFavoriteGlyph8";
+            this.toolTip.SetToolTip(this.lblFavoriteGlyph8, resources.GetString("lblFavoriteGlyph8.ToolTip"));
             this.lblFavoriteGlyph8.Click += new System.EventHandler(this.lblFavoriteGlyph_Click);
             // 
             // lblFavoriteGlyph7
@@ -183,6 +191,7 @@ namespace YuriyGuts.UnicodeKeyboard.UI
             resources.ApplyResources(this.lblFavoriteGlyph7, "lblFavoriteGlyph7");
             this.lblFavoriteGlyph7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblFavoriteGlyph7.Name = "lblFavoriteGlyph7";
+            this.toolTip.SetToolTip(this.lblFavoriteGlyph7, resources.GetString("lblFavoriteGlyph7.ToolTip"));
             this.lblFavoriteGlyph7.Click += new System.EventHandler(this.lblFavoriteGlyph_Click);
             // 
             // lblFavoriteGlyph6
@@ -190,6 +199,7 @@ namespace YuriyGuts.UnicodeKeyboard.UI
             resources.ApplyResources(this.lblFavoriteGlyph6, "lblFavoriteGlyph6");
             this.lblFavoriteGlyph6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblFavoriteGlyph6.Name = "lblFavoriteGlyph6";
+            this.toolTip.SetToolTip(this.lblFavoriteGlyph6, resources.GetString("lblFavoriteGlyph6.ToolTip"));
             this.lblFavoriteGlyph6.Click += new System.EventHandler(this.lblFavoriteGlyph_Click);
             // 
             // lblFavoriteGlyph5
@@ -197,6 +207,7 @@ namespace YuriyGuts.UnicodeKeyboard.UI
             resources.ApplyResources(this.lblFavoriteGlyph5, "lblFavoriteGlyph5");
             this.lblFavoriteGlyph5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblFavoriteGlyph5.Name = "lblFavoriteGlyph5";
+            this.toolTip.SetToolTip(this.lblFavoriteGlyph5, resources.GetString("lblFavoriteGlyph5.ToolTip"));
             this.lblFavoriteGlyph5.Click += new System.EventHandler(this.lblFavoriteGlyph_Click);
             // 
             // lblFavoriteGlyph4
@@ -204,6 +215,7 @@ namespace YuriyGuts.UnicodeKeyboard.UI
             resources.ApplyResources(this.lblFavoriteGlyph4, "lblFavoriteGlyph4");
             this.lblFavoriteGlyph4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblFavoriteGlyph4.Name = "lblFavoriteGlyph4";
+            this.toolTip.SetToolTip(this.lblFavoriteGlyph4, resources.GetString("lblFavoriteGlyph4.ToolTip"));
             this.lblFavoriteGlyph4.Click += new System.EventHandler(this.lblFavoriteGlyph_Click);
             // 
             // lblFavoriteGlyph3
@@ -211,6 +223,7 @@ namespace YuriyGuts.UnicodeKeyboard.UI
             resources.ApplyResources(this.lblFavoriteGlyph3, "lblFavoriteGlyph3");
             this.lblFavoriteGlyph3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblFavoriteGlyph3.Name = "lblFavoriteGlyph3";
+            this.toolTip.SetToolTip(this.lblFavoriteGlyph3, resources.GetString("lblFavoriteGlyph3.ToolTip"));
             this.lblFavoriteGlyph3.Click += new System.EventHandler(this.lblFavoriteGlyph_Click);
             // 
             // lblFavoriteGlyph2
@@ -218,6 +231,7 @@ namespace YuriyGuts.UnicodeKeyboard.UI
             resources.ApplyResources(this.lblFavoriteGlyph2, "lblFavoriteGlyph2");
             this.lblFavoriteGlyph2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblFavoriteGlyph2.Name = "lblFavoriteGlyph2";
+            this.toolTip.SetToolTip(this.lblFavoriteGlyph2, resources.GetString("lblFavoriteGlyph2.ToolTip"));
             this.lblFavoriteGlyph2.Click += new System.EventHandler(this.lblFavoriteGlyph_Click);
             // 
             // lblFavoriteGlyph1
@@ -225,6 +239,7 @@ namespace YuriyGuts.UnicodeKeyboard.UI
             resources.ApplyResources(this.lblFavoriteGlyph1, "lblFavoriteGlyph1");
             this.lblFavoriteGlyph1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblFavoriteGlyph1.Name = "lblFavoriteGlyph1";
+            this.toolTip.SetToolTip(this.lblFavoriteGlyph1, resources.GetString("lblFavoriteGlyph1.ToolTip"));
             this.lblFavoriteGlyph1.Click += new System.EventHandler(this.lblFavoriteGlyph_Click);
             // 
             // lblFavoriteGlyph0
@@ -232,6 +247,7 @@ namespace YuriyGuts.UnicodeKeyboard.UI
             resources.ApplyResources(this.lblFavoriteGlyph0, "lblFavoriteGlyph0");
             this.lblFavoriteGlyph0.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblFavoriteGlyph0.Name = "lblFavoriteGlyph0";
+            this.toolTip.SetToolTip(this.lblFavoriteGlyph0, resources.GetString("lblFavoriteGlyph0.ToolTip"));
             this.lblFavoriteGlyph0.Click += new System.EventHandler(this.lblFavoriteGlyph_Click);
             // 
             // lblFavorites
@@ -239,6 +255,7 @@ namespace YuriyGuts.UnicodeKeyboard.UI
             resources.ApplyResources(this.lblFavorites, "lblFavorites");
             this.lblFavorites.AutoEllipsis = true;
             this.lblFavorites.Name = "lblFavorites";
+            this.toolTip.SetToolTip(this.lblFavorites, resources.GetString("lblFavorites.ToolTip"));
             // 
             // tblFavoriteIndexes
             // 
@@ -254,72 +271,80 @@ namespace YuriyGuts.UnicodeKeyboard.UI
             this.tblFavoriteIndexes.Controls.Add(this.lblFavoriteIndex1, 1, 0);
             this.tblFavoriteIndexes.Controls.Add(this.lblFavoriteIndex0, 0, 0);
             this.tblFavoriteIndexes.Name = "tblFavoriteIndexes";
+            this.toolTip.SetToolTip(this.tblFavoriteIndexes, resources.GetString("tblFavoriteIndexes.ToolTip"));
             // 
             // lblFavoriteIndex9
             // 
             resources.ApplyResources(this.lblFavoriteIndex9, "lblFavoriteIndex9");
             this.lblFavoriteIndex9.Name = "lblFavoriteIndex9";
+            this.toolTip.SetToolTip(this.lblFavoriteIndex9, resources.GetString("lblFavoriteIndex9.ToolTip"));
             // 
             // lblFavoriteIndex8
             // 
             resources.ApplyResources(this.lblFavoriteIndex8, "lblFavoriteIndex8");
             this.lblFavoriteIndex8.Name = "lblFavoriteIndex8";
+            this.toolTip.SetToolTip(this.lblFavoriteIndex8, resources.GetString("lblFavoriteIndex8.ToolTip"));
             // 
             // lblFavoriteIndex7
             // 
             resources.ApplyResources(this.lblFavoriteIndex7, "lblFavoriteIndex7");
             this.lblFavoriteIndex7.Name = "lblFavoriteIndex7";
+            this.toolTip.SetToolTip(this.lblFavoriteIndex7, resources.GetString("lblFavoriteIndex7.ToolTip"));
             // 
             // lblFavoriteIndex6
             // 
             resources.ApplyResources(this.lblFavoriteIndex6, "lblFavoriteIndex6");
             this.lblFavoriteIndex6.Name = "lblFavoriteIndex6";
+            this.toolTip.SetToolTip(this.lblFavoriteIndex6, resources.GetString("lblFavoriteIndex6.ToolTip"));
             // 
             // lblFavoriteIndex5
             // 
             resources.ApplyResources(this.lblFavoriteIndex5, "lblFavoriteIndex5");
             this.lblFavoriteIndex5.Name = "lblFavoriteIndex5";
+            this.toolTip.SetToolTip(this.lblFavoriteIndex5, resources.GetString("lblFavoriteIndex5.ToolTip"));
             // 
             // lblFavoriteIndex4
             // 
             resources.ApplyResources(this.lblFavoriteIndex4, "lblFavoriteIndex4");
             this.lblFavoriteIndex4.Name = "lblFavoriteIndex4";
+            this.toolTip.SetToolTip(this.lblFavoriteIndex4, resources.GetString("lblFavoriteIndex4.ToolTip"));
             // 
             // lblFavoriteIndex3
             // 
             resources.ApplyResources(this.lblFavoriteIndex3, "lblFavoriteIndex3");
             this.lblFavoriteIndex3.Name = "lblFavoriteIndex3";
+            this.toolTip.SetToolTip(this.lblFavoriteIndex3, resources.GetString("lblFavoriteIndex3.ToolTip"));
             // 
             // lblFavoriteIndex2
             // 
             resources.ApplyResources(this.lblFavoriteIndex2, "lblFavoriteIndex2");
             this.lblFavoriteIndex2.Name = "lblFavoriteIndex2";
+            this.toolTip.SetToolTip(this.lblFavoriteIndex2, resources.GetString("lblFavoriteIndex2.ToolTip"));
             // 
             // lblFavoriteIndex1
             // 
             resources.ApplyResources(this.lblFavoriteIndex1, "lblFavoriteIndex1");
             this.lblFavoriteIndex1.Name = "lblFavoriteIndex1";
+            this.toolTip.SetToolTip(this.lblFavoriteIndex1, resources.GetString("lblFavoriteIndex1.ToolTip"));
             // 
             // lblFavoriteIndex0
             // 
             resources.ApplyResources(this.lblFavoriteIndex0, "lblFavoriteIndex0");
             this.lblFavoriteIndex0.Name = "lblFavoriteIndex0";
-            // 
-            // tmrCharacterPreview
-            // 
-            this.tmrCharacterPreview.Interval = 500;
-            this.tmrCharacterPreview.Tick += new System.EventHandler(this.tmrCharacterPreview_Tick);
+            this.toolTip.SetToolTip(this.lblFavoriteIndex0, resources.GetString("lblFavoriteIndex0.ToolTip"));
             // 
             // btnOptions
             // 
-            this.btnOptions.Image = global::YuriyGuts.UnicodeKeyboard.Properties.Resources.Wrench;
             resources.ApplyResources(this.btnOptions, "btnOptions");
+            this.btnOptions.Image = global::YuriyGuts.UnicodeKeyboard.Properties.Resources.Wrench;
             this.btnOptions.Name = "btnOptions";
+            this.toolTip.SetToolTip(this.btnOptions, resources.GetString("btnOptions.ToolTip"));
             this.btnOptions.UseVisualStyleBackColor = true;
             this.btnOptions.Click += new System.EventHandler(this.btnOptions_Click);
             // 
             // cmsOptions
             // 
+            resources.ApplyResources(this.cmsOptions, "cmsOptions");
             this.cmsOptions.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.cmiOptions,
             this.cmiWindowsCharMap,
@@ -327,45 +352,51 @@ namespace YuriyGuts.UnicodeKeyboard.UI
             this.cmiAbout,
             this.cmiExit});
             this.cmsOptions.Name = "cmsOptions";
-            resources.ApplyResources(this.cmsOptions, "cmsOptions");
+            this.toolTip.SetToolTip(this.cmsOptions, resources.GetString("cmsOptions.ToolTip"));
             // 
             // cmiOptions
             // 
-            this.cmiOptions.Name = "cmiOptions";
             resources.ApplyResources(this.cmiOptions, "cmiOptions");
+            this.cmiOptions.Name = "cmiOptions";
             this.cmiOptions.Click += new System.EventHandler(this.cmiOptions_Click);
             // 
             // cmiWindowsCharMap
             // 
-            this.cmiWindowsCharMap.Name = "cmiWindowsCharMap";
             resources.ApplyResources(this.cmiWindowsCharMap, "cmiWindowsCharMap");
+            this.cmiWindowsCharMap.Name = "cmiWindowsCharMap";
             this.cmiWindowsCharMap.Click += new System.EventHandler(this.cmiWindowsCharMap_Click);
             // 
             // cmiOptionsSeparator
             // 
-            this.cmiOptionsSeparator.Name = "cmiOptionsSeparator";
             resources.ApplyResources(this.cmiOptionsSeparator, "cmiOptionsSeparator");
+            this.cmiOptionsSeparator.Name = "cmiOptionsSeparator";
             // 
             // cmiAbout
             // 
-            this.cmiAbout.Name = "cmiAbout";
             resources.ApplyResources(this.cmiAbout, "cmiAbout");
+            this.cmiAbout.Name = "cmiAbout";
             this.cmiAbout.Click += new System.EventHandler(this.cmiAbout_Click);
             // 
             // cmiExit
             // 
-            this.cmiExit.Name = "cmiExit";
             resources.ApplyResources(this.cmiExit, "cmiExit");
+            this.cmiExit.Name = "cmiExit";
             this.cmiExit.Click += new System.EventHandler(this.cmiExit_Click);
             // 
             // windowFinder
             // 
-            this.windowFinder.BackColor = System.Drawing.SystemColors.Control;
             resources.ApplyResources(this.windowFinder, "windowFinder");
+            this.windowFinder.BackColor = System.Drawing.SystemColors.Control;
             this.windowFinder.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.windowFinder.Name = "windowFinder";
+            this.toolTip.SetToolTip(this.windowFinder, resources.GetString("windowFinder.ToolTip"));
             this.windowFinder.ActiveWindowChanged += new System.EventHandler(this.windowFinder_ActiveWindowChanged);
             this.windowFinder.ActiveWindowSelected += new System.EventHandler(this.windowFinder_ActiveWindowSelected);
+            // 
+            // tmrSearchPopupTimeout
+            // 
+            this.tmrSearchPopupTimeout.Interval = 500;
+            this.tmrSearchPopupTimeout.Tick += new System.EventHandler(this.tmrSearchPopupTimeout_Tick);
             // 
             // MainForm
             // 
@@ -379,12 +410,13 @@ namespace YuriyGuts.UnicodeKeyboard.UI
             this.Controls.Add(this.lblTargetWindowTitle);
             this.Controls.Add(this.lblTargetWindow);
             this.Controls.Add(this.lblHeader);
-            this.Controls.Add(this.txtCharCode);
+            this.Controls.Add(this.txtCharSearch);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.KeyPreview = true;
             this.MaximizeBox = false;
             this.Name = "MainForm";
             this.ShowInTaskbar = false;
+            this.toolTip.SetToolTip(this, resources.GetString("$this.ToolTip"));
             this.TopMost = true;
             this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
             this.Activated += new System.EventHandler(this.FormMain_Activated);
@@ -409,7 +441,7 @@ namespace YuriyGuts.UnicodeKeyboard.UI
         #endregion
 
         private System.Windows.Forms.NotifyIcon trayIcon;
-        private System.Windows.Forms.TextBox txtCharCode;
+        private System.Windows.Forms.TextBox txtCharSearch;
         private System.Windows.Forms.Label lblHeader;
         private System.Windows.Forms.Label lblTargetWindow;
         private System.Windows.Forms.Label lblTargetWindowTitle;
@@ -437,7 +469,7 @@ namespace YuriyGuts.UnicodeKeyboard.UI
         private System.Windows.Forms.Label lblFavoriteIndex0;
         private System.Windows.Forms.Label lblFavoriteIndex9;
         private System.Windows.Forms.ToolTip toolTip;
-        private System.Windows.Forms.Timer tmrCharacterPreview;
+        private System.Windows.Forms.Timer tmrSearchPopupTimeout;
         private System.Windows.Forms.ContextMenuStrip cmsTrayIconMenu;
         private System.Windows.Forms.ToolStripMenuItem cmiTrayExit;
         private System.Windows.Forms.ToolStripMenuItem cmiTrayUsageHint;

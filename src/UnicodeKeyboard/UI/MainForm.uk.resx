@@ -125,27 +125,6 @@
     <value>Віртуальна Юнікод-клавіатура</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="cmiTrayUsageHint.Size" type="System.Drawing.Size, System.Drawing">
-    <value>312, 22</value>
-  </data>
-  <data name="cmiTrayUsageHint.Text" xml:space="preserve">
-    <value>Натискайте "{0}" або двічі "{1}" для виклику</value>
-  </data>
-  <data name="cmiTraySeparator.Size" type="System.Drawing.Size, System.Drawing">
-    <value>309, 6</value>
-  </data>
-  <data name="cmiTrayOptions.Size" type="System.Drawing.Size, System.Drawing">
-    <value>312, 22</value>
-  </data>
-  <data name="cmiTrayOptions.Text" xml:space="preserve">
-    <value>Параметри...</value>
-  </data>
-  <data name="cmiTrayExit.Size" type="System.Drawing.Size, System.Drawing">
-    <value>312, 22</value>
-  </data>
-  <data name="cmiTrayExit.Text" xml:space="preserve">
-    <value>Вихід</value>
-  </data>
   <data name="cmsTrayIconMenu.Size" type="System.Drawing.Size, System.Drawing">
     <value>313, 76</value>
   </data>
@@ -176,80 +155,51 @@
   <data name="trayIcon.Text" xml:space="preserve">
     <value>Віртуальна Юнікод-клавіатура</value>
   </data>
+  <data name="cmiTrayUsageHint.Size" type="System.Drawing.Size, System.Drawing">
+    <value>312, 22</value>
+  </data>
+  <data name="cmiTrayUsageHint.Text" xml:space="preserve">
+    <value>Натискайте "{0}" або двічі "{1}" для виклику</value>
+  </data>
+  <data name="cmiTraySeparator.Size" type="System.Drawing.Size, System.Drawing">
+    <value>309, 6</value>
+  </data>
+  <data name="cmiTrayOptions.Size" type="System.Drawing.Size, System.Drawing">
+    <value>312, 22</value>
+  </data>
+  <data name="cmiTrayOptions.Text" xml:space="preserve">
+    <value>Параметри...</value>
+  </data>
+  <data name="cmiTrayExit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>312, 22</value>
+  </data>
+  <data name="cmiTrayExit.Text" xml:space="preserve">
+    <value>Вихід</value>
+  </data>
   <data name="lblHeader.Size" type="System.Drawing.Size, System.Drawing">
     <value>195, 16</value>
   </data>
   <data name="lblHeader.Text" xml:space="preserve">
     <value>Введіть код або назву символу:</value>
   </data>
-  <data name="btnAccept.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="rbHexMode.Size" type="System.Drawing.Size, System.Drawing">
-    <value>60, 17</value>
-  </data>
-  <data name="rbHexMode.Text" xml:space="preserve">
-    <value>1&amp;6-код</value>
-  </data>
-  <data name="rbDecimalMode.Location" type="System.Drawing.Point, System.Drawing">
-    <value>178, 33</value>
-  </data>
-  <data name="rbDecimalMode.Size" type="System.Drawing.Size, System.Drawing">
-    <value>60, 17</value>
-  </data>
-  <data name="rbDecimalMode.Text" xml:space="preserve">
-    <value>1&amp;0-код</value>
-  </data>
   <data name="lblTargetWindow.Size" type="System.Drawing.Size, System.Drawing">
-    <value>83, 13</value>
+    <value>95, 16</value>
   </data>
   <data name="lblTargetWindow.Text" xml:space="preserve">
     <value>Вікно-адресат:</value>
   </data>
-  <data name="btnAddToFavorites.ToolTip" xml:space="preserve">
-    <value>Додати до панелі швидкого доступу</value>
-  </data>
-  <data name="btnCopy.ToolTip" xml:space="preserve">
-    <value>Скопіювати символ в буфер обміну (&lt;Ctrl+Alt+C&gt;)</value>
+  <data name="lblFavorites.Size" type="System.Drawing.Size, System.Drawing">
+    <value>97, 13</value>
   </data>
   <data name="lblFavorites.Text" xml:space="preserve">
-    <value>Швидкий доступ (натискайте {0} і номер комірки):</value>
+    <value>Швидкий доступ:</value>
   </data>
-  <data name="lnkAbout.Location" type="System.Drawing.Point, System.Drawing">
-    <value>230, 213</value>
-  </data>
-  <data name="lnkAbout.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 13</value>
-  </data>
-  <data name="lnkAbout.Text" xml:space="preserve">
-    <value>Про програму</value>
-  </data>
-  <data name="rbTextMode.Location" type="System.Drawing.Point, System.Drawing">
-    <value>240, 33</value>
-  </data>
-  <data name="rbTextMode.Size" type="System.Drawing.Size, System.Drawing">
-    <value>113, 17</value>
-  </data>
-  <data name="rbTextMode.Text" xml:space="preserve">
-    <value>Пошук за &amp;назвою</value>
-  </data>
-  <data name="lnkOptions.Location" type="System.Drawing.Point, System.Drawing">
-    <value>115, 213</value>
-  </data>
-  <data name="lnkOptions.Size" type="System.Drawing.Size, System.Drawing">
-    <value>106, 13</value>
-  </data>
-  <data name="lnkOptions.Text" xml:space="preserve">
-    <value>Параметри (Ctrl+O)</value>
-  </data>
-  <data name="lnkExit.Location" type="System.Drawing.Point, System.Drawing">
-    <value>315, 213</value>
-  </data>
-  <data name="lnkExit.Size" type="System.Drawing.Size, System.Drawing">
-    <value>34, 13</value>
-  </data>
-  <data name="lnkExit.Text" xml:space="preserve">
-    <value>Вихід</value>
+  <data name="windowFinder.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADrwAAA68AZW8ckkAAABGSURBVDhP7c5BCgAgCERRL+f9jzTRYkJkhKxlLd7CL4gG
+        oOTumHKPZKR/YI+MHevNiMtqju4PcHlKxg4ZiW/mHslITxyADYUlyQuVrSEAAAAAAElFTkSuQmCC
+</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

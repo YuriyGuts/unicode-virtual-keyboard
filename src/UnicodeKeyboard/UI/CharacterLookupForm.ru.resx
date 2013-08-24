@@ -123,27 +123,14 @@
   <data name="colCharacterName.HeaderText" xml:space="preserve">
     <value>Название</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="lblFilterEditHint.Location" type="System.Drawing.Point, System.Drawing">
-    <value>155, 9</value>
+  <data name="lblShortcutAddToFavorites.Text" xml:space="preserve">
+    <value>Добавить в Быстрый доступ</value>
   </data>
-  <data name="lblFilterEditHint.Size" type="System.Drawing.Size, System.Drawing">
-    <value>131, 11</value>
+  <data name="lblShortcutCopyToClipboard.Text" xml:space="preserve">
+    <value>Копировать в буфер обмена</value>
   </data>
-  <data name="lblFilterEditHint.Text" xml:space="preserve">
-    <value>F3 - перейти к строке поиска</value>
-  </data>
-  <data name="lblTotalItemsValue.Location" type="System.Drawing.Point, System.Drawing">
-    <value>97, 7</value>
-  </data>
-  <data name="lblTotalItemsCaption.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 7</value>
-  </data>
-  <data name="lblTotalItemsCaption.Size" type="System.Drawing.Size, System.Drawing">
-    <value>85, 13</value>
-  </data>
-  <data name="lblTotalItemsCaption.Text" xml:space="preserve">
-    <value>Всего найдено:</value>
+  <data name="lblShortcutInsertCharacter.Text" xml:space="preserve">
+    <value>Вставить символ</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Поиск символов</value>

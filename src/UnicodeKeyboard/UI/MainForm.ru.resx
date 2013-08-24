@@ -125,29 +125,8 @@
     <value>Виртуальная Юникод-клавиатура</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="cmiTrayUsageHint.Size" type="System.Drawing.Size, System.Drawing">
-    <value>280, 22</value>
-  </data>
-  <data name="cmiTrayUsageHint.Text" xml:space="preserve">
-    <value>Нажимайте "{0}" или дважды "{1}" для вызова</value>
-  </data>
-  <data name="cmiTraySeparator.Size" type="System.Drawing.Size, System.Drawing">
-    <value>277, 6</value>
-  </data>
-  <data name="cmiTrayOptions.Size" type="System.Drawing.Size, System.Drawing">
-    <value>280, 22</value>
-  </data>
-  <data name="cmiTrayOptions.Text" xml:space="preserve">
-    <value>Настройки...</value>
-  </data>
-  <data name="cmiTrayExit.Size" type="System.Drawing.Size, System.Drawing">
-    <value>280, 22</value>
-  </data>
-  <data name="cmiTrayExit.Text" xml:space="preserve">
-    <value>Выход</value>
-  </data>
   <data name="cmsTrayIconMenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>281, 76</value>
+    <value>326, 76</value>
   </data>
   <data name="trayIcon.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -176,86 +155,51 @@
   <data name="trayIcon.Text" xml:space="preserve">
     <value>Виртуальная Юникод-клавиатура</value>
   </data>
+  <data name="cmiTrayUsageHint.Size" type="System.Drawing.Size, System.Drawing">
+    <value>325, 22</value>
+  </data>
+  <data name="cmiTrayUsageHint.Text" xml:space="preserve">
+    <value>Нажимайте "{0}" или дважды "{1}" для вызова</value>
+  </data>
+  <data name="cmiTraySeparator.Size" type="System.Drawing.Size, System.Drawing">
+    <value>322, 6</value>
+  </data>
+  <data name="cmiTrayOptions.Size" type="System.Drawing.Size, System.Drawing">
+    <value>325, 22</value>
+  </data>
+  <data name="cmiTrayOptions.Text" xml:space="preserve">
+    <value>Настройки...</value>
+  </data>
+  <data name="cmiTrayExit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>325, 22</value>
+  </data>
+  <data name="cmiTrayExit.Text" xml:space="preserve">
+    <value>Выход</value>
+  </data>
   <data name="lblHeader.Size" type="System.Drawing.Size, System.Drawing">
     <value>222, 16</value>
   </data>
   <data name="lblHeader.Text" xml:space="preserve">
     <value>Введите код или название символа:</value>
   </data>
-  <data name="btnAccept.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="rbHexMode.Size" type="System.Drawing.Size, System.Drawing">
-    <value>60, 17</value>
-  </data>
-  <data name="rbHexMode.Text" xml:space="preserve">
-    <value>1&amp;6-код</value>
-  </data>
-  <data name="rbDecimalMode.Location" type="System.Drawing.Point, System.Drawing">
-    <value>182, 33</value>
-  </data>
-  <data name="rbDecimalMode.Size" type="System.Drawing.Size, System.Drawing">
-    <value>60, 17</value>
-  </data>
-  <data name="rbDecimalMode.Text" xml:space="preserve">
-    <value>10&amp;-код</value>
-  </data>
   <data name="lblTargetWindow.Size" type="System.Drawing.Size, System.Drawing">
-    <value>83, 13</value>
+    <value>94, 16</value>
   </data>
   <data name="lblTargetWindow.Text" xml:space="preserve">
     <value>Окно-адресат:</value>
   </data>
-  <data name="btnAddToFavorites.ToolTip" xml:space="preserve">
-    <value>Добавить на панель быстрого доступа</value>
-  </data>
-  <data name="btnCopy.ToolTip" xml:space="preserve">
-    <value>Скопировать символ в буфер обмена (&lt;Ctrl+Alt+C&gt;)</value>
-  </data>
-  <data name="lblSenderWindowTitle.Location" type="System.Drawing.Point, System.Drawing">
-    <value>95, 114</value>
-  </data>
-  <data name="lblSenderWindowTitle.Size" type="System.Drawing.Size, System.Drawing">
-    <value>254, 13</value>
+  <data name="lblFavorites.Size" type="System.Drawing.Size, System.Drawing">
+    <value>97, 13</value>
   </data>
   <data name="lblFavorites.Text" xml:space="preserve">
-    <value>Быстрый доступ (нажимайте {0}, затем номер ячейки):</value>
+    <value>Быстрый доступ:</value>
   </data>
-  <data name="lnkAbout.Location" type="System.Drawing.Point, System.Drawing">
-    <value>230, 213</value>
-  </data>
-  <data name="lnkAbout.Size" type="System.Drawing.Size, System.Drawing">
-    <value>71, 13</value>
-  </data>
-  <data name="lnkAbout.Text" xml:space="preserve">
-    <value>О программе</value>
-  </data>
-  <data name="rbTextMode.Location" type="System.Drawing.Point, System.Drawing">
-    <value>250, 33</value>
-  </data>
-  <data name="rbTextMode.Size" type="System.Drawing.Size, System.Drawing">
-    <value>103, 17</value>
-  </data>
-  <data name="rbTextMode.Text" xml:space="preserve">
-    <value>Поиск по &amp;имени</value>
-  </data>
-  <data name="lnkOptions.Location" type="System.Drawing.Point, System.Drawing">
-    <value>115, 213</value>
-  </data>
-  <data name="lnkOptions.Size" type="System.Drawing.Size, System.Drawing">
-    <value>105, 13</value>
-  </data>
-  <data name="lnkOptions.Text" xml:space="preserve">
-    <value>Настройки (Ctrl+O)</value>
-  </data>
-  <data name="lnkExit.Location" type="System.Drawing.Point, System.Drawing">
-    <value>309, 213</value>
-  </data>
-  <data name="lnkExit.Size" type="System.Drawing.Size, System.Drawing">
-    <value>40, 13</value>
-  </data>
-  <data name="lnkExit.Text" xml:space="preserve">
-    <value>Выход</value>
+  <data name="windowFinder.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADrwAAA68AZW8ckkAAABGSURBVDhP7c5BCgAgCERRL+f9jzTRYkJkhKxlLd7CL4gG
+        oOTumHKPZKR/YI+MHevNiMtqju4PcHlKxg4ZiW/mHslITxyADYUlyQuVrSEAAAAAAElFTkSuQmCC
+</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
