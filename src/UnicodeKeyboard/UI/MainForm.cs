@@ -204,8 +204,8 @@ namespace YuriyGuts.UnicodeKeyboard.UI
 
         private void AdjustCharacterLookupFormPosition()
         {
-            frmCharacterLookup.Left = Left + txtCharSearch.Left + 3;
-            frmCharacterLookup.Top = Top + txtCharSearch.Top + txtCharSearch.Height + 24;
+            frmCharacterLookup.Left = Left + txtCharSearch.Left + SystemInformation.FixedFrameBorderSize.Width;
+            frmCharacterLookup.Top = Top + txtCharSearch.Top + txtCharSearch.Height + SystemInformation.ToolWindowCaptionHeight + 2;
         }
 
         private void SubmitSearchQuery(bool focusSearchForm)

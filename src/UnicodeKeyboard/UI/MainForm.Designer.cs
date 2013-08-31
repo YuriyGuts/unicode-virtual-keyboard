@@ -411,7 +411,7 @@ namespace YuriyGuts.UnicodeKeyboard.UI
             this.Controls.Add(this.lblTargetWindow);
             this.Controls.Add(this.lblHeader);
             this.Controls.Add(this.txtCharSearch);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.KeyPreview = true;
             this.MaximizeBox = false;
             this.Name = "MainForm";
