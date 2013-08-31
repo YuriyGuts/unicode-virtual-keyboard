@@ -163,11 +163,10 @@ namespace YuriyGuts.UnicodeKeyboard.UI
         private void UpdateKeyboardShortcutDependentControls()
         {
             string primaryShortcutString = KeyboardShortcutTranscriber.Instance.GetKeyboardShortcutDisplayText(UserSettings.Instance.PrimaryApplicationShortcut);
-            string secondaryShortcutString = KeyboardShortcutTranscriber.Instance.GetKeyboardShortcutDisplayText(UserSettings.Instance.SecondaryApplicationShortcut);
 
             trayIcon.BalloonTipText = string.Format(LocalizationHelper.GetObjectInternalResource(typeof(MainForm), "trayIcon.BalloonTipText"), primaryShortcutString);
-            cmiTrayUsageHint.Text = string.Format(LocalizationHelper.GetObjectInternalResource(typeof(MainForm), "cmiTrayUsageHint.Text"), primaryShortcutString, secondaryShortcutString);
-            lblFavorites.Text = string.Format(LocalizationHelper.GetObjectInternalResource(typeof(MainForm), "lblFavorites.Text"), secondaryShortcutString);
+            cmiTrayUsageHint.Text = string.Format(LocalizationHelper.GetObjectInternalResource(typeof(MainForm), "cmiTrayUsageHint.Text"), primaryShortcutString);
+            lblFavorites.Text = string.Format(LocalizationHelper.GetObjectInternalResource(typeof(MainForm), "lblFavorites.Text"));
         }
 
         #endregion Localization

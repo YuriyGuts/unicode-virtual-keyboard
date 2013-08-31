@@ -929,7 +929,7 @@
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="cmiTrayUsageHint.Text" xml:space="preserve">
-    <value>Press "{0}" or twice "{1}" to activate</value>
+    <value>Press "{0}" to activate</value>
   </data>
   <data name="tblFavoriteIndexes.ToolTip" xml:space="preserve">
     <value />

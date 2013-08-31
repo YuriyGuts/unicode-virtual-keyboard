@@ -159,7 +159,7 @@
     <value>325, 22</value>
   </data>
   <data name="cmiTrayUsageHint.Text" xml:space="preserve">
-    <value>Нажимайте "{0}" или дважды "{1}" для вызова</value>
+    <value>Нажимайте "{0}" для вызова</value>
   </data>
   <data name="cmiTraySeparator.Size" type="System.Drawing.Size, System.Drawing">
     <value>322, 6</value>
