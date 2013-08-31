@@ -31,10 +31,10 @@ namespace YuriyGuts.UnicodeKeyboard.UI
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            SingleAssemblyComponentResourceManager resources = new SingleAssemblyComponentResourceManager(typeof(CharacterLookupForm));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle45 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle43 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new SingleAssemblyComponentResourceManager(typeof(CharacterLookupForm));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle44 = new System.Windows.Forms.DataGridViewCellStyle();
             this.gridResultDisplayer = new System.Windows.Forms.DataGridView();
             this.colCharacterCode = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colCharacterGlyph = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -58,7 +58,6 @@ namespace YuriyGuts.UnicodeKeyboard.UI
             // 
             // gridResultDisplayer
             // 
-            resources.ApplyResources(this.gridResultDisplayer, "gridResultDisplayer");
             this.gridResultDisplayer.AllowUserToAddRows = false;
             this.gridResultDisplayer.AllowUserToDeleteRows = false;
             this.gridResultDisplayer.AllowUserToResizeColumns = false;
@@ -71,14 +70,15 @@ namespace YuriyGuts.UnicodeKeyboard.UI
             this.colCharacterCode,
             this.colCharacterGlyph,
             this.colCharacterName});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Tahoma", 8.25F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.LightSteelBlue;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gridResultDisplayer.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle45.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle45.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle45.Font = new System.Drawing.Font("Tahoma", 8.25F);
+            dataGridViewCellStyle45.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle45.SelectionBackColor = System.Drawing.Color.LightSteelBlue;
+            dataGridViewCellStyle45.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle45.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gridResultDisplayer.DefaultCellStyle = dataGridViewCellStyle45;
+            resources.ApplyResources(this.gridResultDisplayer, "gridResultDisplayer");
             this.gridResultDisplayer.GridColor = System.Drawing.Color.WhiteSmoke;
             this.gridResultDisplayer.MultiSelect = false;
             this.gridResultDisplayer.Name = "gridResultDisplayer";
@@ -93,8 +93,8 @@ namespace YuriyGuts.UnicodeKeyboard.UI
             // colCharacterCode
             // 
             this.colCharacterCode.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.colCharacterCode.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle43.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.colCharacterCode.DefaultCellStyle = dataGridViewCellStyle43;
             resources.ApplyResources(this.colCharacterCode, "colCharacterCode");
             this.colCharacterCode.Name = "colCharacterCode";
             this.colCharacterCode.ReadOnly = true;
@@ -102,9 +102,9 @@ namespace YuriyGuts.UnicodeKeyboard.UI
             // colCharacterGlyph
             // 
             this.colCharacterGlyph.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Arial Unicode MS", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.colCharacterGlyph.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle44.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle44.Font = new System.Drawing.Font("Arial Unicode MS", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.colCharacterGlyph.DefaultCellStyle = dataGridViewCellStyle44;
             resources.ApplyResources(this.colCharacterGlyph, "colCharacterGlyph");
             this.colCharacterGlyph.Name = "colCharacterGlyph";
             this.colCharacterGlyph.ReadOnly = true;
@@ -119,7 +119,6 @@ namespace YuriyGuts.UnicodeKeyboard.UI
             // 
             // pnlBottom
             // 
-            resources.ApplyResources(this.pnlBottom, "pnlBottom");
             this.pnlBottom.BackColor = System.Drawing.SystemColors.Control;
             this.pnlBottom.Controls.Add(this.lblShortcutAddToFavorites);
             this.pnlBottom.Controls.Add(this.lblShortcutCopyToClipboard);
@@ -130,6 +129,7 @@ namespace YuriyGuts.UnicodeKeyboard.UI
             this.pnlBottom.Controls.Add(this.imgShortcutInsertCharacterAlt);
             this.pnlBottom.Controls.Add(this.imgShortcutInsertCharacter);
             this.pnlBottom.Controls.Add(this.pnlSeparatorLine);
+            resources.ApplyResources(this.pnlBottom, "pnlBottom");
             this.pnlBottom.Name = "pnlBottom";
             // 
             // lblShortcutAddToFavorites
@@ -149,42 +149,42 @@ namespace YuriyGuts.UnicodeKeyboard.UI
             // 
             // pnlShortcutSeparatorLine
             // 
-            resources.ApplyResources(this.pnlShortcutSeparatorLine, "pnlShortcutSeparatorLine");
             this.pnlShortcutSeparatorLine.BackColor = System.Drawing.Color.Silver;
+            resources.ApplyResources(this.pnlShortcutSeparatorLine, "pnlShortcutSeparatorLine");
             this.pnlShortcutSeparatorLine.Name = "pnlShortcutSeparatorLine";
             // 
             // imgShortcutCopyToClipboard
             // 
-            resources.ApplyResources(this.imgShortcutCopyToClipboard, "imgShortcutCopyToClipboard");
             this.imgShortcutCopyToClipboard.BackColor = System.Drawing.SystemColors.Control;
             this.imgShortcutCopyToClipboard.BackgroundImage = global::YuriyGuts.UnicodeKeyboard.Properties.Resources.KeyShortcutCopyToClipboard;
+            resources.ApplyResources(this.imgShortcutCopyToClipboard, "imgShortcutCopyToClipboard");
             this.imgShortcutCopyToClipboard.Name = "imgShortcutCopyToClipboard";
             // 
             // imgShortcutAddToFavorites
             // 
-            resources.ApplyResources(this.imgShortcutAddToFavorites, "imgShortcutAddToFavorites");
             this.imgShortcutAddToFavorites.BackColor = System.Drawing.SystemColors.Control;
             this.imgShortcutAddToFavorites.BackgroundImage = global::YuriyGuts.UnicodeKeyboard.Properties.Resources.KeyShortcutAddToFavorites;
+            resources.ApplyResources(this.imgShortcutAddToFavorites, "imgShortcutAddToFavorites");
             this.imgShortcutAddToFavorites.Name = "imgShortcutAddToFavorites";
             // 
             // imgShortcutInsertCharacterAlt
             // 
-            resources.ApplyResources(this.imgShortcutInsertCharacterAlt, "imgShortcutInsertCharacterAlt");
             this.imgShortcutInsertCharacterAlt.BackColor = System.Drawing.SystemColors.Control;
             this.imgShortcutInsertCharacterAlt.BackgroundImage = global::YuriyGuts.UnicodeKeyboard.Properties.Resources.MouseShortcutInsertCharacter;
+            resources.ApplyResources(this.imgShortcutInsertCharacterAlt, "imgShortcutInsertCharacterAlt");
             this.imgShortcutInsertCharacterAlt.Name = "imgShortcutInsertCharacterAlt";
             // 
             // imgShortcutInsertCharacter
             // 
-            resources.ApplyResources(this.imgShortcutInsertCharacter, "imgShortcutInsertCharacter");
             this.imgShortcutInsertCharacter.BackColor = System.Drawing.SystemColors.Control;
             this.imgShortcutInsertCharacter.BackgroundImage = global::YuriyGuts.UnicodeKeyboard.Properties.Resources.KeyShortcutInsertCharacter;
+            resources.ApplyResources(this.imgShortcutInsertCharacter, "imgShortcutInsertCharacter");
             this.imgShortcutInsertCharacter.Name = "imgShortcutInsertCharacter";
             // 
             // pnlSeparatorLine
             // 
-            resources.ApplyResources(this.pnlSeparatorLine, "pnlSeparatorLine");
             this.pnlSeparatorLine.BackColor = System.Drawing.Color.Silver;
+            resources.ApplyResources(this.pnlSeparatorLine, "pnlSeparatorLine");
             this.pnlSeparatorLine.Name = "pnlSeparatorLine";
             // 
             // tmrSearchTimeout
@@ -194,10 +194,10 @@ namespace YuriyGuts.UnicodeKeyboard.UI
             // 
             // pnlBorder
             // 
-            resources.ApplyResources(this.pnlBorder, "pnlBorder");
             this.pnlBorder.BackColor = System.Drawing.SystemColors.WindowText;
             this.pnlBorder.Controls.Add(this.gridResultDisplayer);
             this.pnlBorder.Controls.Add(this.pnlBottom);
+            resources.ApplyResources(this.pnlBorder, "pnlBorder");
             this.pnlBorder.Name = "pnlBorder";
             // 
             // CharacterLookupForm
@@ -210,6 +210,7 @@ namespace YuriyGuts.UnicodeKeyboard.UI
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.Activated += new System.EventHandler(this.CharacterLookupForm_Activated);
+            this.Deactivate += new System.EventHandler(this.CharacterLookupForm_Deactivate);
             this.Shown += new System.EventHandler(this.CharacterLookupForm_Shown);
             ((System.ComponentModel.ISupportInitialize)(this.gridResultDisplayer)).EndInit();
             this.pnlBottom.ResumeLayout(false);

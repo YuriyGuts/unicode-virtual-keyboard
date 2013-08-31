@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Drawing;
 using System.Globalization;
 using System.Windows.Forms;
 using YuriyGuts.UnicodeKeyboard.Interaction;
@@ -72,15 +73,22 @@ namespace YuriyGuts.UnicodeKeyboard.UI
         {
             UseWaitCursor = true;
 
-            if (SearchQuery.Contains(" ") && SearchQuery.Trim().Length > 0)
+            // Try to search by character code first...
+            lastSearchResults = UnicodeCharacterDatabase.FindCharactersByCodeString(SearchQuery);
+
+            // ...If that fails, search characters by name.
+            if (lastSearchResults == null || lastSearchResults.Count == 0)
             {
-                string[] filterParts = SearchQuery.Split(namePartSeparators, StringSplitOptions.RemoveEmptyEntries);
-                string regexPattern = string.Join(@".*?", filterParts);
-                lastSearchResults = UnicodeCharacterDatabase.FindCharactersByNameRegex(regexPattern);
-            }
-            else
-            {
-                lastSearchResults = UnicodeCharacterDatabase.FindCharactersByName(SearchQuery, false);
+                if (SearchQuery.Contains(" ") && SearchQuery.Trim().Length > 0)
+                {
+                    string[] filterParts = SearchQuery.Split(namePartSeparators, StringSplitOptions.RemoveEmptyEntries);
+                    string regexPattern = string.Join(@".*?", filterParts);
+                    lastSearchResults = UnicodeCharacterDatabase.FindCharactersByNameRegex(regexPattern);
+                }
+                else
+                {
+                    lastSearchResults = UnicodeCharacterDatabase.FindCharactersByName(SearchQuery, false);
+                }
             }
 
             gridResultDisplayer.Rows.Clear();
@@ -121,10 +129,16 @@ namespace YuriyGuts.UnicodeKeyboard.UI
 
         private void CharacterLookupForm_Activated(object sender, EventArgs e)
         {
+            gridResultDisplayer.DefaultCellStyle.SelectionBackColor = Color.LightSteelBlue;
             if (gridResultDisplayer.RowCount > 0)
             {
                 gridResultDisplayer.Rows[gridResultDisplayer.FirstDisplayedScrollingRowIndex].Selected = true;
             }
+        }
+
+        private void CharacterLookupForm_Deactivate(object sender, EventArgs e)
+        {
+            gridResultDisplayer.DefaultCellStyle.SelectionBackColor = Color.Gainsboro;
         }
 
         private void CharacterLookupForm_Shown(object sender, EventArgs e)

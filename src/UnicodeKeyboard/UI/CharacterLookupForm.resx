@@ -117,197 +117,167 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="&gt;&gt;imgShortcutCopyToClipboard.Parent" xml:space="preserve">
-    <value>pnlBottom</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="pnlBorder.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>334, 334</value>
-  </data>
-  <data name="imgShortcutAddToFavorites.Location" type="System.Drawing.Point, System.Drawing">
-    <value>151, 42</value>
-  </data>
-  <data name="&gt;&gt;imgShortcutInsertCharacter.Parent" xml:space="preserve">
-    <value>pnlBottom</value>
-  </data>
-  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>334, 200</value>
-  </data>
-  <data name="pnlShortcutSeparatorLine.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1, 74</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="pnlShortcutSeparatorLine.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;pnlSeparatorLine.Parent" xml:space="preserve">
-    <value>pnlBottom</value>
-  </data>
-  <data name="&gt;&gt;imgShortcutInsertCharacter.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;imgShortcutCopyToClipboard.Name" xml:space="preserve">
-    <value>imgShortcutCopyToClipboard</value>
-  </data>
-  <data name="imgShortcutInsertCharacterAlt.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="imgShortcutInsertCharacter.Size" type="System.Drawing.Size, System.Drawing">
-    <value>43, 22</value>
-  </data>
-  <data name="&gt;&gt;pnlShortcutSeparatorLine.Name" xml:space="preserve">
-    <value>pnlShortcutSeparatorLine</value>
-  </data>
-  <data name="colCharacterName.HeaderText" xml:space="preserve">
-    <value>Name</value>
-  </data>
-  <data name="&gt;&gt;colCharacterName.Name" xml:space="preserve">
-    <value>colCharacterName</value>
-  </data>
-  <data name="imgShortcutCopyToClipboard.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;pnlBorder.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;lblShortcutInsertCharacter.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pnlBorder.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblShortcutCopyToClipboard.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="lblShortcutCopyToClipboard.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 29</value>
-  </data>
-  <data name="&gt;&gt;pnlShortcutSeparatorLine.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="imgShortcutAddToFavorites.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="&gt;&gt;lblShortcutCopyToClipboard.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="imgShortcutInsertCharacter.Location" type="System.Drawing.Point, System.Drawing">
-    <value>30, 8</value>
-  </data>
-  <data name="colCharacterCode.Width" type="System.Int32, mscorlib">
-    <value>45</value>
-  </data>
-  <data name="&gt;&gt;tmrSearchTimeout.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="lblShortcutInsertCharacter.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;pnlSeparatorLine.Name" xml:space="preserve">
-    <value>pnlSeparatorLine</value>
-  </data>
-  <data name="&gt;&gt;lblShortcutInsertCharacter.Parent" xml:space="preserve">
-    <value>pnlBottom</value>
-  </data>
-  <data name="pnlShortcutSeparatorLine.Location" type="System.Drawing.Point, System.Drawing">
-    <value>141, 0</value>
-  </data>
-  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
-    <value>CenterParent</value>
-  </data>
+  <metadata name="colCharacterCode.UserAddedColumn" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="colCharacterCode.HeaderText" xml:space="preserve">
     <value>Code</value>
   </data>
-  <data name="&gt;&gt;lblShortcutAddToFavorites.Parent" xml:space="preserve">
-    <value>pnlBottom</value>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="colCharacterCode.Width" type="System.Int32, mscorlib">
+    <value>45</value>
   </data>
-  <data name="imgShortcutCopyToClipboard.Location" type="System.Drawing.Point, System.Drawing">
-    <value>151, 9</value>
+  <metadata name="colCharacterGlyph.UserAddedColumn" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="colCharacterGlyph.HeaderText" xml:space="preserve">
+    <value />
   </data>
-  <data name="&gt;&gt;imgShortcutAddToFavorites.Parent" xml:space="preserve">
-    <value>pnlBottom</value>
+  <data name="colCharacterGlyph.Width" type="System.Int32, mscorlib">
+    <value>50</value>
+  </data>
+  <metadata name="colCharacterName.UserAddedColumn" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="colCharacterName.HeaderText" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="gridResultDisplayer.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="gridResultDisplayer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="gridResultDisplayer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>332, 258</value>
   </data>
   <data name="gridResultDisplayer.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;imgShortcutInsertCharacterAlt.Name" xml:space="preserve">
-    <value>imgShortcutInsertCharacterAlt</value>
+  <data name="&gt;&gt;gridResultDisplayer.Name" xml:space="preserve">
+    <value>gridResultDisplayer</value>
   </data>
-  <data name="imgShortcutInsertCharacter.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
+  <data name="&gt;&gt;gridResultDisplayer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="pnlBorder.Size" type="System.Drawing.Size, System.Drawing">
-    <value>334, 334</value>
+  <data name="&gt;&gt;gridResultDisplayer.Parent" xml:space="preserve">
+    <value>pnlBorder</value>
   </data>
-  <data name="pnlSeparatorLine.TabIndex" type="System.Int32, mscorlib">
+  <data name="&gt;&gt;gridResultDisplayer.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;colCharacterName.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;lblShortcutAddToFavorites.Name" xml:space="preserve">
+    <value>lblShortcutAddToFavorites</value>
   </data>
-  <data name="imgShortcutAddToFavorites.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
+  <data name="&gt;&gt;lblShortcutAddToFavorites.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblShortcutAddToFavorites.Parent" xml:space="preserve">
+    <value>pnlBottom</value>
+  </data>
+  <data name="&gt;&gt;lblShortcutAddToFavorites.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;lblShortcutCopyToClipboard.Name" xml:space="preserve">
+    <value>lblShortcutCopyToClipboard</value>
+  </data>
+  <data name="&gt;&gt;lblShortcutCopyToClipboard.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblShortcutCopyToClipboard.Parent" xml:space="preserve">
+    <value>pnlBottom</value>
+  </data>
+  <data name="&gt;&gt;lblShortcutCopyToClipboard.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;lblShortcutInsertCharacter.Name" xml:space="preserve">
+    <value>lblShortcutInsertCharacter</value>
+  </data>
+  <data name="&gt;&gt;lblShortcutInsertCharacter.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblShortcutInsertCharacter.Parent" xml:space="preserve">
+    <value>pnlBottom</value>
+  </data>
+  <data name="&gt;&gt;lblShortcutInsertCharacter.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;pnlShortcutSeparatorLine.Name" xml:space="preserve">
+    <value>pnlShortcutSeparatorLine</value>
+  </data>
+  <data name="&gt;&gt;pnlShortcutSeparatorLine.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnlShortcutSeparatorLine.Parent" xml:space="preserve">
+    <value>pnlBottom</value>
+  </data>
+  <data name="&gt;&gt;pnlShortcutSeparatorLine.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;imgShortcutCopyToClipboard.Name" xml:space="preserve">
+    <value>imgShortcutCopyToClipboard</value>
   </data>
   <data name="&gt;&gt;imgShortcutCopyToClipboard.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;pnlSeparatorLine.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pnlBottom.Name" xml:space="preserve">
+  <data name="&gt;&gt;imgShortcutCopyToClipboard.Parent" xml:space="preserve">
     <value>pnlBottom</value>
   </data>
   <data name="&gt;&gt;imgShortcutCopyToClipboard.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
+  <data name="&gt;&gt;imgShortcutAddToFavorites.Name" xml:space="preserve">
+    <value>imgShortcutAddToFavorites</value>
   </data>
-  <data name="&gt;&gt;lblShortcutAddToFavorites.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;imgShortcutAddToFavorites.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="lblShortcutCopyToClipboard.Text" xml:space="preserve">
-    <value>Copy to Clipboard</value>
+  <data name="&gt;&gt;imgShortcutAddToFavorites.Parent" xml:space="preserve">
+    <value>pnlBottom</value>
   </data>
-  <data name="pnlBottom.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+  <data name="&gt;&gt;imgShortcutAddToFavorites.ZOrder" xml:space="preserve">
+    <value>5</value>
   </data>
-  <data name="imgShortcutCopyToClipboard.Size" type="System.Drawing.Size, System.Drawing">
-    <value>71, 22</value>
+  <data name="&gt;&gt;imgShortcutInsertCharacterAlt.Name" xml:space="preserve">
+    <value>imgShortcutInsertCharacterAlt</value>
   </data>
-  <data name="lblShortcutInsertCharacter.Size" type="System.Drawing.Size, System.Drawing">
-    <value>61, 61</value>
+  <data name="&gt;&gt;imgShortcutInsertCharacterAlt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;imgShortcutInsertCharacterAlt.Parent" xml:space="preserve">
+    <value>pnlBottom</value>
+  </data>
+  <data name="&gt;&gt;imgShortcutInsertCharacterAlt.ZOrder" xml:space="preserve">
+    <value>6</value>
   </data>
   <data name="&gt;&gt;imgShortcutInsertCharacter.Name" xml:space="preserve">
     <value>imgShortcutInsertCharacter</value>
   </data>
-  <data name="pnlSeparatorLine.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8.25pt</value>
-  </data>
-  <data name="pnlBorder.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="colCharacterGlyph.Width" type="System.Int32, mscorlib">
-    <value>50</value>
-  </data>
-  <data name="lblShortcutCopyToClipboard.Location" type="System.Drawing.Point, System.Drawing">
-    <value>228, 5</value>
-  </data>
-  <data name="lblShortcutCopyToClipboard.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;pnlBottom.Type" xml:space="preserve">
+  <data name="&gt;&gt;imgShortcutInsertCharacter.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;imgShortcutInsertCharacter.Parent" xml:space="preserve">
+    <value>pnlBottom</value>
   </data>
   <data name="&gt;&gt;imgShortcutInsertCharacter.ZOrder" xml:space="preserve">
     <value>7</value>
+  </data>
+  <data name="&gt;&gt;pnlSeparatorLine.Name" xml:space="preserve">
+    <value>pnlSeparatorLine</value>
+  </data>
+  <data name="&gt;&gt;pnlSeparatorLine.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnlSeparatorLine.Parent" xml:space="preserve">
+    <value>pnlBottom</value>
+  </data>
+  <data name="&gt;&gt;pnlSeparatorLine.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="pnlBottom.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
   </data>
   <data name="pnlBottom.Location" type="System.Drawing.Point, System.Drawing">
     <value>1, 259</value>
@@ -315,193 +285,331 @@
   <data name="pnlBottom.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
   </data>
-  <data name="imgShortcutInsertCharacterAlt.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>None</value>
+  <data name="pnlBottom.Size" type="System.Drawing.Size, System.Drawing">
+    <value>332, 74</value>
   </data>
-  <data name="lblShortcutAddToFavorites.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 29</value>
-  </data>
-  <data name="&gt;&gt;colCharacterCode.Name" xml:space="preserve">
-    <value>colCharacterCode</value>
-  </data>
-  <data name="&gt;&gt;imgShortcutInsertCharacterAlt.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblShortcutCopyToClipboard.Parent" xml:space="preserve">
-    <value>pnlBottom</value>
-  </data>
-  <data name="imgShortcutCopyToClipboard.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="lblShortcutInsertCharacter.Location" type="System.Drawing.Point, System.Drawing">
-    <value>77, 8</value>
-  </data>
-  <data name="gridResultDisplayer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>332, 258</value>
-  </data>
-  <data name="&gt;&gt;tmrSearchTimeout.Name" xml:space="preserve">
-    <value>tmrSearchTimeout</value>
-  </data>
-  <data name="lblShortcutAddToFavorites.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;pnlBottom.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="lblShortcutCopyToClipboard.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="&gt;&gt;imgShortcutAddToFavorites.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="imgShortcutAddToFavorites.Size" type="System.Drawing.Size, System.Drawing">
-    <value>71, 22</value>
-  </data>
-  <data name="&gt;&gt;pnlShortcutSeparatorLine.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="pnlSeparatorLine.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="gridResultDisplayer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1, 1</value>
-  </data>
-  <data name="&gt;&gt;lblShortcutInsertCharacter.ZOrder" xml:space="preserve">
+  <data name="pnlBottom.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="&gt;&gt;lblShortcutAddToFavorites.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="pnlBorder.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>1, 1, 1, 1</value>
-  </data>
-  <data name="lblShortcutInsertCharacter.Text" xml:space="preserve">
-    <value>Insert Character</value>
-  </data>
-  <data name="lblShortcutAddToFavorites.Text" xml:space="preserve">
-    <value>Add to Favorites</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="pnlBottom.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Bottom</value>
-  </data>
-  <data name="pnlSeparatorLine.Size" type="System.Drawing.Size, System.Drawing">
-    <value>332, 1</value>
-  </data>
-  <data name="&gt;&gt;gridResultDisplayer.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;imgShortcutAddToFavorites.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pnlShortcutSeparatorLine.Parent" xml:space="preserve">
+  <data name="&gt;&gt;pnlBottom.Name" xml:space="preserve">
     <value>pnlBottom</value>
+  </data>
+  <data name="&gt;&gt;pnlBottom.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;pnlBottom.Parent" xml:space="preserve">
     <value>pnlBorder</value>
   </data>
-  <data name="&gt;&gt;lblShortcutAddToFavorites.Name" xml:space="preserve">
-    <value>lblShortcutAddToFavorites</value>
-  </data>
-  <data name="&gt;&gt;gridResultDisplayer.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="pnlBorder.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="lblShortcutInsertCharacter.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="pnlBottom.Size" type="System.Drawing.Size, System.Drawing">
-    <value>332, 74</value>
-  </data>
-  <data name="lblShortcutCopyToClipboard.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="&gt;&gt;colCharacterCode.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="imgShortcutInsertCharacterAlt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 37</value>
-  </data>
-  <data name="&gt;&gt;lblShortcutInsertCharacter.Name" xml:space="preserve">
-    <value>lblShortcutInsertCharacter</value>
-  </data>
-  <data name="&gt;&gt;imgShortcutInsertCharacterAlt.Parent" xml:space="preserve">
-    <value>pnlBottom</value>
-  </data>
-  <data name="&gt;&gt;gridResultDisplayer.Parent" xml:space="preserve">
-    <value>pnlBorder</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Find character</value>
-  </data>
-  <data name="&gt;&gt;pnlBorder.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;gridResultDisplayer.Name" xml:space="preserve">
-    <value>gridResultDisplayer</value>
+  <data name="&gt;&gt;pnlBottom.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="lblShortcutAddToFavorites.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="lblShortcutAddToFavorites.Location" type="System.Drawing.Point, System.Drawing">
+    <value>228, 38</value>
+  </data>
+  <data name="lblShortcutAddToFavorites.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 29</value>
+  </data>
+  <data name="lblShortcutAddToFavorites.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="lblShortcutAddToFavorites.Text" xml:space="preserve">
+    <value>Add to Favorites</value>
+  </data>
   <data name="lblShortcutAddToFavorites.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;lblShortcutAddToFavorites.Name" xml:space="preserve">
+    <value>lblShortcutAddToFavorites</value>
+  </data>
+  <data name="&gt;&gt;lblShortcutAddToFavorites.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblShortcutAddToFavorites.Parent" xml:space="preserve">
+    <value>pnlBottom</value>
+  </data>
+  <data name="&gt;&gt;lblShortcutAddToFavorites.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblShortcutCopyToClipboard.Location" type="System.Drawing.Point, System.Drawing">
+    <value>228, 5</value>
+  </data>
+  <data name="lblShortcutCopyToClipboard.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="lblShortcutCopyToClipboard.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 29</value>
+  </data>
+  <data name="lblShortcutCopyToClipboard.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="lblShortcutCopyToClipboard.Text" xml:space="preserve">
+    <value>Copy to Clipboard</value>
+  </data>
+  <data name="lblShortcutCopyToClipboard.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
   </data>
   <data name="&gt;&gt;lblShortcutCopyToClipboard.Name" xml:space="preserve">
     <value>lblShortcutCopyToClipboard</value>
   </data>
+  <data name="&gt;&gt;lblShortcutCopyToClipboard.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblShortcutCopyToClipboard.Parent" xml:space="preserve">
+    <value>pnlBottom</value>
+  </data>
+  <data name="&gt;&gt;lblShortcutCopyToClipboard.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lblShortcutInsertCharacter.Location" type="System.Drawing.Point, System.Drawing">
+    <value>77, 8</value>
+  </data>
+  <data name="lblShortcutInsertCharacter.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 61</value>
+  </data>
+  <data name="lblShortcutInsertCharacter.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="lblShortcutInsertCharacter.Text" xml:space="preserve">
+    <value>Insert Character</value>
+  </data>
+  <data name="lblShortcutInsertCharacter.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;lblShortcutInsertCharacter.Name" xml:space="preserve">
+    <value>lblShortcutInsertCharacter</value>
+  </data>
+  <data name="&gt;&gt;lblShortcutInsertCharacter.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblShortcutInsertCharacter.Parent" xml:space="preserve">
+    <value>pnlBottom</value>
+  </data>
+  <data name="&gt;&gt;lblShortcutInsertCharacter.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="pnlShortcutSeparatorLine.Location" type="System.Drawing.Point, System.Drawing">
+    <value>141, 0</value>
+  </data>
+  <data name="pnlShortcutSeparatorLine.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1, 74</value>
+  </data>
+  <data name="pnlShortcutSeparatorLine.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;pnlShortcutSeparatorLine.Name" xml:space="preserve">
+    <value>pnlShortcutSeparatorLine</value>
+  </data>
+  <data name="&gt;&gt;pnlShortcutSeparatorLine.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnlShortcutSeparatorLine.Parent" xml:space="preserve">
+    <value>pnlBottom</value>
+  </data>
+  <data name="&gt;&gt;pnlShortcutSeparatorLine.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="imgShortcutCopyToClipboard.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="imgShortcutCopyToClipboard.Location" type="System.Drawing.Point, System.Drawing">
+    <value>151, 9</value>
+  </data>
+  <data name="imgShortcutCopyToClipboard.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 22</value>
+  </data>
+  <data name="imgShortcutCopyToClipboard.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;imgShortcutCopyToClipboard.Name" xml:space="preserve">
+    <value>imgShortcutCopyToClipboard</value>
+  </data>
+  <data name="&gt;&gt;imgShortcutCopyToClipboard.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;imgShortcutCopyToClipboard.Parent" xml:space="preserve">
+    <value>pnlBottom</value>
+  </data>
+  <data name="&gt;&gt;imgShortcutCopyToClipboard.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="imgShortcutAddToFavorites.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="imgShortcutAddToFavorites.Location" type="System.Drawing.Point, System.Drawing">
+    <value>151, 42</value>
+  </data>
+  <data name="imgShortcutAddToFavorites.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 22</value>
+  </data>
+  <data name="imgShortcutAddToFavorites.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
   <data name="&gt;&gt;imgShortcutAddToFavorites.Name" xml:space="preserve">
     <value>imgShortcutAddToFavorites</value>
   </data>
-  <data name="&gt;&gt;pnlBorder.Name" xml:space="preserve">
-    <value>pnlBorder</value>
+  <data name="&gt;&gt;imgShortcutAddToFavorites.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;colCharacterGlyph.Name" xml:space="preserve">
-    <value>colCharacterGlyph</value>
+  <data name="&gt;&gt;imgShortcutAddToFavorites.Parent" xml:space="preserve">
+    <value>pnlBottom</value>
   </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>CharacterLookupForm</value>
+  <data name="&gt;&gt;imgShortcutAddToFavorites.ZOrder" xml:space="preserve">
+    <value>5</value>
   </data>
-  <data name="colCharacterGlyph.HeaderText" xml:space="preserve">
-    <value />
+  <data name="imgShortcutInsertCharacterAlt.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>None</value>
   </data>
-  <data name="&gt;&gt;pnlSeparatorLine.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="lblShortcutAddToFavorites.Location" type="System.Drawing.Point, System.Drawing">
-    <value>228, 38</value>
-  </data>
-  <data name="&gt;&gt;imgShortcutInsertCharacterAlt.ZOrder" xml:space="preserve">
-    <value>6</value>
+  <data name="imgShortcutInsertCharacterAlt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 37</value>
   </data>
   <data name="imgShortcutInsertCharacterAlt.Size" type="System.Drawing.Size, System.Drawing">
     <value>70, 32</value>
   </data>
+  <data name="imgShortcutInsertCharacterAlt.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;imgShortcutInsertCharacterAlt.Name" xml:space="preserve">
+    <value>imgShortcutInsertCharacterAlt</value>
+  </data>
+  <data name="&gt;&gt;imgShortcutInsertCharacterAlt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;imgShortcutInsertCharacterAlt.Parent" xml:space="preserve">
+    <value>pnlBottom</value>
+  </data>
+  <data name="&gt;&gt;imgShortcutInsertCharacterAlt.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
   <data name="imgShortcutInsertCharacter.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>None</value>
   </data>
-  <data name="gridResultDisplayer.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="imgShortcutInsertCharacter.Location" type="System.Drawing.Point, System.Drawing">
+    <value>30, 8</value>
+  </data>
+  <data name="imgShortcutInsertCharacter.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 22</value>
+  </data>
+  <data name="imgShortcutInsertCharacter.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;imgShortcutInsertCharacter.Name" xml:space="preserve">
+    <value>imgShortcutInsertCharacter</value>
+  </data>
+  <data name="&gt;&gt;imgShortcutInsertCharacter.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;imgShortcutInsertCharacter.Parent" xml:space="preserve">
+    <value>pnlBottom</value>
+  </data>
+  <data name="&gt;&gt;imgShortcutInsertCharacter.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="pnlSeparatorLine.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="pnlSeparatorLine.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="pnlSeparatorLine.Size" type="System.Drawing.Size, System.Drawing">
+    <value>332, 1</value>
+  </data>
+  <data name="pnlSeparatorLine.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;pnlSeparatorLine.Name" xml:space="preserve">
+    <value>pnlSeparatorLine</value>
+  </data>
+  <data name="&gt;&gt;pnlSeparatorLine.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnlSeparatorLine.Parent" xml:space="preserve">
+    <value>pnlBottom</value>
+  </data>
+  <data name="&gt;&gt;pnlSeparatorLine.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <metadata name="tmrSearchTimeout.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="pnlBorder.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
+  </data>
+  <data name="pnlBorder.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="pnlBorder.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="pnlBorder.Size" type="System.Drawing.Size, System.Drawing">
+    <value>334, 334</value>
+  </data>
+  <data name="pnlBorder.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;pnlBorder.Name" xml:space="preserve">
+    <value>pnlBorder</value>
+  </data>
+  <data name="&gt;&gt;pnlBorder.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnlBorder.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pnlBorder.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>334, 334</value>
+  </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt</value>
+  </data>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>334, 200</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterParent</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Find character</value>
+  </data>
+  <data name="&gt;&gt;colCharacterCode.Name" xml:space="preserve">
+    <value>colCharacterCode</value>
+  </data>
+  <data name="&gt;&gt;colCharacterCode.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;colCharacterGlyph.Name" xml:space="preserve">
+    <value>colCharacterGlyph</value>
   </data>
   <data name="&gt;&gt;colCharacterGlyph.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <metadata name="colCharacterCode.UserAddedColumn" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="colCharacterGlyph.UserAddedColumn" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="tmrSearchTimeout.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="colCharacterName.UserAddedColumn" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
+  <data name="&gt;&gt;colCharacterName.Name" xml:space="preserve">
+    <value>colCharacterName</value>
+  </data>
+  <data name="&gt;&gt;colCharacterName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tmrSearchTimeout.Name" xml:space="preserve">
+    <value>tmrSearchTimeout</value>
+  </data>
+  <data name="&gt;&gt;tmrSearchTimeout.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>CharacterLookupForm</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

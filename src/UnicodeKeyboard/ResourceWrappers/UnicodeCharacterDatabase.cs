@@ -80,6 +80,31 @@ namespace YuriyGuts.UnicodeKeyboard.ResourceWrappers
         }
 
         /// <summary>
+        /// Searches for Unicode characters by a string representation of the character code.
+        /// </summary>
+        /// <param name="codeString">String representation of the character code.</param>
+        /// <returns>The list of all found items.</returns>
+        public static List<KeyValuePair<ushort, string>> FindCharactersByCodeString(string codeString)
+        {
+            if (codeString.Length != 4)
+            {
+                return null;
+            }
+
+            ushort charCode;
+            bool isParseSuccessful = ushort.TryParse(codeString, NumberStyles.HexNumber, CultureInfo.CurrentCulture, out charCode);
+
+            if (isParseSuccessful && characterNames.ContainsKey(charCode))
+            {
+                return new List<KeyValuePair<ushort, string>>
+                {
+                    new KeyValuePair<ushort, string>(charCode, characterNames[charCode])
+                };
+            }
+            return null;
+        }
+
+        /// <summary>
         /// Searches for Unicode characters whose names match the specified filter.
         /// </summary>
         /// <param name="nameFilter">Character name filter.</param>
