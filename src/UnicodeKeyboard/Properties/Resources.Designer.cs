@@ -97,7 +97,7 @@ namespace YuriyGuts.UnicodeKeyboard.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 1.0 b2.
+        ///   Looks up a localized string similar to 1.1.
         /// </summary>
         internal static string ApplicationVersion {
             get {
@@ -116,7 +116,7 @@ namespace YuriyGuts.UnicodeKeyboard.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Copyright © Yuriy Guts, 2010-2011.
+        ///   Looks up a localized string similar to Copyright © Yuriy Guts, 2010-2013.
         /// </summary>
         internal static string Copyright {
             get {
