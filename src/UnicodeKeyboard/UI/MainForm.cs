@@ -481,10 +481,13 @@ namespace YuriyGuts.UnicodeKeyboard.UI
                 HideApplication();
             }
 
-            // Arrow keys: move focus to the popup form
-            if (e.Modifiers == Keys.None && (e.KeyCode == Keys.Up || e.KeyCode == Keys.Down) && frmCharacterLookup.Visible)
+            // Arrow / PageUp / PageDown keys: move focus to the popup form
+            if (e.Modifiers == Keys.None && (e.KeyCode == Keys.Up || e.KeyCode == Keys.Down || e.KeyCode == Keys.PageUp || e.KeyCode == Keys.PageDown))
             {
-                frmCharacterLookup.Focus();
+                if (frmCharacterLookup.Visible)
+                {
+                    frmCharacterLookup.Focus();
+                }
             }
 
             // Backspace or Del with empty text box: hide the popup form.
