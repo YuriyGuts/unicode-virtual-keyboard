@@ -31,7 +31,7 @@ namespace YuriyGuts.UnicodeKeyboard.UI
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            SingleAssemblyComponentResourceManager resources = new SingleAssemblyComponentResourceManager(typeof(MainForm));
+            System.ComponentModel.ComponentResourceManager resources = new SingleAssemblyComponentResourceManager(typeof(MainForm));
             this.trayIcon = new System.Windows.Forms.NotifyIcon(this.components);
             this.cmsTrayIconMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.cmiTrayUsageHint = new System.Windows.Forms.ToolStripMenuItem();

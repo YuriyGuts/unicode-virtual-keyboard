@@ -194,6 +194,36 @@
   <data name="lblFavorites.Text" xml:space="preserve">
     <value>Быстрый доступ:</value>
   </data>
+  <data name="cmsOptions.Size" type="System.Drawing.Size, System.Drawing">
+    <value>277, 98</value>
+  </data>
+  <data name="cmiOptions.Size" type="System.Drawing.Size, System.Drawing">
+    <value>276, 22</value>
+  </data>
+  <data name="cmiOptions.Text" xml:space="preserve">
+    <value>Настройки...</value>
+  </data>
+  <data name="cmiWindowsCharMap.Size" type="System.Drawing.Size, System.Drawing">
+    <value>276, 22</value>
+  </data>
+  <data name="cmiWindowsCharMap.Text" xml:space="preserve">
+    <value>Таблица символов Windows</value>
+  </data>
+  <data name="cmiOptionsSeparator.Size" type="System.Drawing.Size, System.Drawing">
+    <value>273, 6</value>
+  </data>
+  <data name="cmiAbout.Size" type="System.Drawing.Size, System.Drawing">
+    <value>276, 22</value>
+  </data>
+  <data name="cmiAbout.Text" xml:space="preserve">
+    <value>О программе</value>
+  </data>
+  <data name="cmiExit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>276, 22</value>
+  </data>
+  <data name="cmiExit.Text" xml:space="preserve">
+    <value>Выход</value>
+  </data>
   <data name="windowFinder.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8

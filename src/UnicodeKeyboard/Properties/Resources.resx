@@ -120,36 +120,17 @@
   <data name="AboutForm_UnicodeCharacterDatabaseURL" xml:space="preserve">
     <value>http://unicode.org/ucd/</value>
   </data>
-  <data name="MainForm_btnAccept_SearchToolTip" xml:space="preserve">
-    <value>Search characters by name (&lt;Enter&gt;)</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="KeyboardSearch" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\KeyboardSearch.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ArrowLeft" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ArrowLeft.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="CharCopy" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\CharCopy.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Language_RU_RU" xml:space="preserve">
     <value>Русский (Russian)</value>
   </data>
   <data name="MainForm_strNoTargetWindow" xml:space="preserve">
     <value>(unknown)</value>
   </data>
-  <data name="MainForm_msgInvalidCharCode" xml:space="preserve">
-    <value>Invalid character code!</value>
-  </data>
   <data name="OptionsForm_msgInvalidPrimaryShortcut" xml:space="preserve">
     <value>Invalid primary shortcut. Please choose another one.</value>
   </data>
   <data name="ApplicationVersion" xml:space="preserve">
     <value>1.0 b2</value>
-  </data>
-  <data name="MainForm_btnAccept_ToolTip" xml:space="preserve">
-    <value>Send character to the target window (&lt;Enter&gt;)</value>
   </data>
   <data name="AboutForm_SilkIconsURL" xml:space="preserve">
     <value>http://famfamfam.com/lab/icons/silk/</value>
@@ -160,15 +141,10 @@
   <data name="Error" xml:space="preserve">
     <value>Error</value>
   </data>
-  <data name="KeyboardLarge" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\KeyboardLarge.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="CharAccept" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\CharAccept.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="OptionsForm_msgDuplicateKeyboardShortcuts" xml:space="preserve">
     <value>The primary and secondary shortcuts must be different.</value>
   </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="KeyboardSmallIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\KeyboardSmall.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -181,17 +157,11 @@
   <data name="MainForm_msgCharmapLaunchFailed" xml:space="preserve">
     <value>Failed to start Character Map because of an error.</value>
   </data>
-  <data name="CharAddToFavorites" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\CharAddToFavorites.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Copyright" xml:space="preserve">
     <value>Copyright © Yuriy Guts, 2010-2011</value>
   </data>
   <data name="CharacterNamesCompressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\CharacterNamesCompressed.dat;System.Byte[], mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="ArrowRight" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ArrowRight.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Language_EN_US" xml:space="preserve">
     <value>English</value>
@@ -204,9 +174,6 @@
   </data>
   <data name="Wrench" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Wrench.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="CharSearch" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\CharSearch.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="KeyboardSmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\KeyboardSmall.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -223,7 +190,6 @@
   <data name="CrosshairCursor" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\crosshaircursor.cur;System.Byte[], mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="KeyShortcutAddToFavorites" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\KeyShortcutAddToFavorites.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>

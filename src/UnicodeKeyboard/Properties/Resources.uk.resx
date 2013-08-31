@@ -126,17 +126,8 @@
   <data name="Error" xml:space="preserve">
     <value>Помилка</value>
   </data>
-  <data name="MainForm_btnAccept_SearchToolTip" xml:space="preserve">
-    <value>Пошук символів за назвою (&lt;Enter&gt;)</value>
-  </data>
-  <data name="MainForm_btnAccept_ToolTip" xml:space="preserve">
-    <value>Відправити символ вікну-адресату (&lt;Enter&gt;)</value>
-  </data>
   <data name="MainForm_msgCharmapLaunchFailed" xml:space="preserve">
     <value>Не вдалося запустити Таблицю Символів в зв'язку з помилкою.</value>
-  </data>
-  <data name="MainForm_msgInvalidCharCode" xml:space="preserve">
-    <value>Введено некоректний код символу!</value>
   </data>
   <data name="MainForm_msgSendCharFailed" xml:space="preserve">
     <value>Не вдалося відправити символ вікну-адресату.</value>

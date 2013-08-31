@@ -199,35 +199,13 @@
     <Compile Include="Settings\UserSettings.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\KeyboardSearch.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\KeyboardSmall.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\KeyboardLarge.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\KeyboardSmall.ico" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\CharAccept.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\CharAddToFavorites.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\CharacterNamesCompressed.dat" />
-    <None Include="Resources\CharCopy.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\ArrowLeft.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\ArrowRight.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\CharSearch.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Wrench.png" />

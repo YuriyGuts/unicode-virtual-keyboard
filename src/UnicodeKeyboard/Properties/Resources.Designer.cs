@@ -106,72 +106,12 @@ namespace YuriyGuts.UnicodeKeyboard.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap ArrowLeft {
-            get {
-                object obj = ResourceManager.GetObject("ArrowLeft", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap ArrowRight {
-            get {
-                object obj = ResourceManager.GetObject("ArrowRight", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap CharAccept {
-            get {
-                object obj = ResourceManager.GetObject("CharAccept", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
         internal static byte[] CharacterNamesCompressed {
             get {
                 object obj = ResourceManager.GetObject("CharacterNamesCompressed", resourceCulture);
                 return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap CharAddToFavorites {
-            get {
-                object obj = ResourceManager.GetObject("CharAddToFavorites", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap CharCopy {
-            get {
-                object obj = ResourceManager.GetObject("CharCopy", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap CharSearch {
-            get {
-                object obj = ResourceManager.GetObject("CharSearch", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
@@ -219,26 +159,6 @@ namespace YuriyGuts.UnicodeKeyboard.Properties {
         internal static string Error {
             get {
                 return ResourceManager.GetString("Error", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap KeyboardLarge {
-            get {
-                object obj = ResourceManager.GetObject("KeyboardLarge", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap KeyboardSearch {
-            get {
-                object obj = ResourceManager.GetObject("KeyboardSearch", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
@@ -320,38 +240,11 @@ namespace YuriyGuts.UnicodeKeyboard.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Search characters by name (&lt;Enter&gt;).
-        /// </summary>
-        internal static string MainForm_btnAccept_SearchToolTip {
-            get {
-                return ResourceManager.GetString("MainForm_btnAccept_SearchToolTip", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Send character to the target window (&lt;Enter&gt;).
-        /// </summary>
-        internal static string MainForm_btnAccept_ToolTip {
-            get {
-                return ResourceManager.GetString("MainForm_btnAccept_ToolTip", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Failed to start Character Map because of an error..
         /// </summary>
         internal static string MainForm_msgCharmapLaunchFailed {
             get {
                 return ResourceManager.GetString("MainForm_msgCharmapLaunchFailed", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Invalid character code!.
-        /// </summary>
-        internal static string MainForm_msgInvalidCharCode {
-            get {
-                return ResourceManager.GetString("MainForm_msgInvalidCharCode", resourceCulture);
             }
         }
         
