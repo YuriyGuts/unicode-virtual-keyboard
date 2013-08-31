@@ -486,6 +486,15 @@ namespace YuriyGuts.UnicodeKeyboard.UI
             {
                 frmCharacterLookup.Focus();
             }
+
+            // Backspace or Del with empty text box: hide the popup form.
+            if (e.Modifiers == Keys.None && (e.KeyCode == Keys.Back || e.KeyCode == Keys.Delete))
+            {
+                if (frmCharacterLookup.Visible && txtCharSearch.Text.Length == 0)
+                {
+                    frmCharacterLookup.SubmitResult(new CharacterSearchResult { Action = CharacterSearchAction.Cancel });
+                }
+            }
         }
 
         private void txtCharCode_TextChanged(object sender, EventArgs e)
